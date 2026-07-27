@@ -624,6 +624,24 @@
     "file": "Service_Texts/fixDate/07/27 St Panteleimon/July 26 VESP.html"
   },
   {
+    "date": "2026-08-02 8th Sunday After Pentecost ",
+    "title": "Aug 01 2026 Bilingual VESP",
+    "order": -1,
+    "file": "Service_Texts/variableDate/2026/08/02 8th Sunday After Pentecost /Aug 01 2026 Bilingual VESP.html"
+  },
+  {
+    "date": "2026-08-02 8th Sunday After Pentecost ",
+    "title": "Aug 02 2026 Bilingual ORTHROS",
+    "order": -1,
+    "file": "Service_Texts/variableDate/2026/08/02 8th Sunday After Pentecost /Aug 02 2026 Bilingual ORTHROS.html"
+  },
+  {
+    "date": "2026-08-02 8th Sunday After Pentecost ",
+    "title": "Aug 02 2026 Bilingual READ",
+    "order": -1,
+    "file": "Service_Texts/variableDate/2026/08/02 8th Sunday After Pentecost /Aug 02 2026 Bilingual READ.html"
+  },
+  {
     "date": "2026-12-28",
     "title": "Dec 28 2025 Bilingual ORTHROS",
     "order": -1,

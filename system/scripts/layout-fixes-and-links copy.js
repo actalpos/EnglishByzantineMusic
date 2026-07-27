@@ -29,6 +29,8 @@ June 30 2026 remove Sticheras from the title
 June 30 2026 - fix for in one place FIFTH EOTHINON EXAPOSTEILARION IN TONE TWO in other FIFTH EOTHINON EXAPOSTEILARION TONE TWO
 July 7 2026 - fix for overlapping [V] [LIHC] For St. Paisios in Tone One | Karam with [O] For St. Paisios in Tone One | Karamnot shouwn in Orthros as well. Only when the service moment is provided.
             - struct change: do not include LITART in VESP only for customizations. So Always keep [LT] as separate entity
+
+
 | JSON                                                  | HTML             | Rezultat                     |
 | ----------------------------------------------------- | ---------------- | ---------------------------- |
 | `TITLE`                                               | `TITLE`          | ✅                            |
@@ -38,6 +40,22 @@ July 7 2026 - fix for overlapping [V] [LIHC] For St. Paisios in Tone One | Karam
 | `[V][LIHC] TITLE` + `[O] TITLE`                       | fiecare serviciu | ✅ fără coliziuni             |
 | `[V] TITLE` + `[O] TITLE`                             | fiecare serviciu | ✅ fără coliziuni             |
 | `[V][LIHC] TITLE` + `[V][LT] TITLE` + `[V][AP] TITLE` | trei apariții    | ✅ în ordinea `SERVICE_ORDER` |
+
+July 17 2026 - fix for having the same title for the same service, same part. The differentiation would be in the automelon of the title
+
+✅ TITLE
+✅ [V] TITLE
+✅ [O] TITLE
+✅ [V][LIHC], [V][LT], [V][AP] în ordinea SERVICE_ORDER
+✅ coliziuni între Vespers și Orthros
+✅ suport pentru TITLE || AUTOMELON
+✅ suport pentru [SERVICE] TITLE || AUTOMELON
+✅ suport pentru [SERVICE][MOMENT] TITLE || AUTOMELON
+✅ protecție împotriva amestecului dintre [SERVICE] și [SERVICE][MOMENT]
+✅ obiectele multi afișează acum doar versiunile care corespund automelonului (cum era cazul For the Holy Fathers...)
+
+July 20 - am scos TD din document.querySelectorAll("td p").forEach(p => {  in incercarea de a putea aplica kinks la file care nu are table - English.hml
+- mai trebuie lucrat
 
 */
 
@@ -120,6 +138,41 @@ function normalizeTitle(str) {
   }
 
   return str.replace(/^(the|a|an|festal)\s+/, "");
+}
+
+function extractAutomelonFromText(text) {
+
+  if (!text) {
+    return "";
+  }
+
+  const match =
+    text.match(/\(\s*\*\*(.*?)\*\*\s*\)/s);
+
+  if (!match) {
+    return "";
+  }
+
+  return normalizeTitle(match[1]);
+}
+
+
+function splitAutomelonKey(key) {
+
+  const separator = "||";
+  const index = key.lastIndexOf(separator);
+
+  if (index === -1) {
+    return {
+      title: key.trim(),
+      automelon: ""
+    };
+  }
+
+  return {
+    title: key.substring(0, index).trim(),
+    automelon: key.substring(index + separator.length).trim()
+  };
 }
 
 function isRTL(text) {
@@ -224,6 +277,10 @@ document.querySelectorAll("table tr").forEach(tr => {
  **********************/
 const serviceIndex = {};
 const globalIndex = {};
+
+const serviceAutomelonIndex = {};
+const globalAutomelonIndex = {};
+
 const globalCount = {};
 const titleUsage = {};
 
@@ -245,7 +302,10 @@ try {
               ? { url: raw[key], name: null }
               : raw[key];
 
-      const norm = normalizeTitle(key);
+      const keyParts = splitAutomelonKey(key);
+
+      const norm = normalizeTitle(keyParts.title);
+      const automelon = normalizeTitle(keyParts.automelon);
 
       // ----------------------------
       // [SERVICE] [MOMENT] TITLE
@@ -255,25 +315,55 @@ try {
 
       if (m) {
 
-          const service = m[1].toUpperCase();
-          const moment  = m[2].toUpperCase();
-          const title   = m[3];
+        const service = m[1].toUpperCase();
+        const moment  = m[2].toUpperCase();
+        const title   = m[3];
 
-          const serviceKey = `[${service}] ${title}`;
+        const serviceKey =
+          `[${service}] ${title}`;
 
-          if (!serviceIndex[serviceKey]) {
-              serviceIndex[serviceKey] = [];
+        if (automelon) {
+
+          const automelonKey =
+            serviceKey + " || " + automelon;
+
+          if (!serviceAutomelonIndex[automelonKey]) {
+
+            serviceAutomelonIndex[automelonKey] = [];
+
           }
 
-          serviceIndex[serviceKey].push({
+          if (Array.isArray(serviceAutomelonIndex[automelonKey])) {
+
+            serviceAutomelonIndex[automelonKey].push({
               moment,
               item
-          });
+            });
 
-          globalCount[title] =
-              (globalCount[title] || 0) + 1;
+          } else {
 
-          continue;
+            console.warn(
+              "Mixed service and service-moment automelon key:",
+              automelonKey
+            );
+
+          }
+
+        }
+
+        if (!serviceIndex[serviceKey]) {
+          serviceIndex[serviceKey] = [];
+        }
+
+        serviceIndex[serviceKey].push({
+          moment,
+          item
+        });
+
+        globalCount[title] =
+          (globalCount[title] || 0) + 1;
+
+        continue;
       }
 
       // ----------------------------
@@ -287,7 +377,31 @@ try {
           const service = m[1].toUpperCase();
           const title   = m[2];
 
-          serviceIndex[`[${service}] ${title}`] = item;
+          const serviceKey =`[${service}] ${title}`;
+
+          if (automelon) {
+
+            const automelonKey =
+              serviceKey + " || " + automelon;
+
+            if (!serviceAutomelonIndex[automelonKey]) {
+
+              serviceAutomelonIndex[automelonKey] = item;
+
+            } else {
+
+              console.warn(
+                "Mixed service and service-moment automelon key:",
+                automelonKey
+              );
+
+            }
+
+          } else {
+
+            serviceIndex[serviceKey] = item;
+
+          }
 
           globalCount[title] =
               (globalCount[title] || 0) + 1;
@@ -299,10 +413,19 @@ try {
       // GLOBAL TITLE
       // ----------------------------
 
-      globalIndex[norm] = item;
+      if (automelon) {
 
-      globalCount[norm] =
-          (globalCount[norm] || 0) + 1;
+        const automelonKey = norm + " || " + automelon;
+
+        globalAutomelonIndex[automelonKey] = item;
+
+      } else {
+
+        globalIndex[norm] = item;
+
+      }
+
+      globalCount[norm] = (globalCount[norm] || 0) + 1;
   } 
 
   // sort moments inside each service
@@ -327,6 +450,30 @@ try {
       });
   }
 
+  for (const key in serviceAutomelonIndex) {
+
+    const entries =
+      serviceAutomelonIndex[key];
+
+    if (!Array.isArray(entries)) {
+      continue;
+    }
+
+    const serviceMatch =
+      key.match(/^\[([A-Z]+)\]/);
+
+    const service =
+      serviceMatch ? serviceMatch[1] : "";
+
+    const order =
+      SERVICE_ORDER[service] || {};
+
+    entries.sort((a, b) =>
+      (order[a.moment] || 999) -
+      (order[b.moment] || 999)
+    );
+  }
+
   // remove global entries that collide
   // with another service
 
@@ -347,22 +494,19 @@ try {
 /**********************
  * APPLY TITLE LINKS
  **********************/
-document.querySelectorAll("td p").forEach(p => {
+document.querySelectorAll("p").forEach(p => {
 
   if (p.querySelector("a")) return;
 
   const originalText = p.textContent.trim();
-  if (!originalText) return;
-  if (originalText.toUpperCase().includes("PAISIOS")) {
-    console.log(originalText);
+
+  if (!originalText) {
+    return;
   }
+
+  const htmlAutomelon = extractAutomelonFromText(originalText);
 
   const baseKey = normalizeTitle(originalText);
-
-  if (baseKey.toLowerCase().includes("paisios")) {
-
-    console.log(baseKey)
-  }
 
   let item = null;
 
@@ -372,31 +516,74 @@ document.querySelectorAll("td p").forEach(p => {
 
   if (SERVICE) {
 
-      const serviceKey =
-          `[${SERVICE}] ${baseKey}`;
+      const serviceKey = `[${SERVICE}] ${baseKey}`;
 
-      const match =
-          serviceIndex[serviceKey];
+      if (htmlAutomelon) {
 
-      if (Array.isArray(match)) {
+        const automelonKey = serviceKey + " || " + htmlAutomelon;
+
+        const automelonMatch = serviceAutomelonIndex[automelonKey];
+
+        if (Array.isArray(automelonMatch)) {
+
+          const usageKey =
+            "AUTOMELON::" + automelonKey;
 
           const index =
-              titleUsage[serviceKey] || 0;
+            titleUsage[usageKey] || 0;
+
+          const selected =
+            automelonMatch[
+              Math.min(
+                index,
+                automelonMatch.length - 1
+              )
+            ];
+
+          item = selected.item;
+
+          titleUsage[usageKey] =
+            index + 1;
+
+        } else if (automelonMatch) {
 
           item =
-              match[
-                  Math.min(
-                      index,
-                      match.length - 1
-                  )
-              ].item;
+            automelonMatch.item ||
+            automelonMatch;
+
+        }
+
+      }
+
+      // 2. Dacă nu s-a găsit după automelon,
+      // folosește logica veche
+      if (!item) {
+
+        const match =
+          serviceIndex[serviceKey];
+
+        if (Array.isArray(match)) {
+
+          const index =
+            titleUsage[serviceKey] || 0;
+
+          item =
+            match[
+              Math.min(
+                index,
+                match.length - 1
+              )
+            ].item;
 
           titleUsage[serviceKey] =
-              index + 1;
-      }
-      else if (match) {
+            index + 1;
+
+        } else if (match) {
 
           item = match;
+
+        }
+
       }
   }
 
@@ -404,8 +591,16 @@ document.querySelectorAll("td p").forEach(p => {
   // GLOBAL
   // ----------------------------
 
+  if (!item && htmlAutomelon) {
+
+    const automelonKey = baseKey + " || " + htmlAutomelon;
+
+    item = globalAutomelonIndex[automelonKey];
+
+  }
+
   if (!item) {
-      item = globalIndex[baseKey];
+    item = globalIndex[baseKey];
   }
 
   if (!item) {
@@ -415,10 +610,35 @@ document.querySelectorAll("td p").forEach(p => {
 
   if (item.type === "multi" && Array.isArray(item.versions)) {
 
+    let versions = item.versions;
+
+    if (htmlAutomelon) {
+
+      versions = versions.filter(v =>
+        normalizeTitle(v.automelon || "") === htmlAutomelon
+      );
+
+      if (versions.length === 0) {
+
+        console.warn(
+          "No matching automelon version:",
+          baseKey,
+          htmlAutomelon
+        );
+
+        return;
+      }
+
+    }
+
     const span = document.createElement("span");
     span.innerHTML = p.innerHTML;
 
-    item.versions.forEach(v => {
+    versions.forEach(v => {
+
+      if (!v.url) {
+        return;
+      }
 
       const space = document.createTextNode(" ");
 
@@ -426,7 +646,7 @@ document.querySelectorAll("td p").forEach(p => {
       a.href = v.url;
       a.target = "_blank";
       a.rel = "noopener noreferrer";
-      a.textContent = `(${v.label})`;
+      a.textContent = `(${v.label || "PDF"})`;
 
       span.appendChild(space);
       span.appendChild(a);
@@ -437,7 +657,6 @@ document.querySelectorAll("td p").forEach(p => {
     p.appendChild(span);
 
     return;
-
   }
 
   if (!item.url) return;

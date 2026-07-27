@@ -265,6 +265,19 @@
       }
     ]
   },
+  "APOLYTIKION OF SAINT STEPHEN IN TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "AA",
+        "url": "https://drive.google.com/file/d/1xZwirZhgb7Ils4bbIfWO1Wa4TUD6a6it/view?usp=drivesdk",
+        "name": "06 Apolytikion-4th-StStephen.pdf",
+        "description": "APOLYTIKION OF SAINT STEPHEN\nIN TONE FOUR (**Be quick to anticipate**) | AA",
+        "automelon": "BE QUICK TO ANTICIPATE",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 02 August Transfer St Stephen Relics"
+      }
+    ]
+  },
   "APOLYTIKION OF SOULS SATURDAY IN TONE EIGHT": {
     "url": "https://drive.google.com/file/d/1Irm64kavh6cesQNlzQLK7IESO9LzK6NC/view?usp=drivesdk",
     "name": "2 Apolitikion-pl4th-SA-EN-SaturdaySouls.pdf",
@@ -656,13 +669,6 @@
         "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
       }
     ]
-  },
-  "APOSTICHA THEOTOKION FOR THE RESURRECTION IN TONE SIX": {
-    "url": "https://drive.google.com/file/d/1ncDnUUHzKDM8223b7ePz2ef11vhi5_PN/view?usp=drivesdk",
-    "name": "06 ApostichaTheotokionSlow-pl2nd.pdf",
-    "description": "APOSTICHA THEOTOKION FOR THE RESURRECTION IN TONE SIX",
-    "path": "Byzantine Music / EnglishByzantineMusic / Vespers",
-    "automelon": ""
   },
   "APOSTICHA THEOTOKION FOR THE RESURRECTION IN TONE THREE BRIEF": {
     "url": "https://drive.google.com/file/d/1qALMYHhAqgKV43xeJAk_25i0A7VzCZlN/view?usp=drivesdk",
@@ -1198,14 +1204,14 @@
     "path": "Byzantine Music / EnglishByzantineMusic / Great Lent Triodion / 01 Sunday of the Pharisee and Publican",
     "automelon": ""
   },
-  "EIGHT EOTHINON DOXASTIKON IN TONE EIGHT": {
+  "EIGHTH EOTHINON DOXASTICON IN TONE EIGHT": {
     "type": "multi",
     "versions": [
       {
         "label": "SA",
         "url": "https://drive.google.com/file/d/1lrL4ta6LHKm8PWZatl8Lah2tJKL2MQK1/view?usp=drivesdk",
         "name": "16 8th DoxastikonEothinon-pl4th.pdf",
-        "description": "THE EIGHT EOTHINON DOXASTIKON IN TONE EIGHT | SA",
+        "description": "THE EIGHTH EOTHINON DOXASTICON IN TONE EIGHT | SA",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
       }
@@ -1335,6 +1341,19 @@
         "description": "THE EXAPOSTEILARION & THEOTOKION OF HOLY FATHERS IN TONE TWO (**Hearken, ye women**) | AA",
         "automelon": "HEARKEN, YE WOMEN",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 11 July / 13 - 19 July First Sunday of the Holy Fathers of the 4th Ecumenical Council"
+      }
+    ]
+  },
+  "EXAPOSTEILARION & THEOTOKION OF SAINT STEPHEN IN TONE TWO": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "AA",
+        "url": "https://drive.google.com/file/d/16C5zu8_fheV_BBE_RE0xtubPP0qH0drN/view?usp=drivesdk",
+        "name": "21 Exaposteilarion-2nd-AA-Orthros-StStephenRelics.pdf",
+        "description": "EXAPOSTEILARION & THEOTOKION OF SAINT STEPHEN IN TONE TWO\n(**Hearken, ye women**) | AA",
+        "automelon": "HEARKEN, YE WOMEN",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 02 August Transfer St Stephen Relics"
       }
     ]
   },
@@ -1537,6 +1556,14 @@
     "type": "multi",
     "versions": [
       {
+        "label": "Regular - Karam",
+        "url": "https://drive.google.com/file/d/1jy9I4qetB6ym2tWmP_Yo7DyqeW0hGGEc/view?usp=drivesdk",
+        "name": "10 AfterPsalm50Troparia-2nd.pdf",
+        "description": "FESTAL TROPARIA AFTER PSALM 50 IN TONE TWO | Regular - Karam",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      },
+      {
         "label": "Sts Nicholas & Habib",
         "url": "https://drive.google.com/file/d/178LD7qgJiH3e6cDHlDnpP-6fpdzd8JHm/view?usp=drivesdk",
         "name": "25 Post-Gospel-Troparia-2nd-Karam-Orthros-NicholasAndHabib.pdf",
@@ -1551,14 +1578,6 @@
         "description": "FESTAL TROPARIA AFTER PSALM 50 IN TONE TWO | St Joseph Damascus",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 11 July / 10 July St Joseph of Damascus"
-      },
-      {
-        "label": "Regular - Karam",
-        "url": "https://drive.google.com/file/d/1jy9I4qetB6ym2tWmP_Yo7DyqeW0hGGEc/view?usp=drivesdk",
-        "name": "10 AfterPsalm50Troparia-2nd.pdf",
-        "description": "FESTAL TROPARIA AFTER PSALM 50 IN TONE TWO | Regular - Karam",
-        "automelon": "",
-        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
       },
       {
         "label": "PalmSunday -Karam",
@@ -2585,6 +2604,19 @@
     "description": "MORE VERSES IN TONE SIX",
     "path": "Byzantine Music / EnglishByzantineMusic / Great Lent Triodion / Great Compline",
     "automelon": ""
+  },
+  "NINTH EOTHINON DOXASTICON IN TONE FIVE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "SA",
+        "url": "https://drive.google.com/file/d/126D4rdwY49atETMZwe_BpVqWFql6qFCu/view?usp=drivesdk",
+        "name": "16 9th DoxastikonEothinon-pl1st.pdf",
+        "description": "THE NINTH EOTHINON DOXASTICON IN TONE FIVE | SA",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
   },
   "NINTH ODE OF THE PASCHAL & THEOTOKOS CANONS IN TONE ONE": {
     "type": "multi",
@@ -3779,6 +3811,19 @@
       }
     ]
   },
+  "[O] FOR ST. STEPHEN TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/1sz0PrYYKTK_7ziALXnntr4BRpTH6DrjC/view?usp=drivesdk",
+        "name": "22 Praises-4th-ElMassih-Orthros-StStephuenRelics.pdf",
+        "description": "[O] For St. Stephen in Tone Four\n(**Unto them that fear Thee**) | El Massih",
+        "automelon": "UNTO THEM THAT FEAR THEE",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 02 August Transfer St Stephen Relics"
+      }
+    ]
+  },
   "[O] FOR THE HOLY FATHERS TONE SIX": {
     "type": "multi",
     "versions": [
@@ -3809,6 +3854,32 @@
         "description": "[O] For the Saints in Tone Eight | Stst Nicholas & Habib",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 11 July / 16 July Hyeromartyrs Nicholas and Habib"
+      }
+    ]
+  },
+  "[O] KATAVASIAE OF TRANSFIGURATION CANON TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Karam",
+        "url": "https://drive.google.com/file/d/1R2rKEG4pU_0d4ohVivQ0KUJBGxHUEpA0/view?usp=drivesdk",
+        "name": "11 Ode1-9-4th-Karam-Transfiguration.pdf",
+        "description": "[O] KATAVASIAE OF TRANSFIGURATION CANON IN TONE FOUR | Karam",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
+  },
+  "[O] THEOTOKION TONE FIVE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "SA",
+        "url": "https://drive.google.com/file/d/1FTV1izeSwfyyDHmWBX5twH5CAc9CW3zW/view?usp=drivesdk",
+        "name": "17 Theotokion-pl1st-DoxastikonEothion.pdf",
+        "description": "[O] THEOTOKION IN TONE FIVE | SA",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
       }
     ]
   },
@@ -4015,6 +4086,19 @@
       }
     ]
   },
+  "[V] [AP] DOXASTICON FOR ST. STEPHEN TONE SIX": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Dedes",
+        "url": "https://drive.google.com/file/d/1h6F051l0m812flB1_fuytG_xbQIVnuVH/view?usp=drivesdk",
+        "name": "05 ApostichaDoxastikon-pl2nd-Vespers-StStephenRelics.pdf",
+        "description": "[V] [AP] DOXASTICON FOR ST. STEPHEN\nIN TONE SIX | Dedes",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 02 August Transfer St Stephen Relics"
+      }
+    ]
+  },
   "[V] [AP] DOXASTICON FOR THE HOLY FATHERS TONE THREE": {
     "type": "multi",
     "versions": [
@@ -4025,6 +4109,27 @@
         "description": "[V] [AP] DOXASTICON FOR THE HOLY FATHERS IN TONE THREE | Creemens",
         "automelon": "",
         "path": "MyEnglishMusic / Menaion / 11 July"
+      }
+    ]
+  },
+  "[V] [AP] THEOTOKION FOR THE RESURRECTION TONE SIX": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Slow",
+        "url": "https://drive.google.com/file/d/1ncDnUUHzKDM8223b7ePz2ef11vhi5_PN/view?usp=drivesdk",
+        "name": "06 ApostichaTheotokionSlow-pl2nd.pdf",
+        "description": "[V] [AP] THEOTOKION FOR THE RESURRECTION IN TONE SIX | Slow",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
+      },
+      {
+        "label": "Brief",
+        "url": "https://drive.google.com/file/d/1Y79ZDKLDhNMWE3C4vqktxQClAmKdYqOm/view?usp=drivesdk",
+        "name": "06 ApostichaTheotokionBrief-pl2nd.pdf",
+        "description": "[V] [AP] THEOTOKION FOR THE RESURRECTION IN TONE SIX | Brief",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
       }
     ]
   },
@@ -4143,6 +4248,19 @@
       }
     ]
   },
+  "[V] [LIHC] DOXASTICON FOR ST. STEPHEN TONE SIX": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Dedes",
+        "url": "https://drive.google.com/file/d/1Jb2hFi9R-SUjvFpfP2peo89lClxMPqyD/view?usp=drivesdk",
+        "name": "02 SticheraDoxastikon-pl2nd-Dedes-Vespers-StStephenRelics.pdf",
+        "description": "[V] [LIHC] DOXASTICON FOR ST. STEPHEN\nIN TONE SIX | Dedes",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 02 August Transfer St Stephen Relics"
+      }
+    ]
+  },
   "[V] [LIHC] FOR ST. PAISIOS TONE ONE": {
     "type": "multi",
     "versions": [
@@ -4169,6 +4287,19 @@
       }
     ]
   },
+  "[V] [LIHC] FOR ST. STEPHEN TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/17oi_nklC3MdUJmAOszrSqb0--xQBcpza/view?usp=drivesdk",
+        "name": "01 Sticheras-4th-ElMassih-Vespers-StStephenRelics.pdf",
+        "description": "[V] [LIHC] For St. Stephen in Tone Four\n(**As one valiant**) | El Massih",
+        "automelon": "AS ONE VALIANT",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 02 August Transfer St Stephen Relics"
+      }
+    ]
+  },
   "[V] [LIHC] FOR THE ASCENSION TONE SIX": {
     "type": "multi",
     "versions": [
@@ -4186,20 +4317,20 @@
     "type": "multi",
     "versions": [
       {
-        "label": "AA - w",
-        "url": "https://drive.google.com/file/d/1jsHOoeeBUPsjbwuFqFYndfmb90UZuJqb/view?usp=drivesdk",
-        "name": "01 SticheraHolyFathers-pl2nd-Vespers-SundayOfHolyFathers-W.pdf",
-        "description": "[V] [LIHC] For the Holy Fathers in Tone Six\n(**The original melody**)  | AA - w",
-        "automelon": "ORIGINAL MELODY",
-        "path": "Byzantine Music / EnglishByzantineMusic / Penticostarion / 10 Sunday of the Holy Fathers"
-      },
-      {
         "label": "Boyer",
         "url": "https://drive.google.com/file/d/1NP_SYx5Xn2vB3EGHRJf3iHr5m9Hxq34P/view?usp=drivesdk",
         "name": "01 Sticheras-pl2nd-Boyer-Vespers-SundayHolyFathers.pdf",
         "description": "[V] [LIHC] For the Holy Fathers in Tone Six\n(**Having laid up all their hope**) | Boyer",
         "automelon": "HAVING LAID UP ALL THEIR HOPE",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 11 July / 13 - 19 July First Sunday of the Holy Fathers of the 4th Ecumenical Council"
+      },
+      {
+        "label": "AA - w",
+        "url": "https://drive.google.com/file/d/1jsHOoeeBUPsjbwuFqFYndfmb90UZuJqb/view?usp=drivesdk",
+        "name": "01 SticheraHolyFathers-pl2nd-Vespers-SundayOfHolyFathers-W.pdf",
+        "description": "[V] [LIHC] For the Holy Fathers in Tone Six\n(**The original melody**)  | AA - w",
+        "automelon": "ORIGINAL MELODY",
+        "path": "Byzantine Music / EnglishByzantineMusic / Penticostarion / 10 Sunday of the Holy Fathers"
       }
     ]
   },
