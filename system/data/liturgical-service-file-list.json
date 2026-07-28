@@ -624,6 +624,24 @@
     "file": "Service_Texts/fixDate/07/27 St Panteleimon/July 26 VESP.html"
   },
   {
+    "date": "2026-08-01 Procession of the Cross ",
+    "title": "Aug 01 ORTHROS",
+    "order": -1,
+    "file": "Service_Texts/fixDate/08/01 Procession of the Cross /Aug 01 ORTHROS.html"
+  },
+  {
+    "date": "2026-08-01 Procession of the Cross ",
+    "title": "Aug 01 PROCESS",
+    "order": -1,
+    "file": "Service_Texts/fixDate/08/01 Procession of the Cross /Aug 01 PROCESS.html"
+  },
+  {
+    "date": "2026-08-01 Procession of the Cross ",
+    "title": "Aug 01 READ",
+    "order": -1,
+    "file": "Service_Texts/fixDate/08/01 Procession of the Cross /Aug 01 READ.html"
+  },
+  {
     "date": "2026-08-02 8th Sunday After Pentecost ",
     "title": "Aug 01 2026 Bilingual VESP",
     "order": -1,

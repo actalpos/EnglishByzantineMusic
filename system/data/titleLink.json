@@ -429,6 +429,19 @@
     "path": "Byzantine Music / EnglishByzantineMusic / Penticostarion / 10 Sunday of the Holy Fathers",
     "automelon": ""
   },
+  "APOLYTIKION OF THE HOLY MACCABEES IN TONE ONE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "AA",
+        "url": "https://drive.google.com/file/d/1w7D8hRUwUCf2Px130u246DEpJFCaf9ET/view?usp=drivesdk",
+        "name": "02 Apolytikion-ByTheSufferringsOfThySaints-1st-AA-W.pdf",
+        "description": "APOLYTIKION OF THE HOLY MACCABEES IN TONE ONE | AA",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 01 August Procession of the Holy Cross "
+      }
+    ]
+  },
   "APOLYTIKION OF THE SAINTS IN TONE ONE": {
     "type": "multi",
     "versions": [
@@ -683,6 +696,19 @@
     "description": "APOSTICHA THEOTOKION FOR THE RESURRECTION IN TONE THREE SLOW",
     "path": "Byzantine Music / EnglishByzantineMusic / Vespers",
     "automelon": ""
+  },
+  "BEFORE THY CROSS": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "EN-AR",
+        "url": "https://drive.google.com/file/d/10fdsFIpARtT46oAdP51_cZBfEvM1yYEU/view?usp=drivesdk",
+        "name": "ThyCrossWeWorship-2nd-EN-AR-GR.pdf",
+        "description": "“BEFORE THY CROSS” | EN-AR",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Divine Liturgy / 5 Trisagion"
+      }
+    ]
   },
   "BLESSED ARE THEY WHOM THOU HAST CHOSEN AND TAKEN TO THYSELF, O LORD. THEIR MEMORIAL IS FROM GENERATION TO GENERATION. ALLELUIA.": {
     "url": "https://drive.google.com/file/d/1j5t4GrHOy2DL7nqeo-hRr4jc3MhJ9hlS/view?usp=drivesdk",
@@ -1054,18 +1080,18 @@
       {
         "label": "Karam",
         "url": "https://drive.google.com/file/d/1eOAhLn4Wd2_CGNp6FjFEfQynWfr4UyF2/view?usp=drivesdk",
-        "name": "3B ApostichaDoxastikondox-4th-Karam.pdf",
+        "name": "3B ApostichaDoxastikon-4th-Karam.pdf",
         "description": "DOXASTICON FOR THIRD SUNDAY OF GREAT LENT IN TONE FOUR | Karam",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Great Lent Triodion / 07 Sunday of the 3rd Week of Lent - Veneration of the Cross"
       },
       {
-        "label": "GC",
+        "label": "Creemens",
         "url": "https://drive.google.com/file/d/1qbERwnA2AkHtkai-mnwQEitYxg1F_9Ft/view?usp=drivesdk",
-        "name": "3B ApostichaDoxastikondox-4th-GC.pdf",
-        "description": "DOXASTICON FOR THIRD SUNDAY OF GREAT LENT IN TONE FOUR | GC",
+        "name": "3B ApostichaDoxastikon-4th-Creemens.pdf",
+        "description": "DOXASTICON FOR THIRD SUNDAY OF GREAT LENT IN TONE FOUR | Creemens",
         "automelon": "",
-        "path": "Byzantine Music / EnglishByzantineMusic / Great Lent Triodion / 07 Sunday of the 3rd Week of Lent - Veneration of the Cross"
+        "path": "MyEnglishMusic / Great Lent Triodion / 07 Sunday of the 3rd Week of Lent - Veneration of the Cross"
       }
     ]
   },
@@ -1282,6 +1308,19 @@
         "description": "THE EXAPOSTEILARIA FOR LAZARUS SATURDAY IN TONE THREE | Karam",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Great Lent Triodion / 09-06 Saturday of the 6th Week - Lazarus Saturday"
+      }
+    ]
+  },
+  "EXAPOSTEILARIA FOR THE MACCABEES & HOLY CROSS IN TONE TWO": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "AA",
+        "url": "https://drive.google.com/file/d/1Y0fNc4RR9SJWL7t9BTh2PArU1hb-jrc4/view?usp=drivesdk",
+        "name": "23 Exaposteilarion-2nd-AA-Orthros-ProcessionOfCross.pdf",
+        "description": "EXAPOSTEILARIA FOR THE MACCABEES & HOLY CROSS IN TONE TWO | AA",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 01 August Procession of the Holy Cross "
       }
     ]
   },
@@ -2067,6 +2106,19 @@
     "path": "Byzantine Music / EnglishByzantineMusic / Orthros",
     "automelon": ""
   },
+  "GREAT DOXOLOGY IN TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "SA",
+        "url": "https://drive.google.com/file/d/1zMKUx-G90K1E6LZbhdKGnT3q8-fApdvu/view?usp=drivesdk",
+        "name": "18 BriefDoxology-4th.pdf",
+        "description": "THE Great Doxology IN TONE FOUR | SA",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
+  },
   "GREAT DOXOLOGY IN TONE ONE": {
     "url": "https://drive.google.com/file/d/1iNzEXnQHpdRtQQF3N_7rWXatJpYvKxQU/view?usp=drivesdk",
     "name": "18 BriefDoxology-1st.pdf",
@@ -2141,6 +2193,19 @@
     "path": "Byzantine Music / EnglishByzantineMusic / Orthros",
     "automelon": ""
   },
+  "IDIOMELON FOR THE HOLY CROSS IN TONE TWO": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Creemens",
+        "url": "https://drive.google.com/file/d/1-lAkrqnGDJivJdSPUr7HjdPKGAmYEhQi/view?usp=drivesdk",
+        "name": "Sep-14-Doxastikon-at-Vespers-Ware-GC.pdf",
+        "description": "IDIOMELON FOR THE HOLY CROSS IN TONE TWO | Creemens",
+        "automelon": "",
+        "path": "MyEnglishMusic / Menaion / 01 September / 14 Elevevation of the Holy Cross"
+      }
+    ]
+  },
   "IDIOMELON IN TONE SIX": {
     "type": "multi",
     "versions": [
@@ -2159,6 +2224,19 @@
         "description": "IDIOMELON IN TONE SIX | Ascension ",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Penticostarion / 09 The Ascension of Our Lord Jesus Christ "
+      }
+    ]
+  },
+  "IF THE PROCESSION IS BEGUN AS THE GREAT DOXOLOGY CONCLUDES IN ORTHROS, THE FINAL HOLY GOD, HOLY MIGHTY IS SLOWLY CHANTED ( TRADITIONALLY, IF POSSIBLE, IN THE AGIA STYLE OF TONE FOUR ).": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Creemens",
+        "url": "https://drive.google.com/file/d/1FZcb7YlhAmK_02xU0ux-0AfRXVCWrO36/view?usp=drivesdk",
+        "name": "Asmatika-of-the-Cross-Various-Adaptations-PCP.pdf",
+        "description": "If the procession is begun as the Great Doxology concludes in Orthros, the final \"Holy God, Holy Mighty\" is slowly chanted (traditionally, if possible, in the “Agia” style of Tone Four). | Creemens",
+        "automelon": "",
+        "path": "MyEnglishMusic / Menaion / 01 September / 14 Elevevation of the Holy Cross"
       }
     ]
   },
@@ -2206,6 +2284,19 @@
         "description": "THE KATAVASIAE OF THE\nASCENSION CANONS IN TONE FOUR | Karam",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Penticostarion / 09 The Ascension of Our Lord Jesus Christ "
+      }
+    ]
+  },
+  "KATAVASIAE OF THE HOLY CROSS CANON IN TONE EIGHT": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Karam",
+        "url": "https://drive.google.com/file/d/1N6ubM_GHci1Zy0qylDJmKzpl_u21vUE5/view?usp=drivesdk",
+        "name": "11 Ode1-9-pl4th-Karam-ElevetionOfCross.pdf",
+        "description": "THE KATAVASIAE OF THE HOLY CROSS CANON IN TONE EIGHT | Karam",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
       }
     ]
   },
@@ -3673,6 +3764,19 @@
       }
     ]
   },
+  "[O] DOXASTICON FOR THE MACCABEES TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Creemens",
+        "url": "https://drive.google.com/file/d/1KA1NtTptEXvZ1iWw29evhSAyAQiQbd35/view?usp=drivesdk",
+        "name": "25 PraisesDoxastikonMacabees-4th-Creemens-ProcessionOfCross.pdf",
+        "description": "[O] DOXASTICON FOR THE MACCABEES IN TONE FOUR | Creemens",
+        "automelon": "",
+        "path": "MyEnglishMusic / Menaion / 12 August / 01 Procession of the Holy Cross"
+      }
+    ]
+  },
   "[O] DOXASTICON FOR THE SUNDAY OF FORGIVENESS TONE SIX": {
     "url": "https://drive.google.com/file/d/1rhidMDfUQDGTKn8coOxVBB_ZSAsXwSnS/view?usp=drivesdk",
     "name": "7 PraisesDoxastikon-pl2nd-ForgivenessSunday.pdf",
@@ -3824,6 +3928,19 @@
       }
     ]
   },
+  "[O] FOR THE HOLY CROSS TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/1GND4g0DVWyqcCoTXkoDJdAlY5ZymjMGC/view?usp=drivesdk",
+        "name": "24 Praises-4th-ElMassih-Orthos-ProcessionOfCross.pdf",
+        "description": "[O] For the Holy Cross in Tone Four (**As one valiant**) | El Massih",
+        "automelon": "AS ONE VALIANT",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 01 August Procession of the Holy Cross "
+      }
+    ]
+  },
   "[O] FOR THE HOLY FATHERS TONE SIX": {
     "type": "multi",
     "versions": [
@@ -3834,6 +3951,19 @@
         "description": "[O] For the Holy Fathers in Tone Six\n(**Having laid up all their hope**) | AA",
         "automelon": "HAVING LAID UP ALL THEIR HOPE",
         "path": "Byzantine Music / EnglishByzantineMusic / Penticostarion / 10 Sunday of the Holy Fathers"
+      }
+    ]
+  },
+  "[O] FOR THE MACCABEES": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Creemens",
+        "url": "https://drive.google.com/file/d/1qTc0mk7aYdVGUSujSy2wNZWILlDvY3bR/view?usp=drivesdk",
+        "name": "23 PraisesMacabees-1st-Creemens-ProcessionOfCross.pdf",
+        "description": "[O] For the Maccabees | Creemens",
+        "automelon": "",
+        "path": "MyEnglishMusic / Menaion / 12 August / 01 Procession of the Holy Cross"
       }
     ]
   },
@@ -3867,6 +3997,19 @@
         "description": "[O] KATAVASIAE OF TRANSFIGURATION CANON IN TONE FOUR | Karam",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
+  },
+  "[O] KATHISMATA HYMNS OF THE HOLY CROSS": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Karam",
+        "url": "https://drive.google.com/file/d/1apTZesZhdY1S845Ojxvt1KW9l2TlRKKk/view?usp=drivesdk",
+        "name": "21 Kathismata-1st-Karam-Orthros-ProcessionOfCross.pdf",
+        "description": "[O] KATHISMATA HYMNS OF THE HOLY CROSS | Karam",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 01 August Procession of the Holy Cross "
       }
     ]
   },
