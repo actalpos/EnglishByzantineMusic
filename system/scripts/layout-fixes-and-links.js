@@ -276,6 +276,74 @@ si fisierul care as vrea sa fie displayed are descrierea [V] [AP] THEOTOKION IN 
     });
 
     /**********************
+     * CENTER MONOLINGUAL TABLES
+     **********************/
+    document.querySelectorAll("table").forEach(table => {
+
+      const rows = Array.from(table.rows);
+
+      /*
+       * Este bilingv dacă există cel puțin un rând
+       * cu două celule care conțin text.
+       */
+      const bilingual = rows.some(row => {
+
+        const cellsWithText =
+          Array.from(row.cells).filter(cell =>
+            cell.textContent.trim()
+          );
+
+        return cellsWithText.length >= 2;
+      });
+
+      if (bilingual) {
+        return;
+      }
+
+      table.classList.add("monolingual-table");
+
+      table.style.marginLeft = "auto";
+      table.style.marginRight = "auto";
+      table.style.maxWidth = "900px";
+
+      table.querySelectorAll("td").forEach(td => {
+        td.style.textAlign = "center";
+      });
+
+      table.querySelectorAll("p").forEach(p => {
+
+        /*
+         * Centrează numai textul LTR.
+         * Textul arab rămâne aliniat la dreapta.
+         */
+        const text = p.textContent.trim();
+
+        if (text && !isRTL(text)) {
+          p.style.textAlign = "center";
+        }
+      });
+
+    });
+
+    /**********************
+ * CENTER MONOLINGUAL DOCUMENTS
+ * WITHOUT TABLES
+ **********************/
+    if (!document.querySelector("table")) {
+
+      document.body.classList.add("monolingual-document");
+
+      document.querySelectorAll("p").forEach(p => {
+
+        const text = p.textContent.trim();
+
+        if (text && !isRTL(text)) {
+          p.style.textAlign = "center";
+        }
+      });
+    }
+
+    /**********************
      * LOAD TITLE LINKS
      **********************/
     const serviceIndex = {};
