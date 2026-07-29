@@ -326,9 +326,9 @@ si fisierul care as vrea sa fie displayed are descrierea [V] [AP] THEOTOKION IN 
     });
 
     /**********************
- * CENTER MONOLINGUAL DOCUMENTS
- * WITHOUT TABLES
- **********************/
+     * CENTER MONOLINGUAL DOCUMENTS
+     * WITHOUT TABLES
+     **********************/
     if (!document.querySelector("table")) {
 
       document.body.classList.add("monolingual-document");
