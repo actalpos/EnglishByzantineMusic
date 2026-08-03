@@ -57,327 +57,398 @@ July 17 2026 - fix for having the same title for the same service, same part. Th
 July 20 - am scos TD din document.querySelectorAll("td p").forEach(p => {  in incercarea de a putea aplica kinks la file care nu are table - English.hml
 - mai trebuie lucrat
 
+July 27 - Fix bug: Am [V] [LIHC] THEOTOKION IN TONE SIX in decrierea unui fiser pe google drive. In documentul curect la Aposticha am titlul THEOTOKION IN TONE SIX 
+si fisierul care as vrea sa fie displayed are descrierea [V] [AP] THEOTOKION IN TONE SIX. Linkul se duce la [V] [LIHC] THEOTOKION IN TONE SIX
+
 */
 
 (function () {
-"use strict";
+  "use strict";
 
-function ready(fn) {
-if (document.readyState !== "loading") {
-fn();
-} else {
-document.addEventListener("DOMContentLoaded", fn);
-}
-}
-
-ready(async () => {
-
-console.log("layout-fixes-and-links loaded");
-
-/**********************
- * SERVICE TYPE
- **********************/
-function detectServiceType() {
-  const path = window.location.pathname.toLowerCase();
-
-  if (path.includes("vesp")) return "V";
-  if (path.includes("orthros")) return "O";
-  if (path.includes("litart")) return "LT";
-
-  // if ((path.includes("liturgy") || path.includes("divine")) && !path.includes("variables")) {
-  //   return "L";
-  // }
-
-  if ((path.includes("liturgy") || path.includes("divine")) && path.includes("variables")) {
-    return "LV";
-  }
-
-  return null;
-}
-
-const SERVICE = detectServiceType();
-
-// defines document order when multiple identical
-// titles exist inside the same service
-const SERVICE_ORDER = {
-  V: {
-    LIHC: 1,
-    LT: 2,
-    AP: 3,
-  }
-};
-
-/**********************
- * UTILS
- **********************/
-function normalizeTitle(str) {
-  str = str
-      .replace(/[\n\r\t]+/g, " ")
-    .replace(/\(\s*\*\*.*?\*\*\s*\)/g, "")   // (** ... **)
-    .replace(/\*\*.*?\*\*/g, "")             // fallback
-    .replace(/[*]/g, "")
-    .replace(/["“”]/g, "")
-    .replace(/[–—]/g, "-")
-    .replace(/\(\s*/g, "( ")
-    .replace(/\s*\)/g, " )")
-    .replace(/\s+/g, " ")
-    .trim()
-    .toLowerCase()
-    .replace(/^(the|a|an|sticheras)\s+/i, "")          // remove leading article
-    .replace(/\bin\s+tone\b/gi, "tone")                
-
-  const prefixMatch = str.match(/^((\[[a-z]+\]\s*)+)(.*)$/i);
-
-  if (prefixMatch) {
-    const prefixes = prefixMatch[1];
-    let title = prefixMatch[3];
-
-    title = title.replace(/^(the|a|an|festal|sticheras)\s+/, "");
-
-    return `${prefixes} ${title}`.trim();
-  }
-
-  return str.replace(/^(the|a|an|festal)\s+/, "");
-}
-
-function extractAutomelonFromText(text) {
-
-  if (!text) {
-    return "";
-  }
-
-  const match =
-    text.match(/\(\s*\*\*(.*?)\*\*\s*\)/s);
-
-  if (!match) {
-    return "";
-  }
-
-  return normalizeTitle(match[1]);
-}
-
-
-function splitAutomelonKey(key) {
-
-  const separator = "||";
-  const index = key.lastIndexOf(separator);
-
-  if (index === -1) {
-    return {
-      title: key.trim(),
-      automelon: ""
-    };
-  }
-
-  return {
-    title: key.substring(0, index).trim(),
-    automelon: key.substring(index + separator.length).trim()
-  };
-}
-
-function isRTL(text) {
-  return /[\u0590-\u08FF]/.test(text);
-}
-
-/**********************
- * REMOVE GHOST COLUMNS
- **********************/
-document.querySelectorAll("table col").forEach(col => {
-  const width = parseInt(col.getAttribute("width"));
-  if (!width || width > 1000) col.remove();
-});
-
-document.querySelectorAll("table tr").forEach(tr => {
-
-  const tds = Array.from(tr.children).filter(td => td.tagName === "TD");
-
-  tds.forEach(td => {
-
-    const text = td.textContent.replace(/\s+/g, "");
-    const width = td.getAttribute("width");
-
-    if (!text || (width && parseInt(width) > 1000)) {
-      td.remove();
+  function ready(fn) {
+    if (document.readyState !== "loading") {
+      fn();
+    } else {
+      document.addEventListener("DOMContentLoaded", fn);
     }
-
-  });
-
-  const remainingTds = Array.from(tr.children).filter(td => td.tagName === "TD");
-
-  if (remainingTds.length === 1) {
-    remainingTds[0].setAttribute("colspan", "2");
   }
 
-  if (remainingTds.length === 2) {
-    remainingTds.forEach(td => td.removeAttribute("colspan"));
-  }
+  ready(async () => {
 
-});
+    console.log("layout-fixes-and-links loaded");
 
-/**********************
- * FORCE LTR TABLE LAYOUT
- **********************/
-document.querySelectorAll("table").forEach(table => {
-  table.setAttribute("dir", "ltr");
-});
+    /**********************
+     * SERVICE TYPE
+     **********************/
+    function detectServiceType() {
+      const path = window.location.pathname.toLowerCase();
 
-/**********************
- * PARAGRAPH FIXES
- **********************/
-document.querySelectorAll("td p").forEach(p => {
+      if (path.includes("vesp")) return "V";
+      if (path.includes("orthros")) return "O";
+      if (path.includes("litart")) return "LT";
 
-  const text = p.textContent.trim();
-  if (!text) return;
+      // if ((path.includes("liturgy") || path.includes("divine")) && !path.includes("variables")) {
+      //   return "L";
+      // }
 
-  p.removeAttribute("align");
-  p.style.float = "none";
-  p.style.position = "static";
-
-  const rtl = isRTL(text);
-
-  p.style.direction = rtl ? "rtl" : "ltr";
-  p.style.textAlign = rtl ? "right" : "left";
-
-});
-
-/**********************
- * FIX COLUMN ORDER
- **********************/
-document.querySelectorAll("table tr").forEach(tr => {
-
-  const tds = Array.from(tr.querySelectorAll("td"));
-  if (tds.length !== 2) return;
-
-  const leftText = tds[0].textContent.trim();
-  const rightText = tds[1].textContent.trim();
-
-  const leftRTL = isRTL(leftText);
-  const rightRTL = isRTL(rightText);
-
-  if (leftRTL && !rightRTL) {
-    tr.insertBefore(tds[1], tds[0]);
-  }
-
-  tds.forEach(td => {
-
-    const text = td.textContent.trim();
-    if (!text) return;
-
-    const rtl = isRTL(text);
-
-    td.setAttribute("dir", rtl ? "rtl" : "ltr");
-    td.style.textAlign = rtl ? "right" : "left";
-
-  });
-
-});
-
-/**********************
- * LOAD TITLE LINKS
- **********************/
-const serviceIndex = {};
-const globalIndex = {};
-
-const serviceAutomelonIndex = {};
-const globalAutomelonIndex = {};
-
-const globalCount = {};
-const titleUsage = {};
-
-try {
-
-  const base = window.location.pathname.includes("/byzmusic/") ? "/byzmusic" : "";
-  const res = await fetch(`${base}/system/data/titleLink.json`);
-
-  if (!res.ok) throw new Error("titleLink.json missing");
-
-  const raw = await res.json();
-
-
-
-  for (const key in raw) {
-
-      const item =
-          typeof raw[key] === "string"
-              ? { url: raw[key], name: null }
-              : raw[key];
-
-      const keyParts = splitAutomelonKey(key);
-
-      const norm = normalizeTitle(keyParts.title);
-      const automelon = normalizeTitle(keyParts.automelon);
-
-      // ----------------------------
-      // [SERVICE] [MOMENT] TITLE
-      // ----------------------------
-
-      let m = norm.match(/^\[([a-z]+)\]\s+\[([a-z]+)\]\s+(.*)$/i);
-
-      if (m) {
-
-        const service = m[1].toUpperCase();
-        const moment  = m[2].toUpperCase();
-        const title   = m[3];
-
-        const serviceKey =
-          `[${service}] ${title}`;
-
-        if (automelon) {
-
-          const automelonKey =
-            serviceKey + " || " + automelon;
-
-          if (!serviceAutomelonIndex[automelonKey]) {
-
-            serviceAutomelonIndex[automelonKey] = [];
-
-          }
-
-          if (Array.isArray(serviceAutomelonIndex[automelonKey])) {
-
-            serviceAutomelonIndex[automelonKey].push({
-              moment,
-              item
-            });
-
-          } else {
-
-            console.warn(
-              "Mixed service and service-moment automelon key:",
-              automelonKey
-            );
-
-          }
-
-        }
-
-        if (!serviceIndex[serviceKey]) {
-          serviceIndex[serviceKey] = [];
-        }
-
-        serviceIndex[serviceKey].push({
-          moment,
-          item
-        });
-
-        globalCount[title] =
-          (globalCount[title] || 0) + 1;
-
-        continue;
+      if ((path.includes("liturgy") || path.includes("divine")) && path.includes("variables")) {
+        return "LV";
       }
 
-      // ----------------------------
-      // [SERVICE] TITLE
-      // ----------------------------
+      return null;
+    }
 
-      m = norm.match(/^\[([a-z]+)\]\s+(.*)$/i);
+    const SERVICE = detectServiceType();
 
-      if (m) {
+    // defines document order when multiple identical
+    // titles exist inside the same service
+    const SERVICE_ORDER = {
+      V: {
+        LIHC: 1,
+        LT: 2,
+        AP: 3,
+      }
+    };
+
+    /**********************
+     * UTILS
+     **********************/
+    function normalizeTitle(str) {
+      str = str
+        .replace(/[\n\r\t]+/g, " ")
+        .replace(/\(\s*\*\*.*?\*\*\s*\)/g, "")   // (** ... **)
+        .replace(/\*\*.*?\*\*/g, "")             // fallback
+        .replace(/[*]/g, "")
+        .replace(/["“”]/g, "")
+        .replace(/[–—]/g, "-")
+        .replace(/\(\s*/g, "( ")
+        .replace(/\s*\)/g, " )")
+        .replace(/\s+/g, " ")
+        .trim()
+        .toLowerCase()
+        .replace(/^(the|a|an|sticheras)\s+/i, "")          // remove leading article
+        .replace(/\bin\s+tone\b/gi, "tone")
+
+      const prefixMatch = str.match(/^((\[[a-z]+\]\s*)+)(.*)$/i);
+
+      if (prefixMatch) {
+        const prefixes = prefixMatch[1];
+        let title = prefixMatch[3];
+
+        title = title.replace(/^(the|a|an|festal|sticheras)\s+/, "");
+
+        return `${prefixes} ${title}`.trim();
+      }
+
+      return str.replace(/^(the|a|an|festal)\s+/, "");
+    }
+
+    function extractAutomelonFromText(text) {
+
+      if (!text) {
+        return "";
+      }
+
+      const match =
+        text.match(/\(\s*\*\*(.*?)\*\*\s*\)/s);
+
+      if (!match) {
+        return "";
+      }
+
+      return normalizeTitle(match[1]);
+    }
+
+
+    function splitAutomelonKey(key) {
+
+      const separator = "||";
+      const index = key.lastIndexOf(separator);
+
+      if (index === -1) {
+        return {
+          title: key.trim(),
+          automelon: ""
+        };
+      }
+
+      return {
+        title: key.substring(0, index).trim(),
+        automelon: key.substring(index + separator.length).trim()
+      };
+    }
+
+    function isRTL(text) {
+      return /[\u0590-\u08FF]/.test(text);
+    }
+
+    /**********************
+     * REMOVE GHOST COLUMNS
+     **********************/
+    document.querySelectorAll("table col").forEach(col => {
+      const width = parseInt(col.getAttribute("width"));
+      if (!width || width > 1000) col.remove();
+    });
+
+    document.querySelectorAll("table tr").forEach(tr => {
+
+      const tds = Array.from(tr.children).filter(td => td.tagName === "TD");
+
+      tds.forEach(td => {
+
+        const text = td.textContent.replace(/\s+/g, "");
+        const width = td.getAttribute("width");
+
+        if (!text || (width && parseInt(width) > 1000)) {
+          td.remove();
+        }
+
+      });
+
+      const remainingTds = Array.from(tr.children).filter(td => td.tagName === "TD");
+
+      if (remainingTds.length === 1) {
+        remainingTds[0].setAttribute("colspan", "2");
+      }
+
+      if (remainingTds.length === 2) {
+        remainingTds.forEach(td => td.removeAttribute("colspan"));
+      }
+
+    });
+
+    /**********************
+     * FORCE LTR TABLE LAYOUT
+     **********************/
+    document.querySelectorAll("table").forEach(table => {
+      table.setAttribute("dir", "ltr");
+    });
+
+    /**********************
+     * PARAGRAPH FIXES
+     **********************/
+    document.querySelectorAll("p").forEach(p => {
+
+      const text = p.textContent.trim();
+      if (!text) return;
+
+      p.removeAttribute("align");
+      p.style.float = "none";
+      p.style.position = "static";
+
+      const rtl = isRTL(text);
+
+      p.style.direction = rtl ? "rtl" : "ltr";
+      p.style.textAlign = rtl ? "right" : "left";
+
+    });
+
+    /**********************
+     * FIX COLUMN ORDER
+     **********************/
+    document.querySelectorAll("table tr").forEach(tr => {
+
+      const tds = Array.from(tr.querySelectorAll("td"));
+      if (tds.length !== 2) return;
+
+      const leftText = tds[0].textContent.trim();
+      const rightText = tds[1].textContent.trim();
+
+      const leftRTL = isRTL(leftText);
+      const rightRTL = isRTL(rightText);
+
+      if (leftRTL && !rightRTL) {
+        tr.insertBefore(tds[1], tds[0]);
+      }
+
+      tds.forEach(td => {
+
+        const text = td.textContent.trim();
+        if (!text) return;
+
+        const rtl = isRTL(text);
+
+        td.setAttribute("dir", rtl ? "rtl" : "ltr");
+        td.style.textAlign = rtl ? "right" : "left";
+
+      });
+
+    });
+
+    /**********************
+     * CENTER MONOLINGUAL TABLES
+     **********************/
+    document.querySelectorAll("table").forEach(table => {
+
+      const rows = Array.from(table.rows);
+
+      /*
+       * Este bilingv dacă există cel puțin un rând
+       * cu două celule care conțin text.
+       */
+      const bilingual = rows.some(row => {
+
+        const cellsWithText =
+          Array.from(row.cells).filter(cell =>
+            cell.textContent.trim()
+          );
+
+        return cellsWithText.length >= 2;
+      });
+
+      if (bilingual) {
+        return;
+      }
+
+      table.classList.add("monolingual-table");
+
+      table.style.marginLeft = "auto";
+      table.style.marginRight = "auto";
+      table.style.maxWidth = "900px";
+
+      table.querySelectorAll("td").forEach(td => {
+        td.style.textAlign = "center";
+      });
+
+      table.querySelectorAll("p").forEach(p => {
+
+        /*
+         * Centrează numai textul LTR.
+         * Textul arab rămâne aliniat la dreapta.
+         */
+        const text = p.textContent.trim();
+
+        if (text && !isRTL(text)) {
+          p.style.textAlign = "center";
+        }
+      });
+
+    });
+
+    /**********************
+     * CENTER MONOLINGUAL DOCUMENTS
+     * WITHOUT TABLES
+     **********************/
+    if (!document.querySelector("table")) {
+
+      document.body.classList.add("monolingual-document");
+
+      document.querySelectorAll("p").forEach(p => {
+
+        const text = p.textContent.trim();
+
+        if (text && !isRTL(text)) {
+          p.style.textAlign = "center";
+        }
+      });
+    }
+
+    /**********************
+     * LOAD TITLE LINKS
+     **********************/
+    const serviceIndex = {};
+    const globalIndex = {};
+
+    const serviceAutomelonIndex = {};
+    const globalAutomelonIndex = {};
+
+    const globalCount = {};
+    const titleUsage = {};
+
+    try {
+
+      const base = window.location.pathname.includes("/byzmusic/") ? "/byzmusic" : "";
+      const res = await fetch(`${base}/system/data/titleLink.json`);
+
+      if (!res.ok) throw new Error("titleLink.json missing");
+
+      const raw = await res.json();
+
+
+
+      for (const key in raw) {
+
+        const item =
+          typeof raw[key] === "string"
+            ? { url: raw[key], name: null }
+            : raw[key];
+
+        const keyParts = splitAutomelonKey(key);
+
+        const norm = normalizeTitle(keyParts.title);
+        const automelon = normalizeTitle(keyParts.automelon);
+
+        // ----------------------------
+        // [SERVICE] [MOMENT] TITLE
+        // ----------------------------
+
+        let m = norm.match(/^\[([a-z]+)\]\s+\[([a-z]+)\]\s+(.*)$/i);
+
+        if (m) {
 
           const service = m[1].toUpperCase();
-          const title   = m[2];
+          const moment = m[2].toUpperCase();
+          const title = m[3];
 
-          const serviceKey =`[${service}] ${title}`;
+          const serviceKey =
+            `[${service}] ${title}`;
+
+          if (automelon) {
+
+            const automelonKey =
+              serviceKey + " || " + automelon;
+
+            if (!serviceAutomelonIndex[automelonKey]) {
+
+              serviceAutomelonIndex[automelonKey] = [];
+
+            }
+
+            if (Array.isArray(serviceAutomelonIndex[automelonKey])) {
+
+              serviceAutomelonIndex[automelonKey].push({
+                moment,
+                item
+              });
+
+            } else {
+
+              console.warn(
+                "Mixed service and service-moment automelon key:",
+                automelonKey
+              );
+
+            }
+
+          }
+
+          if (!serviceIndex[serviceKey]) {
+            serviceIndex[serviceKey] = [];
+          }
+
+          serviceIndex[serviceKey].push({
+            moment,
+            item
+          });
+
+          globalCount[title] =
+            (globalCount[title] || 0) + 1;
+
+          continue;
+        }
+
+        // ----------------------------
+        // [SERVICE] TITLE
+        // ----------------------------
+
+        m = norm.match(/^\[([a-z]+)\]\s+(.*)$/i);
+
+        if (m) {
+
+          const service = m[1].toUpperCase();
+          const title = m[2];
+
+          const serviceKey = `[${service}] ${title}`;
 
           if (automelon) {
 
@@ -404,306 +475,413 @@ try {
           }
 
           globalCount[title] =
-              (globalCount[title] || 0) + 1;
+            (globalCount[title] || 0) + 1;
 
           continue;
+        }
+
+        // ----------------------------
+        // GLOBAL TITLE
+        // ----------------------------
+
+        if (automelon) {
+
+          const automelonKey = norm + " || " + automelon;
+
+          globalAutomelonIndex[automelonKey] = item;
+
+        } else {
+
+          globalIndex[norm] = item;
+
+        }
+
+        globalCount[norm] = (globalCount[norm] || 0) + 1;
       }
 
-      // ----------------------------
-      // GLOBAL TITLE
-      // ----------------------------
+      // sort moments inside each service
 
-      if (automelon) {
+      for (const key in serviceIndex) {
 
-        const automelonKey = norm + " || " + automelon;
-
-        globalAutomelonIndex[automelonKey] = item;
-
-      } else {
-
-        globalIndex[norm] = item;
-
-      }
-
-      globalCount[norm] = (globalCount[norm] || 0) + 1;
-  } 
-
-  // sort moments inside each service
-
-  for (const key in serviceIndex) {
-
-      if (!Array.isArray(serviceIndex[key])) {
+        if (!Array.isArray(serviceIndex[key])) {
           continue;
-      }
+        }
 
-      const service =
+        const service =
           key.match(/^\[([A-Z]+)\]/)[1];
 
-      const order =
+        const order =
           SERVICE_ORDER[service] || {};
 
-      serviceIndex[key].sort((a, b) => {
+        serviceIndex[key].sort((a, b) => {
 
           return (order[a.moment] || 999)
-              - (order[b.moment] || 999);
+            - (order[b.moment] || 999);
 
-      });
-  }
-
-  for (const key in serviceAutomelonIndex) {
-
-    const entries =
-      serviceAutomelonIndex[key];
-
-    if (!Array.isArray(entries)) {
-      continue;
-    }
-
-    const serviceMatch =
-      key.match(/^\[([A-Z]+)\]/);
-
-    const service =
-      serviceMatch ? serviceMatch[1] : "";
-
-    const order =
-      SERVICE_ORDER[service] || {};
-
-    entries.sort((a, b) =>
-      (order[a.moment] || 999) -
-      (order[b.moment] || 999)
-    );
-  }
-
-  // remove global entries that collide
-  // with another service
-
-  for (const title in globalCount) {
-
-      if (globalCount[title] > 1) {
-          delete globalIndex[title];
+        });
       }
-  }  
 
+      for (const key in serviceAutomelonIndex) {
 
-} catch (e) {
+        const entries =
+          serviceAutomelonIndex[key];
 
-  console.warn("TitleLink load failed:", e.message);
-
-}
-
-/**********************
- * APPLY TITLE LINKS
- **********************/
-document.querySelectorAll("p").forEach(p => {
-
-  if (p.querySelector("a")) return;
-
-  const originalText = p.textContent.trim();
-
-  if (!originalText) {
-    return;
-  }
-
-  const htmlAutomelon = extractAutomelonFromText(originalText);
-
-  const baseKey = normalizeTitle(originalText);
-
-  let item = null;
-
-  // ----------------------------
-  // SERVICE
-  // ----------------------------
-
-  if (SERVICE) {
-
-      const serviceKey = `[${SERVICE}] ${baseKey}`;
-
-      if (htmlAutomelon) {
-
-        const automelonKey = serviceKey + " || " + htmlAutomelon;
-
-        const automelonMatch = serviceAutomelonIndex[automelonKey];
-
-        if (Array.isArray(automelonMatch)) {
-
-          const usageKey =
-            "AUTOMELON::" + automelonKey;
-
-          const index =
-            titleUsage[usageKey] || 0;
-
-          const selected =
-            automelonMatch[
-              Math.min(
-                index,
-                automelonMatch.length - 1
-              )
-            ];
-
-          item = selected.item;
-
-          titleUsage[usageKey] =
-            index + 1;
-
-        } else if (automelonMatch) {
-
-          item =
-            automelonMatch.item ||
-            automelonMatch;
-
+        if (!Array.isArray(entries)) {
+          continue;
         }
 
-      }
+        const serviceMatch =
+          key.match(/^\[([A-Z]+)\]/);
 
-      // 2. Dacă nu s-a găsit după automelon,
-      // folosește logica veche
-      if (!item) {
+        const service =
+          serviceMatch ? serviceMatch[1] : "";
 
-        const match =
-          serviceIndex[serviceKey];
+        const order =
+          SERVICE_ORDER[service] || {};
 
-        if (Array.isArray(match)) {
-
-          const index =
-            titleUsage[serviceKey] || 0;
-
-          item =
-            match[
-              Math.min(
-                index,
-                match.length - 1
-              )
-            ].item;
-
-          titleUsage[serviceKey] =
-            index + 1;
-
-        } else if (match) {
-
-          item = match;
-
-        }
-
-      }
-  }
-
-  // ----------------------------
-  // GLOBAL
-  // ----------------------------
-
-  if (!item && htmlAutomelon) {
-
-    const automelonKey = baseKey + " || " + htmlAutomelon;
-
-    item = globalAutomelonIndex[automelonKey];
-
-  }
-
-  if (!item) {
-    item = globalIndex[baseKey];
-  }
-
-  if (!item) {
-      return;
-  }
-
-
-  if (item.type === "multi" && Array.isArray(item.versions)) {
-
-    let versions = item.versions;
-
-    if (htmlAutomelon) {
-
-      versions = versions.filter(v =>
-        normalizeTitle(v.automelon || "") === htmlAutomelon
-      );
-
-      if (versions.length === 0) {
-
-        console.warn(
-          "No matching automelon version:",
-          baseKey,
-          htmlAutomelon
+        entries.sort((a, b) =>
+          (order[a.moment] || 999) -
+          (order[b.moment] || 999)
         );
-
-        return;
       }
+
+      // remove global entries that collide
+      // with another service
+
+      for (const title in globalCount) {
+
+        if (globalCount[title] > 1) {
+          delete globalIndex[title];
+        }
+      }
+
+
+    } catch (e) {
+
+      console.warn("TitleLink load failed:", e.message);
 
     }
 
-    const span = document.createElement("span");
-    span.innerHTML = p.innerHTML;
 
-    versions.forEach(v => {
+    function detectMomentForParagraph(p) {
 
-      if (!v.url) {
+      const paragraphs =
+        Array.from(document.querySelectorAll("p"));
+
+      const currentIndex =
+        paragraphs.indexOf(p);
+
+      if (currentIndex === -1) {
+        return "";
+      }
+
+      /*
+       * Căutăm înapoi maximum 100 de paragrafe.
+       */
+      const startIndex =
+        Math.max(0, currentIndex - 100);
+
+      for (
+        let i = currentIndex - 1;
+        i >= startIndex;
+        i--
+      ) {
+
+        const text =
+          normalizeTitle(
+            paragraphs[i].textContent || ""
+          );
+
+        if (text.includes("aposticha")) {
+          return "AP";
+        }
+
+        if (
+          text.includes("litia") ||
+          text.includes("artoklasia")
+        ) {
+          return "LT";
+        }
+
+        if (
+          text.includes("o lord i have cried") ||
+          text.includes("lord i have cried")
+        ) {
+          return "LIHC";
+        }
+      }
+
+      return "";
+    }
+
+    /**********************
+     * APPLY TITLE LINKS
+     **********************/
+    document.querySelectorAll("p").forEach(p => {
+
+      if (p.querySelector("a")) return;
+
+      const originalText = p.textContent.trim();
+
+      if (!originalText) {
         return;
       }
 
-      const space = document.createTextNode(" ");
+      const htmlAutomelon = extractAutomelonFromText(originalText);
+
+      const baseKey = normalizeTitle(originalText);
+
+      const htmlMoment = detectMomentForParagraph(p);
+
+      let item = null;
+
+      // ----------------------------
+      // SERVICE
+      // ----------------------------
+
+      if (SERVICE) {
+
+        const serviceKey =
+          `[${SERVICE}] ${baseKey}`;
+
+        /*
+         * 1. Căutare după serviciu + automelon
+         */
+        if (htmlAutomelon) {
+
+          const automelonKey =
+            serviceKey + " || " + htmlAutomelon;
+
+          const automelonMatch =
+            serviceAutomelonIndex[automelonKey];
+
+          if (Array.isArray(automelonMatch)) {
+
+            const usageKey =
+              "AUTOMELON::" + automelonKey;
+
+            const momentMatch =
+              htmlMoment
+                ? automelonMatch.find(entry =>
+                  entry &&
+                  entry.moment === htmlMoment &&
+                  entry.item
+                )
+                : null;
+
+            if (momentMatch) {
+
+              item = momentMatch.item;
+
+            } else {
+
+              const index =
+                titleUsage[usageKey] || 0;
+
+              const selected =
+                automelonMatch[
+                Math.min(
+                  index,
+                  automelonMatch.length - 1
+                )
+                ];
+
+              if (selected?.item) {
+                item = selected.item;
+              }
+
+              titleUsage[usageKey] =
+                index + 1;
+            }
+
+          } else if (automelonMatch) {
+
+            item =
+              automelonMatch.item ||
+              automelonMatch;
+          }
+        }
+
+        /*
+         * 2. Numai dacă automelonul nu a găsit nimic,
+         * căutăm după serviciu + titlu.
+         */
+        if (!item) {
+
+          const match =
+            serviceIndex[serviceKey];
+
+          if (Array.isArray(match)) {
+
+            const momentMatch =
+              htmlMoment
+                ? match.find(entry =>
+                  entry &&
+                  entry.moment === htmlMoment &&
+                  entry.item
+                )
+                : null;
+
+            console.log({
+              htmlMoment,
+              match,
+              momentMatch
+            });
+
+            if (momentMatch) {
+
+              item = momentMatch.item;
+
+            } else {
+
+              const usageKey =
+                "SERVICE::" + serviceKey;
+
+              const index =
+                titleUsage[usageKey] || 0;
+
+              const selected =
+                match[
+                Math.min(
+                  index,
+                  match.length - 1
+                )
+                ];
+
+              if (selected?.item) {
+                item = selected.item;
+              }
+
+              titleUsage[usageKey] =
+                index + 1;
+            }
+
+          } else if (match) {
+
+            item =
+              match.item ||
+              match;
+          }
+        }
+      }
+
+      // ----------------------------
+      // GLOBAL
+      // ----------------------------
+
+      if (!item && htmlAutomelon) {
+
+        const automelonKey = baseKey + " || " + htmlAutomelon;
+
+        item = globalAutomelonIndex[automelonKey];
+
+      }
+
+      if (!item) {
+        item = globalIndex[baseKey];
+      }
+
+      if (!item) {
+        return;
+      }
+
+
+      if (item.type === "multi" && Array.isArray(item.versions)) {
+
+        let versions = item.versions;
+
+        if (htmlAutomelon) {
+
+          versions = versions.filter(v =>
+            normalizeTitle(v.automelon || "") === htmlAutomelon
+          );
+
+          if (versions.length === 0) {
+
+            console.warn(
+              "No matching automelon version:",
+              baseKey,
+              htmlAutomelon
+            );
+
+            return;
+          }
+
+        }
+
+        const span = document.createElement("span");
+        span.innerHTML = p.innerHTML;
+
+        versions.forEach(v => {
+
+          if (!v.url) {
+            return;
+          }
+
+          const space = document.createTextNode(" ");
+
+          const a = document.createElement("a");
+          a.href = v.url;
+          a.target = "_blank";
+          a.rel = "noopener noreferrer";
+          a.textContent = `(${v.label || "PDF"})`;
+
+          span.appendChild(space);
+          span.appendChild(a);
+
+        });
+
+        p.innerHTML = "";
+        p.appendChild(span);
+
+        return;
+      }
+
+      if (!item.url) return;
 
       const a = document.createElement("a");
-      a.href = v.url;
+
+      a.href = item.url;
       a.target = "_blank";
       a.rel = "noopener noreferrer";
-      a.textContent = `(${v.label || "PDF"})`;
+      a.innerHTML = p.innerHTML;
 
-      span.appendChild(space);
-      span.appendChild(a);
+      if (item.name) a.title = item.name;
+
+      p.innerHTML = "";
+      p.appendChild(a);
 
     });
 
-    p.innerHTML = "";
-    p.appendChild(span);
+    /**********************
+     * REMOVE WORD FONT SIZES
+     **********************/
+    document.querySelectorAll("[style*='font-size']").forEach(el => {
+      el.style.fontSize = "";
+    });
 
-    return;
-  }
+    document.querySelectorAll("font[size]").forEach(el => {
+      el.removeAttribute("size");
+    });
 
-  if (!item.url) return;
+    document.querySelectorAll("font[face]").forEach(el => {
+      el.removeAttribute("face");
+    });
 
-  const a = document.createElement("a");
+    /**********************
+     * CLEAN WORD COLORS
+     **********************/
+    document.querySelectorAll("a font").forEach(f => {
+      f.removeAttribute("color");
+      if (f.style) f.style.color = "";
+    });
 
-  a.href = item.url;
-  a.target = "_blank";
-  a.rel = "noopener noreferrer";
-  a.innerHTML = p.innerHTML;
+    document.querySelectorAll("a span").forEach(s => {
+      if (s.style) s.style.color = "";
+    });
 
-  if (item.name) a.title = item.name;
+    console.log("Layout + links applied successfully.");
 
-  p.innerHTML = "";
-  p.appendChild(a);
-
-});
-
-/**********************
- * REMOVE WORD FONT SIZES
- **********************/
-document.querySelectorAll("[style*='font-size']").forEach(el => {
-  el.style.fontSize = "";
-});
-
-document.querySelectorAll("font[size]").forEach(el => {
-  el.removeAttribute("size");
-});
-
-document.querySelectorAll("font[face]").forEach(el => {
-  el.removeAttribute("face");
-});
-
-/**********************
- * CLEAN WORD COLORS
- **********************/
-document.querySelectorAll("a font").forEach(f => {
-  f.removeAttribute("color");
-  if (f.style) f.style.color = "";
-});
-
-document.querySelectorAll("a span").forEach(s => {
-  if (s.style) s.style.color = "";
-});
-
-console.log("Layout + links applied successfully.");
-
-});
+  });
 
 })();

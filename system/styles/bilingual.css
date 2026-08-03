@@ -1,0 +1,44 @@
+/* ==========================================================
+   Bilingual documents
+   ========================================================== */
+
+body.bilingual-document table {
+
+    width: 100%;
+    max-width: 900px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    table-layout: fixed;
+
+}
+
+body.bilingual-document td {
+
+    width: 50%;
+    vertical-align: top;
+
+    padding-left: .5rem;
+    padding-right: .5rem;
+
+}
+
+body.bilingual-document td[dir="ltr"] {
+
+    text-align: left;
+
+}
+
+body.bilingual-document td[dir="rtl"] {
+
+    text-align: right;
+
+}
+
+body.bilingual-document p {
+
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+
+}

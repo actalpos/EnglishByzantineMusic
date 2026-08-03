@@ -1,0 +1,247 @@
+/* ==========================================================
+   MONOLINGUAL SERVICE DOCUMENTS
+
+   - Times New Roman, 24px
+   - margini apropiate de Microsoft Word
+   - paragrafe aliniate la stânga
+   - titluri centrate
+   - responsive pe tabletă și telefon
+   ========================================================== */
+
+body.monolingual-document {
+    box-sizing: border-box;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 6rem 7.5rem;
+
+    background: #ffffff;
+    color: #000000;
+
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px !important;
+    line-height: 33px !important;
+}
+
+/*
+ * Toate elementele respectă dimensiunea disponibilă.
+ */
+body.monolingual-document *,
+body.monolingual-document *::before,
+body.monolingual-document *::after {
+    box-sizing: border-box;
+}
+
+/*
+ * Paragrafe normale:
+ * ocupă tot spațiul dintre margini și sunt aliniate la stânga.
+ */
+body.monolingual-document p {
+    width: 100%;
+    max-width: none;
+
+    margin: 0 0 0.8em;
+    padding: 0;
+
+    font-family: inherit !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+
+    text-align: justify !important;
+    text-justify: inter-word;
+    direction: ltr;
+}
+
+/*
+ * Suprascrie clasele generate de LibreOffice.
+ */
+body.monolingual-document p.western,
+body.monolingual-document p.cjk,
+body.monolingual-document p.ctl {
+    font-family: "Times New Roman", Times, serif !important;
+    font-size: 24px !important;
+}
+
+/*
+ * Titlurile HTML normale.
+ */
+body.monolingual-document h1,
+body.monolingual-document h2,
+body.monolingual-document h3,
+body.monolingual-document h4,
+body.monolingual-document h5,
+body.monolingual-document h6 {
+    width: 100%;
+
+    margin: 1.3em 0 0.7em;
+    padding: 0;
+
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    line-height: 1.2 !important;
+}
+
+/*
+ * Paragrafele care erau centrate în documentul original.
+ */
+body.monolingual-document p.source-centered {
+    text-align: center !important;
+}
+
+/*
+ * LibreOffice produce deseori titlurile ca paragrafe
+ * care conțin text subliniat.
+ */
+body.monolingual-document p:has(u),
+body.monolingual-document p:has(ins),
+body.monolingual-document p:has([style*="text-decoration: underline"]),
+body.monolingual-document p:has([style*="text-decoration:underline"]) {
+    margin-top: 1.3em;
+    margin-bottom: 0.7em;
+
+    text-align: center !important;
+    font-weight: bold;
+    line-height: 1.2 !important;
+}
+
+/*
+ * Titluri transformate în hyperlink de title-links.js.
+ */
+body.monolingual-document p>a:only-child {
+    display: inline;
+}
+
+/*
+ * Centrează paragraful când întregul titlu este un link.
+ */
+body.monolingual-document p:has(> a:only-child) {
+    text-align: center !important;
+}
+
+/*
+ * Nu centra un paragraf obișnuit doar pentru că are
+ * un link în interiorul unei propoziții.
+ */
+body.monolingual-document p:has(> a:not(:only-child)) {
+    text-align: left !important;
+}
+
+/*
+ * Tabele monolingve care pot exista în unele fișiere.
+ */
+body.monolingual-document table {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0 auto;
+    border-collapse: collapse;
+
+    font-family: "Times New Roman", Times, serif;
+    font-size: inherit;
+}
+
+body.monolingual-document td {
+    padding: 0;
+    vertical-align: top;
+    text-align: left;
+}
+
+/*
+ * Imagini și alte elemente late.
+ */
+body.monolingual-document img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+ * Linkuri.
+ */
+body.monolingual-document a {
+    font-weight: inherit;
+    text-decoration: underline;
+    overflow-wrap: anywhere;
+}
+
+/*
+ * Păstrează italicele venite din document.
+ */
+body.monolingual-document em,
+body.monolingual-document i {
+    font-style: italic;
+}
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media screen and (max-width: 1199px) {
+    body.monolingual-document {
+        width: 100%;
+        padding: 4.25rem 4.75rem;
+
+        font-size: 24px !important;
+        line-height: 33px !important;
+    }
+}
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media screen and (max-width: 767px) {
+    body.monolingual-document {
+        width: 100%;
+
+        padding: 1.2rem 1rem;
+
+        font-size: 24px !important;
+        line-height: 33px !important;
+    }
+
+    body.monolingual-document p {
+        margin-bottom: 0.75em;
+    }
+
+    body.monolingual-document h1,
+    body.monolingual-document h2,
+    body.monolingual-document h3,
+    body.monolingual-document h4,
+    body.monolingual-document h5,
+    body.monolingual-document h6,
+    body.monolingual-document p.source-centered,
+    body.monolingual-document p:has(u),
+    body.monolingual-document p:has(ins),
+    body.monolingual-document p:has([style*="text-decoration: underline"]),
+    body.monolingual-document p:has([style*="text-decoration:underline"]),
+    body.monolingual-document p:has(> a:only-child) {
+        overflow-wrap: anywhere;
+    }
+}
+
+/* ==========================================================
+   PRINT
+   ========================================================== */
+
+@page {
+    size: A4;
+    margin: 2rem 3rem;
+}
+
+@media print {
+    body.monolingual-document {
+        width: auto;
+
+        margin: 0;
+        padding: 0;
+
+        font-size: 24px !important;
+        line-height: 33px !important;
+        background: transparent;
+    }
+
+    body.monolingual-document a {
+        color: #000000;
+    }
+}

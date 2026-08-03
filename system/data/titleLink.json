@@ -1,5 +1,5 @@
 {
-  "1. L, R, L: O ALL-HOLY LADY THEOTOKOS, INTERCEDE FOR US SINNERS. ( THRICE )": {
+  "1. L R L O ALL-HOLY LADY THEOTOKOS INTERCEDE FOR US SINNERS. ( THRICE )": {
     "url": "https://drive.google.com/file/d/1mSUgfq-yeu8MMOhXDFr-vqRver1iusY5/view?usp=drivesdk",
     "name": "3 IntercedeForUsSinners-pl2nd.pdf",
     "description": "1. L, R, L: O all-holy Lady Theotokos, intercede for us sinners. (thrice)",
@@ -125,7 +125,7 @@
     "path": "Byzantine Music / EnglishByzantineMusic / Great Lent Triodion / 01 Sunday of the Pharisee and Publican",
     "automelon": ""
   },
-  "AMOMOS: SEVENTEENTH KATHISMA OF THE PSALTER IN TONE FIVE": {
+  "AMOMOS SEVENTEENTH KATHISMA OF THE PSALTER IN TONE FIVE": {
     "url": "https://drive.google.com/file/d/1xc9Hkuqwg6auKW6xeK61k0dMyXqaXJjB/view?usp=drivesdk",
     "name": "3 Amomos-pl1st-Karam-EN-SaturdaySouls.pdf",
     "description": "THE AMOMOS: SEVENTEENTH KATHISMA OF THE PSALTER\nIN TONE FIVE",
@@ -463,6 +463,19 @@
       }
     ]
   },
+  "APOLYTIKION OF THE TRANSFIGURATION IN TONE SEVEN": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "St Anthony",
+        "url": "https://drive.google.com/file/d/1DW1qVO0AaRA5LMF9tt8N182-QOhJAxii/view?usp=drivesdk",
+        "name": "07 Apolytikion-pl3rdgrave-SA-Transfiguration.pdf",
+        "description": "APOLYTIKION OF THE TRANSFIGURATION IN TONE SEVEN | St Anthony",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
+      }
+    ]
+  },
   "APOSTICHA DOXASTICON FOR THE SUNDAY OF FORGIVENESS IN TONE SIX": {
     "url": "https://drive.google.com/file/d/1rQR_ZvNWhZPza2mm2EFE9dS2kgRag-Dm/view?usp=drivesdk",
     "name": "4 ApostichaDoxastikon-pl2nd-ForgivenessSunday.pdf",
@@ -718,7 +731,7 @@
       }
     ]
   },
-  "BLESSED ARE THEY WHOM THOU HAST CHOSEN AND TAKEN TO THYSELF, O LORD. THEIR MEMORIAL IS FROM GENERATION TO GENERATION. ALLELUIA.": {
+  "BLESSED ARE THEY WHOM THOU HAST CHOSEN AND TAKEN TO THYSELF O LORD. THEIR MEMORIAL IS FROM GENERATION TO GENERATION. ALLELUIA.": {
     "url": "https://drive.google.com/file/d/1j5t4GrHOy2DL7nqeo-hRr4jc3MhJ9hlS/view?usp=drivesdk",
     "name": "SaturdayBlessedAreTheyWhomThouHastChosenBrief-1st.pdf",
     "description": "Blessed are they whom Thou hast chosen and taken to Thyself, O Lord. Their memorial is from generation to generation. Alleluia.",
@@ -751,7 +764,7 @@
       }
     ]
   },
-  "DEACON: THE EVENING PROKEIMENON.": {
+  "DEACON THE EVENING PROKEIMENON.": {
     "type": "multi",
     "versions": [
       {
@@ -1340,7 +1353,7 @@
         "url": "https://drive.google.com/file/d/19g60p3Ff508Dnwf-WljVhyR78bkRISFS/view?usp=drivesdk",
         "name": "26 Exaposteilaria-3rd-Karam-Orthros-SundayPentecost.pdf",
         "description": "THE EXAPOSTEILARIA OF PENTECOST IN TONE THREE\n(**Thou Who, as God, adornest**) | Karam",
-        "automelon": "THOU WHO, AS GOD, ADORNEST",
+        "automelon": "THOU WHO AS GOD ADORNEST",
         "path": "Byzantine Music / EnglishByzantineMusic / Penticostarion / 12 Sunday of Pentecost"
       }
     ]
@@ -1386,7 +1399,7 @@
         "url": "https://drive.google.com/file/d/1lc2eXxmmLZCMaYzwwcEaOCSEcEVlAYxL/view?usp=drivesdk",
         "name": "24 Exaposteilarion-2nd-AA-Orthros-SundayHolyFathers.pdf",
         "description": "THE EXAPOSTEILARION & THEOTOKION OF HOLY FATHERS IN TONE TWO (**Hearken, ye women**) | AA",
-        "automelon": "HEARKEN, YE WOMEN",
+        "automelon": "HEARKEN YE WOMEN",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 11 July / 13 - 19 July First Sunday of the Holy Fathers of the 4th Ecumenical Council"
       }
     ]
@@ -1399,7 +1412,7 @@
         "url": "https://drive.google.com/file/d/16C5zu8_fheV_BBE_RE0xtubPP0qH0drN/view?usp=drivesdk",
         "name": "21 Exaposteilarion-2nd-AA-Orthros-StStephenRelics.pdf",
         "description": "EXAPOSTEILARION & THEOTOKION OF SAINT STEPHEN IN TONE TWO\n(**Hearken, ye women**) | AA",
-        "automelon": "HEARKEN, YE WOMEN",
+        "automelon": "HEARKEN YE WOMEN",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 02 August Transfer St Stephen Relics"
       }
     ]
@@ -1409,7 +1422,7 @@
     "name": "21 exaposteilarion-2nd-StsPeterPaul.pdf",
     "description": "EXAPOSTEILARION & THEOTOKION OF SS. PETER AND PAUL IN TONE TWO\n(**Hearken, ye women**)",
     "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 10 June / June 28",
-    "automelon": "HEARKEN, YE WOMEN"
+    "automelon": "HEARKEN YE WOMEN"
   },
   "EXAPOSTEILARION & THEOTOKION OF ST. JOSEPH IN TONE TWO": {
     "type": "multi",
@@ -1491,7 +1504,7 @@
         "url": "https://drive.google.com/file/d/1F7t0LlGIBjTh_UWQdNfCrK8DJOgcr9SI/view?usp=drivesdk",
         "name": "21 Exaposteilarion-2nd-Orthros-SundayOfHolyFathers.pdf",
         "description": "THE EXAPOSTEILARION OF THE HOLY FATHERS IN TONE TWO\n(**Hearken, ye women**) | AA",
-        "automelon": "HEARKEN, YE WOMEN",
+        "automelon": "HEARKEN YE WOMEN",
         "path": "Byzantine Music / EnglishByzantineMusic / Penticostarion / 10 Sunday of the Holy Fathers"
       }
     ]
@@ -1530,12 +1543,25 @@
       }
     ]
   },
+  "EXAPOSTEILARION OF THE TRANSFIGURATION IN TONE THREE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Archdiocese",
+        "url": "https://drive.google.com/file/d/1NUvEkAfOPJQsmu0Ecr6X7RxcyxRd_6d8/view?usp=drivesdk",
+        "name": "25 Exaposteilarion-3rd-AA-Orthros-Transfiguration.pdf",
+        "description": "THE EXAPOSTEILARION OF THE TRANSFIGURATION IN TONE THREE | Archdiocese",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
+      }
+    ]
+  },
   "EXAPOSTEILIARION & THEOTOKION FOR FIRST SUNDAY OF GREAT LENT IN TONE TWO": {
     "url": "https://drive.google.com/file/d/1k3MUqU7SsOJFXpXPMSHXQJaxTD3L9kRE/view?usp=drivesdk",
     "name": "12 Exaposteilarion-2nd-AA-EN-OrthodoxySunday-W.pdf",
     "description": "EXAPOSTEILIARION & THEOTOKION FOR FIRST SUNDAY OF GREAT LENT\nIN TONE TWO (**Hearken, ye women**)",
     "path": "Byzantine Music / EnglishByzantineMusic / Great Lent Triodion / 05 Sunday of the 1st Week of Lent - Orthodoxy",
-    "automelon": "HEARKEN, YE WOMEN"
+    "automelon": "HEARKEN YE WOMEN"
   },
   "EXAPOSTEILIARION & THEOTOKION FOR ST. JOHN CLIMACUS IN TONE TWO": {
     "type": "multi",
@@ -1545,7 +1571,7 @@
         "url": "https://drive.google.com/file/d/1qwOR2L5u4ZbXTo9ll4AQ9f2R0skvG2bV/view?usp=drivesdk",
         "name": "11 Exaposteilarion--2nd-AA-StJohnClimacus.pdf",
         "description": "EXAPOSTEILIARION & THEOTOKION FOR ST. JOHN CLIMACUS\nIN TONE TWO (**Hearken, ye women**) | AA",
-        "automelon": "HEARKEN, YE WOMEN",
+        "automelon": "HEARKEN YE WOMEN",
         "path": "Byzantine Music / EnglishByzantineMusic / Great Lent Triodion / 08 Sunday of the 4th Week of Lent - St John Climacus"
       }
     ]
@@ -1562,7 +1588,7 @@
     "name": "5 Exaposteilarion-2nd-ForgivenessSunday.pdf",
     "description": " EXAPOSTEILIARION & THEOTOKION FOR THE SUNDAY OF FORGIVENESS\nIN TONE TWO (**Hearken, ye women **)",
     "path": "Byzantine Music / EnglishByzantineMusic / Great Lent Triodion / 04 Sunday of Forgiveness",
-    "automelon": "HEARKEN, YE WOMEN"
+    "automelon": "HEARKEN YE WOMEN"
   },
   "EXAPOSTEILIARION FOR THE PHARISEE & PUBLICAN IN TONE TWO": {
     "url": "https://drive.google.com/file/d/1EXbw78qw-f3w1IPd5dLWXeHEWHxf3mKw/view?usp=drivesdk",
@@ -1576,7 +1602,7 @@
     "name": "ProdigalSon-Exaposteilarion-2nd-AA-EN.pdf",
     "description": "THE EXAPOSTEILIARION FOR\nTHE PRODIGAL SON IN TONE TWO (**Hearken, ye women**)",
     "path": "Byzantine Music / EnglishByzantineMusic / Great Lent Triodion / 02 Sunday of the Prodigal Son",
-    "automelon": "HEARKEN, YE WOMEN"
+    "automelon": "HEARKEN YE WOMEN"
   },
   "FESTAL ANABATHMOI IN TONE FOUR": {
     "type": "multi",
@@ -1603,12 +1629,12 @@
     "type": "multi",
     "versions": [
       {
-        "label": "Regular - Karam",
-        "url": "https://drive.google.com/file/d/1jy9I4qetB6ym2tWmP_Yo7DyqeW0hGGEc/view?usp=drivesdk",
-        "name": "10 AfterPsalm50Troparia-2nd.pdf",
-        "description": "FESTAL TROPARIA AFTER PSALM 50 IN TONE TWO | Regular - Karam",
+        "label": "Transfiguration - Ayoub",
+        "url": "https://drive.google.com/file/d/12gLNwyGKLtsfSZb41Ir0tXT3UpMMeMgF/view?usp=drivesdk",
+        "name": "22 AfterPsalm50Idiomelon-pl2nd-Ayoub-Orthros-Transfiguration.pdf",
+        "description": "FESTAL TROPARIA AFTER PSALM 50 IN TONE TWO | Transfiguration - Ayoub",
         "automelon": "",
-        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
       },
       {
         "label": "Sts Nicholas & Habib",
@@ -1625,6 +1651,14 @@
         "description": "FESTAL TROPARIA AFTER PSALM 50 IN TONE TWO | St Joseph Damascus",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 11 July / 10 July St Joseph of Damascus"
+      },
+      {
+        "label": "Regular - Karam",
+        "url": "https://drive.google.com/file/d/1jy9I4qetB6ym2tWmP_Yo7DyqeW0hGGEc/view?usp=drivesdk",
+        "name": "10 AfterPsalm50Troparia-2nd.pdf",
+        "description": "FESTAL TROPARIA AFTER PSALM 50 IN TONE TWO | Regular - Karam",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
       },
       {
         "label": "PalmSunday -Karam",
@@ -2235,7 +2269,7 @@
       }
     ]
   },
-  "IF THE PROCESSION IS BEGUN AS THE GREAT DOXOLOGY CONCLUDES IN ORTHROS, THE FINAL HOLY GOD, HOLY MIGHTY IS SLOWLY CHANTED ( TRADITIONALLY, IF POSSIBLE, IN THE AGIA STYLE OF TONE FOUR ).": {
+  "IF THE PROCESSION IS BEGUN AS THE GREAT DOXOLOGY CONCLUDES IN ORTHROS THE FINAL HOLY GOD HOLY MIGHTY IS SLOWLY CHANTED ( TRADITIONALLY IF POSSIBLE IN THE AGIA STYLE OF TONE FOUR ).": {
     "type": "multi",
     "versions": [
       {
@@ -2248,7 +2282,7 @@
       }
     ]
   },
-  "IN EVERLASTING REMEMBRANCE SHALL THE RIGHTEOUS BE; HE SHALL NOT BE AFRAID OF EVIL TIDINGS. ALLELUIA.": {
+  "IN EVERLASTING REMEMBRANCE SHALL THE RIGHTEOUS BE HE SHALL NOT BE AFRAID OF EVIL TIDINGS. ALLELUIA.": {
     "url": "https://drive.google.com/file/d/1nSeOZy-OywMNHNn3UGs3RcT_W9MHJQme/view?usp=drivesdk",
     "name": "InEverlastingRemembranceBrief-1st-SA-EN.pdf",
     "description": "In everlasting remembrance shall the righteous be; he shall not be afraid of evil tidings. Alleluia.",
@@ -2496,6 +2530,19 @@
       }
     ]
   },
+  "KOINONIKON ( COMMUNION HYMN ) FOR THE TRANSFIGURATION": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "SA",
+        "url": "https://drive.google.com/file/d/1rz-6PoKEgCuOIlJJPH-quZSXlH8t4s28/view?usp=drivesdk",
+        "name": "33 Communion-pl4th-SA-Transfiguration.pdf",
+        "description": "KOINONIKON (COMMUNION HYMN) FOR THE TRANSFIGURATION | SA",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
+      }
+    ]
+  },
   "KONTAKION AND OIKOS FOR ST. JOSEPH ( PLAIN READING )": {
     "type": "multi",
     "versions": [
@@ -2717,6 +2764,19 @@
       }
     ]
   },
+  "NINTH ODE OF THE FIRST TRANSFIGURATION CANON IN TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Karam",
+        "url": "https://drive.google.com/file/d/1q1sjswZoDxIZrKBHRI0vcEG9EvoAxnAE/view?usp=drivesdk",
+        "name": "23 9th-ode-Karam-Orthros-Transfiguration.pdf",
+        "description": "NINTH ODE OF THE FIRST TRANSFIGURATION CANON IN TONE FOUR | Karam",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
+      }
+    ]
+  },
   "NINTH ODE OF THE PASCHAL & THEOTOKOS CANONS IN TONE ONE": {
     "type": "multi",
     "versions": [
@@ -2751,14 +2811,7 @@
       }
     ]
   },
-  "O LORD OF HOSTS IN TONE SIX": {
-    "url": "https://drive.google.com/file/d/1Cy1xdLLedE5Ro6Lhjm3FcmZrTkO0J1b1/view?usp=drivesdk",
-    "name": "5 OLordOfHosts-pl2nd.pdf",
-    "description": "“O LORD OF HOSTS” IN TONE SIX",
-    "path": "Byzantine Music / EnglishByzantineMusic / Great Lent Triodion / Great Compline",
-    "automelon": ""
-  },
-  "O LORD, I HAVE CRIED IN TONE EIGHT": {
+  "O LORD I HAVE CRIED IN TONE EIGHT": {
     "type": "multi",
     "versions": [
       {
@@ -2771,7 +2824,7 @@
       }
     ]
   },
-  "O LORD, I HAVE CRIED IN TONE FIVE": {
+  "O LORD I HAVE CRIED IN TONE FIVE": {
     "type": "multi",
     "versions": [
       {
@@ -2784,7 +2837,7 @@
       }
     ]
   },
-  "O LORD, I HAVE CRIED IN TONE FOUR": {
+  "O LORD I HAVE CRIED IN TONE FOUR": {
     "type": "multi",
     "versions": [
       {
@@ -2797,7 +2850,7 @@
       }
     ]
   },
-  "O LORD, I HAVE CRIED IN TONE ONE": {
+  "O LORD I HAVE CRIED IN TONE ONE": {
     "type": "multi",
     "versions": [
       {
@@ -2810,7 +2863,7 @@
       }
     ]
   },
-  "O LORD, I HAVE CRIED IN TONE SEVEN": {
+  "O LORD I HAVE CRIED IN TONE SEVEN": {
     "type": "multi",
     "versions": [
       {
@@ -2823,7 +2876,7 @@
       }
     ]
   },
-  "O LORD, I HAVE CRIED IN TONE SIX": {
+  "O LORD I HAVE CRIED IN TONE SIX": {
     "type": "multi",
     "versions": [
       {
@@ -2836,7 +2889,7 @@
       }
     ]
   },
-  "O LORD, I HAVE CRIED IN TONE THREE": {
+  "O LORD I HAVE CRIED IN TONE THREE": {
     "type": "multi",
     "versions": [
       {
@@ -2849,7 +2902,7 @@
       }
     ]
   },
-  "O LORD, I HAVE CRIED IN TONE TWO": {
+  "O LORD I HAVE CRIED IN TONE TWO": {
     "type": "multi",
     "versions": [
       {
@@ -2861,6 +2914,13 @@
         "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
       }
     ]
+  },
+  "O LORD OF HOSTS IN TONE SIX": {
+    "url": "https://drive.google.com/file/d/1Cy1xdLLedE5Ro6Lhjm3FcmZrTkO0J1b1/view?usp=drivesdk",
+    "name": "5 OLordOfHosts-pl2nd.pdf",
+    "description": "“O LORD OF HOSTS” IN TONE SIX",
+    "path": "Byzantine Music / EnglishByzantineMusic / Great Lent Triodion / Great Compline",
+    "automelon": ""
   },
   "PASCHAL CANON": {
     "url": "https://drive.google.com/file/d/1dRWAtc3OmVSy9Ua_f0CnSZAcgMXDOIHp/view?usp=drivesdk",
@@ -3243,7 +3303,7 @@
     "path": "Byzantine Music / Bilingual Services / Vespers",
     "automelon": ""
   },
-  "RIGHT: O ALL-HOLY THEOTOKOS, FORSAKE ME NOT IN THE YEARS OF MY LIFE, O INTECESSOR FOR MANKIND; BUT HELP ME AND HAVE MERCY ON ME.": {
+  "RIGHT O ALL-HOLY THEOTOKOS FORSAKE ME NOT IN THE YEARS OF MY LIFE O INTECESSOR FOR MANKIND BUT HELP ME AND HAVE MERCY ON ME.": {
     "url": "https://drive.google.com/file/d/185xHn4adH3583dMWymJCkCAxE_iYdBlU/view?usp=drivesdk",
     "name": "6 OAllHolyTheotokos-2nd.pdf",
     "description": "Right: O all-holy Theotokos, forsake me not in the years of my life, O intecessor for mankind; but help me and have mercy on me.",
@@ -3252,12 +3312,12 @@
   },
   "SATURDAY PROKEIMENON IN TONE SIX": {
     "url": "https://drive.google.com/file/d/1EjnhljX5B4GlP0kyzPL6aFICkyLxVGBt/view?usp=drivesdk",
-    "name": "04-7 ProkeimenonSaturday-pl2nd.pdf",
+    "name": "04-7 ProkeimenonSaturday-pl2nd-ElMassih.pdf",
     "description": "SATURDAY PROKEIMENON IN TONE SIX",
     "path": "Byzantine Music / EnglishByzantineMusic / Vespers",
     "automelon": ""
   },
-  "SAVE US, O GOOD COMFORTER, WHO SING TO THEE: ALLELUIA.": {
+  "SAVE US O GOOD COMFORTER WHO SING TO THEE ALLELUIA.": {
     "type": "multi",
     "versions": [
       {
@@ -3825,6 +3885,19 @@
       }
     ]
   },
+  "[O] DOXASTICON OF THE TRANSFIGURATION TONE EIGHT": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Ayoub",
+        "url": "https://drive.google.com/file/d/1wKGmYZ1IvHO1h2o6zrktaNRDreyH3usy/view?usp=drivesdk",
+        "name": "27 PraisesDoxastikon-pl4th-Ayoub-Orthros-Transfiguration.pdf",
+        "description": "[O] THE Doxasticon OF the transfiguration in Tone Eight | Ayoub",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
+      }
+    ]
+  },
   "[O] EXAPOSTEILARION & THEOTOKION FOR ST. PAISIOS TONE THREE": {
     "type": "multi",
     "versions": [
@@ -3846,7 +3919,7 @@
         "url": "https://drive.google.com/file/d/1MOnN8BqWsEwMWO39yKbxiT2Sugf0_18u/view?usp=drivesdk",
         "name": "21 Exaposteilarion-2nd-AA-Orthros-StParaskevi.pdf",
         "description": "[O] EXAPOSTEILARION & THEOTOKION OF ST. PARASKEVA IN TONE TWO\n(**Hearken, ye women**) | AA",
-        "automelon": "HEARKEN, YE WOMEN",
+        "automelon": "HEARKEN YE WOMEN",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 11 July / 26 July St Paraskeva"
       }
     ]
@@ -3995,6 +4068,19 @@
       }
     ]
   },
+  "[O] FOR THE TRANSFIGURATION TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/1SlBKCVMxxcQBSSS9UQlA0qEx-4e7mZCO/view?usp=drivesdk",
+        "name": "26 Praises-4th-ElMassih-Orthros-Transfiguration.pdf",
+        "description": "[O] For the Transfiguration in Tone Four (**Thou who wast called from on high**) | El Massih",
+        "automelon": "THOU WHO WAST CALLED FROM ON HIGH",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
+      }
+    ]
+  },
   "[O] KATAVASIAE OF TRANSFIGURATION CANON TONE FOUR": {
     "type": "multi",
     "versions": [
@@ -4018,6 +4104,32 @@
         "description": "[O] KATHISMATA HYMNS OF THE HOLY CROSS | Karam",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 01 August Procession of the Holy Cross "
+      }
+    ]
+  },
+  "[O] KATHISMATA HYMNS OF THE TRANSFIGURATION": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/1C-NIh2cso7ikIWNvu7pm4U_wric14SFp/view?usp=drivesdk",
+        "name": "21 Kathisma-4th-ElMassih-Orthros-Transfiguration.pdf",
+        "description": "[O] KATHISMATA HYMNS OF THE TRANSFIGURATION | El Massih",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
+      }
+    ]
+  },
+  "[O] PROKEIMENON FOR THE TRANSFIGURATION TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Kazan",
+        "url": "https://drive.google.com/file/d/1N7G9lmq-A5NMRcxPVKMQfLgOjGrtuZ1M/view?usp=drivesdk",
+        "name": "24 Prokeimenon-4th-Kazan-Transfiguration-W.pdf",
+        "description": "[O] Prokeimenon FOR THE TRANSFIGURATION in Tone FOUR | Kazan",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
       }
     ]
   },
@@ -4061,6 +4173,19 @@
     "description": "[O] TROPARION IN TONE FOUR",
     "path": "Byzantine Music / EnglishByzantineMusic / Orthros",
     "automelon": ""
+  },
+  "[V] DOXASTICA AT THE LITIA PROCESSION TONE FIVE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Creemens",
+        "url": "https://drive.google.com/file/d/1kQ-CpqAoYm4jBtb-exiwtLfA8515gfuW/view?usp=drivesdk",
+        "name": "06 LityDoxastikon-pl1st-Creemens-Vespers-Transfiguration.pdf",
+        "description": "[V] DOXASTICA AT THE LITIA PROCESSION IN TONE FIVE | Creemens",
+        "automelon": "",
+        "path": "MyEnglishMusic / Menaion / 12 August / 06 Holy Transfiguration"
+      }
+    ]
   },
   "[V] DOXASTICON FOR THE SUNDAY OF FORGIVENESS TONE SIX": {
     "url": "https://drive.google.com/file/d/1I2bTRE4O1WBefw-Rk9Maj7NCfiVEo1yK/view?usp=drivesdk",
@@ -4123,12 +4248,77 @@
       }
     ]
   },
+  "[V] FRIDAY PROKEIMENON TONE SEVEN": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/1L8gBMP0ed3pjHcGrXfohsvgMcSmgtoCO/view?usp=drivesdk",
+        "name": "04-6 ProkeimenonFriday-pl3rdgrave-ElMassih.pdf",
+        "description": "[V] FRIDAY PROKEIMENON IN TONE SEVEN | El Massih",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
+      }
+    ]
+  },
+  "[V] MONDAY PROKEIMENON TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/1IrRys9dqMcHfkKEtED922490XWXAMouw/view?usp=drivesdk",
+        "name": "04-2 ProkeimenonMonday-4th-ElMassih.pdf",
+        "description": "[V] MONDAY PROKEIMENON IN TONE FOUR | El Massih",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
+      }
+    ]
+  },
   "[V] RESURRECTIONAL THEOTOKION TONE TWO": {
     "url": "https://drive.google.com/file/d/1QVqkMehs91HnJorhDoSxbhHk17jVHNWn/view?usp=drivesdk",
     "name": "08 ApolytikionResurrectionTheotokion-2nd.pdf",
     "description": "[V] RESURRECTIONAL THEOTOKION\nIN TONE TWO",
     "path": "Byzantine Music / Bilingual Services / Vespers",
     "automelon": ""
+  },
+  "[V] THURSDAY PROKEIMENON TONE SIX": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/1qG2k0bQ6Rf4pRuLd_4D-I3T0MSei0WTn/view?usp=drivesdk",
+        "name": "04-5 ProkeimenonThursday-pl2nd-ElMassih.pdf",
+        "description": "[V] THURSDAY PROKEIMENON IN TONE SIX | El Massih",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
+      }
+    ]
+  },
+  "[V] TUESDAY PROKEIMENON TONE ONE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/1BMmD9pjT-nmstURMydRlcCBU7UZPsUD7/view?usp=drivesdk",
+        "name": "04-3 ProkeimenonTuesday-1st-ElMassih.pdf",
+        "description": "[V] TUESDAY PROKEIMENON IN TONE ONE | El Massih",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
+      }
+    ]
+  },
+  "[V] WEDNESDAY PROKEIMENON TONE FIVE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/1BKhAHu_5DQcVjhrTMXZeT2F4VYrQDquY/view?usp=drivesdk",
+        "name": "04-4 ProkeimenonWednesday-5th-ElMassih.pdf",
+        "description": "[V] WEDNESDAY PROKEIMENON IN TONE FIVE | El Massih",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
+      }
+    ]
   },
   "[V] [AP] APOSTICHA FOR THE RESURRECTION TONE SIX": {
     "type": "multi",
@@ -4260,6 +4450,32 @@
         "description": "[V] [AP] DOXASTICON FOR THE HOLY FATHERS IN TONE THREE | Creemens",
         "automelon": "",
         "path": "MyEnglishMusic / Menaion / 11 July"
+      }
+    ]
+  },
+  "[V] [AP] DOXASTICON FOR THE TRANSFIGURATION TONE SIX": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Ayoub",
+        "url": "https://drive.google.com/file/d/1OrIvRzfaIXdexv63TIngp2riWphtzBMM/view?usp=drivesdk",
+        "name": "06 ApostichaDoxastikon-pl2nd-Ayoub-Vespers-Transfiguration.pdf",
+        "description": "[V] [AP] DOXASTICON FOR THE TRANSFIGURATION IN TONE SIX | Ayoub",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
+      }
+    ]
+  },
+  "[V] [AP] THE APOSTICHA FOR THE TRANSFIGURATION TONE ONE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Ayoub",
+        "url": "https://drive.google.com/file/d/17_d1WCn_wtEP3lWQESEz62L6AV41mVHn/view?usp=drivesdk",
+        "name": "05 Aposticha-1st-Ayoub-Vespers-Transfiguration.pdf",
+        "description": "[V] [AP] THE APOSTICHA FOR THE TRANSFIGURATION IN TONE ONE | Ayoub",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
       }
     ]
   },
@@ -4409,6 +4625,19 @@
         "description": "[V] [LIHC] DOXASTICON FOR ST. STEPHEN\nIN TONE SIX | Dedes",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 02 August Transfer St Stephen Relics"
+      }
+    ]
+  },
+  "[V] [LIHC] DOXASTICON FOR THE TRANSFIGURATION TONE SIX": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Ayoub",
+        "url": "https://drive.google.com/file/d/1iegDH3XTVALCPZ8OogDYM0gaHZbqkk6U/view?usp=drivesdk",
+        "name": "02 SticherasDoxastikon-pl2nd-Ayoub-Vespers-Transfiguration.pdf",
+        "description": "[V] [LIHC] DOXASTICON FOR THE TRANSFIGURATION IN TONE SIX | Ayoub",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
       }
     ]
   },
@@ -4642,6 +4871,19 @@
         "description": "[V] [LIHC] For the Resurrection in Tone Two | Slow",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
+      }
+    ]
+  },
+  "[V] [LIHC] FOR THE TRANSFIGURATION TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Ayoub",
+        "url": "https://drive.google.com/file/d/1sZxG71z6a0_d0vWJcB1dbb14LOThSufg/view?usp=drivesdk",
+        "name": "01 Sticheras-4th-Ayoub-Vespers-Transfiguration.pdf",
+        "description": "[V] [LIHC] For the Transfiguration in Tone Four | Ayoub",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
       }
     ]
   },

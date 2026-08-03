@@ -120,6 +120,7 @@ si fisierul care as vrea sa fie displayed are descrierea [V] [AP] THEOTOKION IN 
         .replace(/\*\*.*?\*\*/g, "")             // fallback
         .replace(/[*]/g, "")
         .replace(/["“”]/g, "")
+        .replace(/[,:;]+/g, "")
         .replace(/[–—]/g, "-")
         .replace(/\(\s*/g, "( ")
         .replace(/\s*\)/g, " )")

@@ -4,8 +4,15 @@ The process
 =============
 
 The service files used are found on the Antiochian Archdiocese site in RTF format having bylingual content arranged on 2 table columns, English and Arabic.
+The RTF files are transformed into docx files with Microsoft word and then into html with Libre Office.
+The html files get added manually links to a js script and a titles json file references.
+The script helps formatting the html content at the runtime, while getting displayed on the screen and also to add the links to the document titles. 
+The document titles are keys for the title json file to retrieve the physical location of the file it wants to open.
+
 The service text content mark the required hymns with a title, usually bolded with upper case characters, but not always. Ex "OR LORD" I HAVE CRIED. 
 The titles can have different extra characters in them as in the above example. Currently we do exact match on the hymn title content. 
+
+The html files are placed onto a web application so the chanters would be able to select a date and a service for display to open the html file.
 
 To help the chanters find the required hymns quickly, the ask is to make the hymn titles as link to the hymn sitting in the Google drive hymn repository.
 Also the link should open a new tab.
@@ -18,6 +25,15 @@ The following process takes place for each service to address the requirement:
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../../../../../system/styles/layout-fixes.css">
 	<script src="../../../../../system/scripts/layout-fixes-and-links.js" defer></script>	
+
+Monolanguages:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/byzmusic/system/styles/common.css">
+<link rel="stylesheet" href="/byzmusic/system/styles/bilingual.css">
+<link rel="stylesheet" href="/byzmusic/system/styles/monolingual.css">
+
+<script src="/byzmusic/system/scripts/layout-fixes.js" defer></script>
+<script src="/byzmusic/system/scripts/title-links.js" defer></script>	
 
 5. Add the html to the Service_Texts folder in the required fixDate/variableDate and month/date folder (see the folder structe below)
 6. Run the update-liturgical-service-file-list.js script to add the new html service file to the liturgical-service-file-list.json
@@ -35,6 +51,7 @@ Example: title: "O LORD" I HAVE CRIED
 has 2 versions: Slow and Brief and the result should be: "O LORD" I HAVE CRIED (Slow) (Brief) with (Slow) (Brief) as hyperlinks
 Or a hymn could have 2 different authors. The ask is to shouw the differences ex title: Apolitikion Resurrection (SA) (AA)
 (SA) (AA) to be shouwn as hyperlinks selectable individually.
+THIS IS RESOLVED
 
 
 
@@ -60,7 +77,7 @@ the content is Fed from /system/data/liturgical-service-file-list.json file
    |-- scripts
           |-- generate_divine_liturgy_html.js         <---- generate /template/divine_Liturgy.html from divine_liturgy.json
           |-- update-liturgical-service-file-list.js  <---- script to refresh the liturgical-service-file-list.json after adding html files
-	        |-- update-title-link.js                    <---- script to run the google script scan https://script.google.com/u/1/home/projects/10SMApOvsRJ-7K5knca8Q-hl1rIPpWyTP1pC772_wuh9nqmG2rw6weJ7g/edit 
+	  |-- update-title-link.js                    <---- script to run the google script scan https://script.google.com/u/1/home/projects/10SMApOvsRJ-7K5knca8Q-hl1rIPpWyTP1pC772_wuh9nqmG2rw6weJ7g/edit 
                                                             to scan the file descriptions and to update the system/data/titleLink.json file
           |-- validate_service_texts_summary.js.      <---- script to vlidate after the above was run
           |-- copy_template.sh                        <---- copies /template/divine_Liturgy.html into the following low level folders:

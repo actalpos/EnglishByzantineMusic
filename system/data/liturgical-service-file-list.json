@@ -660,6 +660,30 @@
     "file": "Service_Texts/variableDate/2026/08/02 8th Sunday After Pentecost /Aug 02 2026 Bilingual READ.html"
   },
   {
+    "date": "2026-08-06 Transfiguration",
+    "title": "Aug 05 LITART",
+    "order": -1,
+    "file": "Service_Texts/fixDate/08/06 Transfiguration/Aug 05 LITART.html"
+  },
+  {
+    "date": "2026-08-06 Transfiguration",
+    "title": "Aug 05 VESP",
+    "order": -1,
+    "file": "Service_Texts/fixDate/08/06 Transfiguration/Aug 05 VESP.html"
+  },
+  {
+    "date": "2026-08-06 Transfiguration",
+    "title": "Aug 06 ORTHROS",
+    "order": -1,
+    "file": "Service_Texts/fixDate/08/06 Transfiguration/Aug 06 ORTHROS.html"
+  },
+  {
+    "date": "2026-08-06 Transfiguration",
+    "title": "Aug 06 READ",
+    "order": -1,
+    "file": "Service_Texts/fixDate/08/06 Transfiguration/Aug 06 READ.html"
+  },
+  {
     "date": "2026-12-28",
     "title": "Dec 28 2025 Bilingual ORTHROS",
     "order": -1,
