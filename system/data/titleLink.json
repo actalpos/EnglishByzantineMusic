@@ -777,6 +777,19 @@
       }
     ]
   },
+  "DOXASTICA AT THE LITIA PROCESSION IN TONE FIVE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Creemens",
+        "url": "https://drive.google.com/file/d/1kQ-CpqAoYm4jBtb-exiwtLfA8515gfuW/view?usp=drivesdk",
+        "name": "06 LityDoxastikon-pl1st-Creemens-Vespers-Transfiguration.pdf",
+        "description": "DOXASTICA AT THE LITIA PROCESSION IN TONE FIVE | Creemens",
+        "automelon": "",
+        "path": "MyEnglishMusic / Menaion / 12 August / 06 Holy Transfiguration"
+      }
+    ]
+  },
   "DOXASTICA FOR SOULS SATURDAY IN TONE SIX": {
     "url": "https://drive.google.com/file/d/1MyFfN8lfq2Yag0QMbicRio9kqa0icA7U/view?usp=drivesdk",
     "name": "14 DoxastikonApostichaOrthros-pls2nd-Karam-EN-SaturdaySouls.pdf",
@@ -1549,7 +1562,7 @@
       {
         "label": "Archdiocese",
         "url": "https://drive.google.com/file/d/1NUvEkAfOPJQsmu0Ecr6X7RxcyxRd_6d8/view?usp=drivesdk",
-        "name": "25 Exaposteilarion-3rd-AA-Orthros-Transfiguration.pdf",
+        "name": "26 Exaposteilarion-3rd-AA-Orthros-Transfiguration.pdf",
         "description": "THE EXAPOSTEILARION OF THE TRANSFIGURATION IN TONE THREE | Archdiocese",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
@@ -1631,7 +1644,7 @@
       {
         "label": "Transfiguration - Ayoub",
         "url": "https://drive.google.com/file/d/12gLNwyGKLtsfSZb41Ir0tXT3UpMMeMgF/view?usp=drivesdk",
-        "name": "22 AfterPsalm50Idiomelon-pl2nd-Ayoub-Orthros-Transfiguration.pdf",
+        "name": "23 AfterPsalm50Idiomelon-pl2nd-Ayoub-Orthros-Transfiguration.pdf",
         "description": "FESTAL TROPARIA AFTER PSALM 50 IN TONE TWO | Transfiguration - Ayoub",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
@@ -2770,7 +2783,7 @@
       {
         "label": "Karam",
         "url": "https://drive.google.com/file/d/1q1sjswZoDxIZrKBHRI0vcEG9EvoAxnAE/view?usp=drivesdk",
-        "name": "23 9th-ode-Karam-Orthros-Transfiguration.pdf",
+        "name": "24 9th-ode-Karam-Orthros-Transfiguration.pdf",
         "description": "NINTH ODE OF THE FIRST TRANSFIGURATION CANON IN TONE FOUR | Karam",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
@@ -3891,7 +3904,7 @@
       {
         "label": "Ayoub",
         "url": "https://drive.google.com/file/d/1wKGmYZ1IvHO1h2o6zrktaNRDreyH3usy/view?usp=drivesdk",
-        "name": "27 PraisesDoxastikon-pl4th-Ayoub-Orthros-Transfiguration.pdf",
+        "name": "28 PraisesDoxastikon-pl4th-Ayoub-Orthros-Transfiguration.pdf",
         "description": "[O] THE Doxasticon OF the transfiguration in Tone Eight | Ayoub",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
@@ -4074,7 +4087,7 @@
       {
         "label": "El Massih",
         "url": "https://drive.google.com/file/d/1SlBKCVMxxcQBSSS9UQlA0qEx-4e7mZCO/view?usp=drivesdk",
-        "name": "26 Praises-4th-ElMassih-Orthros-Transfiguration.pdf",
+        "name": "27 Praises-4th-ElMassih-Orthros-Transfiguration.pdf",
         "description": "[O] For the Transfiguration in Tone Four (**Thou who wast called from on high**) | El Massih",
         "automelon": "THOU WHO WAST CALLED FROM ON HIGH",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
@@ -4126,7 +4139,7 @@
       {
         "label": "Kazan",
         "url": "https://drive.google.com/file/d/1N7G9lmq-A5NMRcxPVKMQfLgOjGrtuZ1M/view?usp=drivesdk",
-        "name": "24 Prokeimenon-4th-Kazan-Transfiguration-W.pdf",
+        "name": "25 Prokeimenon-4th-Kazan-Transfiguration-W.pdf",
         "description": "[O] Prokeimenon FOR THE TRANSFIGURATION in Tone FOUR | Kazan",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
@@ -4173,19 +4186,6 @@
     "description": "[O] TROPARION IN TONE FOUR",
     "path": "Byzantine Music / EnglishByzantineMusic / Orthros",
     "automelon": ""
-  },
-  "[V] DOXASTICA AT THE LITIA PROCESSION TONE FIVE": {
-    "type": "multi",
-    "versions": [
-      {
-        "label": "Creemens",
-        "url": "https://drive.google.com/file/d/1kQ-CpqAoYm4jBtb-exiwtLfA8515gfuW/view?usp=drivesdk",
-        "name": "06 LityDoxastikon-pl1st-Creemens-Vespers-Transfiguration.pdf",
-        "description": "[V] DOXASTICA AT THE LITIA PROCESSION IN TONE FIVE | Creemens",
-        "automelon": "",
-        "path": "MyEnglishMusic / Menaion / 12 August / 06 Holy Transfiguration"
-      }
-    ]
   },
   "[V] DOXASTICON FOR THE SUNDAY OF FORGIVENESS TONE SIX": {
     "url": "https://drive.google.com/file/d/1I2bTRE4O1WBefw-Rk9Maj7NCfiVEo1yK/view?usp=drivesdk",
@@ -4271,6 +4271,19 @@
         "description": "[V] MONDAY PROKEIMENON IN TONE FOUR | El Massih",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
+      }
+    ]
+  },
+  "[V] POLYELEOS HYMNS OF THE TRANSFIGURATION TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/1t6g5KO8tObXWmHc3bqO0Sn8CQf2t0DtE/view?usp=drivesdk",
+        "name": "22 PolyeleosHymn-4th-ElMassih-Transfiguration.pdf",
+        "description": "[V] POLYELEOS HYMNS OF THE TRANSFIGURATION IN TONE FOUR | El Massih",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
       }
     ]
   },
