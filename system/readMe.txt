@@ -23,8 +23,8 @@ The following process takes place for each service to address the requirement:
 3. Open the docx file with LibreOffice and save it as html file. The html is preferred because the link can be controlled to open in a new tab.
 4. Edit the html file and add the following 3 lines to correct the previous steps conversion issues, to make the html responsive and to add the hymn title links
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../../../../../system/styles/layout-fixes.css">
-	<script src="../../../../../system/scripts/layout-fixes-and-links.js" defer></script>	
+	<link rel="stylesheet" href="/byzmusic/system/styles/layout-fixes.css">
+	<script src="/byzmusic/system/scripts/layout-fixes-and-links.js" defer></script>	
 
 Monolanguages:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

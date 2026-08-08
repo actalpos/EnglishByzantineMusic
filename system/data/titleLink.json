@@ -4453,6 +4453,27 @@
       }
     ]
   },
+  "[V] [AP] DOXASTICON FOR THE AFTER-FEAST TONE FIVE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "G Creemens",
+        "url": "https://drive.google.com/file/d/1Wk3DzeP7CUy3Dn_N05qCqNJCboVoFs0e/view?usp=drivesdk",
+        "name": "48B ApostichaDoxastikon-pl1st-Creemens-Vespers-Transfiguration.pdf",
+        "description": "[V] [AP] DOXASTICON FOR THE AFTER-FEAST IN TONE FIVE | G Creemens",
+        "automelon": "",
+        "path": "MyEnglishMusic / Menaion / 12 August / 06 Holy Transfiguration"
+      },
+      {
+        "label": "S Herron",
+        "url": "https://drive.google.com/file/d/1RGnisua2h8Si9EvsEHh0rQGtz8g6f7fH/view?usp=drivesdk",
+        "name": "48 ApsotichaDoxastikon-pl1st-SHerron-Vespers-Transfiguration.pdf",
+        "description": "[V] [AP] DOXASTICON FOR THE AFTER-FEAST IN TONE FIVE | S Herron",
+        "automelon": "",
+        "path": "MyEnglishMusic / Menaion / 12 August / 06 Holy Transfiguration"
+      }
+    ]
+  },
   "[V] [AP] DOXASTICON FOR THE HOLY FATHERS TONE THREE": {
     "type": "multi",
     "versions": [
@@ -4641,6 +4662,27 @@
       }
     ]
   },
+  "[V] [LIHC] DOXASTICON FOR THE AFTER-FEAST TONE FIVE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Creemens",
+        "url": "https://drive.google.com/file/d/1_1THUlejuMB2tbJvHgXH7QwYNsTbNhbr/view?usp=drivesdk",
+        "name": "46B SticherasDoxastikon-pl1st-Creemens-Vespers-Transfiguration.pdf",
+        "description": "[V] [LIHC] DOXASTICON FOR THE AFTER-FEAST IN TONE FIVE | Creemens",
+        "automelon": "",
+        "path": "MyEnglishMusic / Menaion / 12 August / 06 Holy Transfiguration"
+      },
+      {
+        "label": "S Herron",
+        "url": "https://drive.google.com/file/d/1KkigxtNOUOGu-Col-WieyDDGkguTVZHG/view?usp=drivesdk",
+        "name": "46 SticherasDoxastikon-pl1st-SHerron-Vespers-Transfiguration.pdf",
+        "description": "[V] [LIHC] DOXASTICON FOR THE AFTER-FEAST IN TONE FIVE | S Herron",
+        "automelon": "",
+        "path": "MyEnglishMusic / Menaion / 12 August / 06 Holy Transfiguration"
+      }
+    ]
+  },
   "[V] [LIHC] DOXASTICON FOR THE TRANSFIGURATION TONE SIX": {
     "type": "multi",
     "versions": [
@@ -4692,6 +4734,13 @@
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 02 August Transfer St Stephen Relics"
       }
     ]
+  },
+  "[V] [LIHC] FOR THE AFTER-FEAST TONE ONE": {
+    "url": "https://drive.google.com/file/d/1g7JUeNrpNxD2hB2ergCNK8lCjkXE0DGk/view?usp=drivesdk",
+    "name": "43 Sticheras-1st-Karam-AfterfeastTransfiguration.pdf",
+    "description": "[V] [LIHC] For the After-feast in Tone One\n(**Thou art the joy**)",
+    "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration ",
+    "automelon": "THOU ART THE JOY"
   },
   "[V] [LIHC] FOR THE ASCENSION TONE SIX": {
     "type": "multi",
