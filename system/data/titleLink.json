@@ -43,10 +43,10 @@
     "type": "multi",
     "versions": [
       {
-        "label": "Breif",
+        "label": "Slow",
         "url": "https://drive.google.com/file/d/1C1w7jx2mEIiZ32BzAbxMSP437pPHl8sU/view?usp=drivesdk",
-        "name": "15 BriefPraises-1st.pdf",
-        "description": "AINOI (PRAISES) IN TONE ONE | Breif",
+        "name": "15 SlowPraises-1st.pdf",
+        "description": "AINOI (PRAISES) IN TONE ONE | Slow",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
       }
@@ -466,6 +466,14 @@
   "APOLYTIKION OF THE TRANSFIGURATION IN TONE SEVEN": {
     "type": "multi",
     "versions": [
+      {
+        "label": "Holwey",
+        "url": "https://drive.google.com/file/d/1_IyiHingdO4f-yEnQvBNBvmJUgDSWhEd/view?usp=drivesdk",
+        "name": "07 Apolytikion-pl3rdgrave-Holwey-Transfiguration.pdf",
+        "description": "APOLYTIKION OF THE TRANSFIGURATION IN TONE SEVEN | Holwey",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
+      },
       {
         "label": "St Anthony",
         "url": "https://drive.google.com/file/d/1DW1qVO0AaRA5LMF9tt8N182-QOhJAxii/view?usp=drivesdk",
@@ -3443,6 +3451,19 @@
     "description": "SUNDAY PROKEIMENON IN TONE EIGHT",
     "path": "Byzantine Music / EnglishByzantineMusic / Vespers",
     "automelon": ""
+  },
+  "TENTH EOTHINON DOXASTICON IN TONE SIX": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "SA",
+        "url": "https://drive.google.com/file/d/1T4C9cXll2adg88xyIwZwF3uQbzSOVwhM/view?usp=drivesdk",
+        "name": "16 10th DoxastikonEothinon-pl2nd.pdf",
+        "description": "THE TENTH EOTHINON DOXASTICON IN TONE SIX | SA",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
   },
   "TENTH EOTHINON EXAPOSTEILARION IN TONE TWO": {
     "type": "multi",
