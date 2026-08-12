@@ -91,7 +91,7 @@
         let title = prefixMatch[3];
 
         title = title.replace(
-          /^(the|a|an|festal|sticheras)\s+/,
+          /^(the|a|an|festal|sticheras|verses)\s+/,
           ""
         );
 

@@ -394,6 +394,35 @@
     "path": "Byzantine Music / EnglishByzantineMusic / Penticostarion / 09 The Ascension of Our Lord Jesus Christ ",
     "automelon": ""
   },
+  "APOLYTIKION OF THE DORMITION IN TONE ONE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "SA",
+        "url": "https://drive.google.com/file/d/1veyXEU4ekd9rtekVG2rz2RxMKfwpqIgg/view?usp=drivesdk",
+        "name": "07 Apolytikion-1st-SA-Dormition.pdf",
+        "description": "APOLYTIKION OF THE DORMITION IN TONE ONE | SA",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 15 Dormition of Theotokos"
+      },
+      {
+        "label": "Karam",
+        "url": "https://drive.google.com/file/d/1oDIym3VlR1AuhM3Szhxcp0EgEIOKj9iN/view?usp=drivesdk",
+        "name": "07 Apolytikion-1st-Karam-Dormition.pdf",
+        "description": "APOLYTIKION OF THE DORMITION IN TONE ONE | Karam",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 15 Dormition of Theotokos"
+      },
+      {
+        "label": "Howley",
+        "url": "https://drive.google.com/file/d/1AZzkJdFVevusCpFiIykc-mCUd8fbLAz4/view?usp=drivesdk",
+        "name": "07 Apolytikion-1st-Howley-Dormition.pdf",
+        "description": "APOLYTIKION OF THE DORMITION IN TONE ONE | Howley",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 15 Dormition of Theotokos"
+      }
+    ]
+  },
   "APOLYTIKION OF THE FIRST SUNDAY OF GREAT LENT IN TONE TWO": {
     "url": "https://drive.google.com/file/d/1ZC4IbkI4RCFBeomrnHFzzr55qPQXWFgw/view?usp=drivesdk",
     "name": "4A Apolytikion-2nd-AA-EN-OrthodoxySunday.pdf",
@@ -1517,6 +1546,13 @@
       }
     ]
   },
+  "EXAPOSTEILARION OF THE DORMITION IN TONE THREE": {
+    "url": "https://drive.google.com/file/d/19TvtGgKVWk01krKzSrSHtsACNFevPAc9/view?usp=drivesdk",
+    "name": "26 Exaposteilarion-2nd-Karam-Orthros-Dormition.pdf",
+    "description": "THE EXAPOSTEILARION of the dormition IN TONE three | ",
+    "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 15 Dormition of Theotokos",
+    "automelon": ""
+  },
   "EXAPOSTEILARION OF THE HOLY FATHERS IN TONE TWO": {
     "type": "multi",
     "versions": [
@@ -1650,6 +1686,22 @@
     "type": "multi",
     "versions": [
       {
+        "label": "Regular - Karam",
+        "url": "https://drive.google.com/file/d/1jy9I4qetB6ym2tWmP_Yo7DyqeW0hGGEc/view?usp=drivesdk",
+        "name": "10 AfterPsalm50Troparia-2nd.pdf",
+        "description": "FESTAL TROPARIA AFTER PSALM 50 IN TONE TWO | Regular - Karam",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      },
+      {
+        "label": "Dormition - Karam",
+        "url": "https://drive.google.com/file/d/1EicetxF2-IxKqUhtZ9AX1K2aqMiPwpJo/view?usp=drivesdk",
+        "name": "24 AfterPsalm50Hymn-2nd-Karam-Orthros-Dormition.pdf",
+        "description": "FESTAL TROPARIA AFTER PSALM 50 IN TONE TWO | Dormition - Karam",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 15 Dormition of Theotokos"
+      },
+      {
         "label": "Transfiguration - Ayoub",
         "url": "https://drive.google.com/file/d/12gLNwyGKLtsfSZb41Ir0tXT3UpMMeMgF/view?usp=drivesdk",
         "name": "23 AfterPsalm50Idiomelon-pl2nd-Ayoub-Orthros-Transfiguration.pdf",
@@ -1672,14 +1724,6 @@
         "description": "FESTAL TROPARIA AFTER PSALM 50 IN TONE TWO | St Joseph Damascus",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 11 July / 10 July St Joseph of Damascus"
-      },
-      {
-        "label": "Regular - Karam",
-        "url": "https://drive.google.com/file/d/1jy9I4qetB6ym2tWmP_Yo7DyqeW0hGGEc/view?usp=drivesdk",
-        "name": "10 AfterPsalm50Troparia-2nd.pdf",
-        "description": "FESTAL TROPARIA AFTER PSALM 50 IN TONE TWO | Regular - Karam",
-        "automelon": "",
-        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
       },
       {
         "label": "PalmSunday -Karam",
@@ -2350,13 +2394,26 @@
       }
     ]
   },
+  "KATAVASIAE OF THE DORMITION CANON IN TONE ONE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Karam",
+        "url": "https://drive.google.com/file/d/1ZkjE7IHO-yEt_SRvGqXCiDLU-v4wdfs_/view?usp=drivesdk",
+        "name": "11-17 Ode1-9-1st-DormitionOfTheotokos.pdf",
+        "description": "THE KATAVASIAE OF THE DORMITION CANON IN TONE ONE | Karam",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
+  },
   "KATAVASIAE OF THE HOLY CROSS CANON IN TONE EIGHT": {
     "type": "multi",
     "versions": [
       {
         "label": "Karam",
         "url": "https://drive.google.com/file/d/1N6ubM_GHci1Zy0qylDJmKzpl_u21vUE5/view?usp=drivesdk",
-        "name": "11 Ode1-9-pl4th-Karam-ElevetionOfCross.pdf",
+        "name": "11-01 Ode1-9-pl4th-Karam-ElevetionOfCross.pdf",
         "description": "THE KATAVASIAE OF THE HOLY CROSS CANON IN TONE EIGHT | Karam",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
@@ -2459,7 +2516,7 @@
       {
         "label": "Karam",
         "url": "https://drive.google.com/file/d/1GshvIkb-2zDzDib7YN_4lK5-DKJ-YqkW/view?usp=drivesdk",
-        "name": "11 Ode1-9-1st-Karam-VenerationOfCrossSunday.pdf",
+        "name": "11-01 Ode1-9-1st-Karam-VenerationOfCrossSunday.pdf",
         "description": "KATAVASIAE OF THIRD SUNDAY OF GREAT LENT CANON IN TONE ONE | Karam",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
@@ -2496,6 +2553,19 @@
         "description": "KATHISMATA HYMNS OF ST. JOSEPH | Karam",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 11 July / 10 July St Joseph of Damascus"
+      }
+    ]
+  },
+  "KATHISMATA HYMNS OF THE DORMITION": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/1ElORqTRbFNTeshwKw0Hrbi4nMoOJQqeL/view?usp=drivesdk",
+        "name": "21 Kathisma-4th-ElMassih-Orthros-Dormition.pdf",
+        "description": "KATHISMATA HYMNS OF THE DORMITION | El Massih",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 15 Dormition of Theotokos"
       }
     ]
   },
@@ -2785,6 +2855,19 @@
       }
     ]
   },
+  "NINTH ODE OF THE FIRST DORMITION CANON IN TONE ONE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Karam",
+        "url": "https://drive.google.com/file/d/1DXTbPM-b4OlpZVlFZL7F_Nl6Z-EzjMnp/view?usp=drivesdk",
+        "name": "25 ode-9th-1st-Karam-Orthros-Dormition.pdf",
+        "description": "THE NINTH ODE OF THE FIRST DORMITION CANON IN TONE ONE | Karam",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 15 Dormition of Theotokos"
+      }
+    ]
+  },
   "NINTH ODE OF THE FIRST TRANSFIGURATION CANON IN TONE FOUR": {
     "type": "multi",
     "versions": [
@@ -3019,6 +3102,19 @@
       }
     ]
   },
+  "POLYELEOS HYMNS OF THE DORMITION IN TONE THREE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Karam",
+        "url": "https://drive.google.com/file/d/1mEdhuScl_8JW3ra5U0zFdeFH1HLjXePN/view?usp=drivesdk",
+        "name": "23 PolyeleosHymn-3rd-Karam-Orthros-Dormition.pdf",
+        "description": "POLYELEOS HYMNS OF THE DORMITION IN TONE THREE | Karam",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 15 Dormition of Theotokos"
+      }
+    ]
+  },
   "POLYELEOS IN TONE ONE ( ABRIDGED )": {
     "type": "multi",
     "versions": [
@@ -3116,6 +3212,19 @@
     "description": "PROKEIMENON FOR THE ASCENSION\nIN TONE FOUR",
     "path": "Byzantine Music / EnglishByzantineMusic / Penticostarion / 09 The Ascension of Our Lord Jesus Christ ",
     "automelon": ""
+  },
+  "PROKEIMENON FOR THE DORMITION IN TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Holwey",
+        "url": "https://drive.google.com/file/d/12UjkLwNYA51Ms1S4qCgD0Y6LzusmW5qs/view?usp=drivesdk",
+        "name": "23 Prokeimenon-4th-Holwey-Orthros-Dormiition.pdf",
+        "description": "Prokeimenon FOR THE DORMITION in Tone FOUR | Holwey",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 15 Dormition of Theotokos"
+      }
+    ]
   },
   "PROKEIMENON FOR THE FEAST IN TONE FOUR": {
     "type": "multi",
@@ -4043,6 +4152,19 @@
       }
     ]
   },
+  "[O] FOR THE DORMITION TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/1Tj7wkkAxGGYwsSg8PE0eHMSr8xj09Wp-/view?usp=drivesdk",
+        "name": "27 Praises-4th-ElMassih-Orthros-Dormition.pdf",
+        "description": "[O] For the Dormition in Tone Four (**As one valiant**) | El Massih",
+        "automelon": "AS ONE VALIANT",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 15 Dormition of Theotokos"
+      }
+    ]
+  },
   "[O] FOR THE HOLY CROSS TONE FOUR": {
     "type": "multi",
     "versions": [
@@ -4121,7 +4243,7 @@
       {
         "label": "Karam",
         "url": "https://drive.google.com/file/d/1R2rKEG4pU_0d4ohVivQ0KUJBGxHUEpA0/view?usp=drivesdk",
-        "name": "11 Ode1-9-4th-Karam-Transfiguration.pdf",
+        "name": "11-16 Ode1-9-4th-Karam-Transfiguration.pdf",
         "description": "[O] KATAVASIAE OF TRANSFIGURATION CANON IN TONE FOUR | Karam",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
