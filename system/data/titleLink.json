@@ -479,6 +479,19 @@
       }
     ]
   },
+  "APOLYTIKION OF THE HOLY NAPKIN IN TONE TWO": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Karam",
+        "url": "https://drive.google.com/file/d/11FZJmIBt38MJqN9Q7opxXHCEm2LqVh4V/view?usp=drivesdk",
+        "name": "02 Apolytikion-4th-Karam-HolyNapkin.pdf",
+        "description": "APOLYTIKION OF THE HOLY NAPKIN IN TONE TWO | Karam",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 16 Holy Napkin"
+      }
+    ]
+  },
   "APOLYTIKION OF THE SAINTS IN TONE ONE": {
     "type": "multi",
     "versions": [
@@ -4600,18 +4613,26 @@
     "type": "multi",
     "versions": [
       {
-        "label": "G Creemens",
-        "url": "https://drive.google.com/file/d/1Wk3DzeP7CUy3Dn_N05qCqNJCboVoFs0e/view?usp=drivesdk",
-        "name": "48B ApostichaDoxastikon-pl1st-Creemens-Vespers-Transfiguration.pdf",
-        "description": "[V] [AP] DOXASTICON FOR THE AFTER-FEAST IN TONE FIVE | G Creemens",
+        "label": "Dormition - Creemens",
+        "url": "https://drive.google.com/file/d/1qeL9P5Ie58DtYb08FE8plO6ELrxkmcCj/view?usp=drivesdk",
+        "name": "41 ApostichaDoxastikon-pl1st-Creemens-Vespers-SundayAfterDormitionFeast.pdf",
+        "description": "[V] [AP] DOXASTICON FOR THE AFTER-FEAST IN TONE FIVE | Dormition - Creemens",
+        "automelon": "",
+        "path": "MyEnglishMusic / Menaion / 12 August / 15 Dormition of Theotokos"
+      },
+      {
+        "label": "Transfiguration - S Herron",
+        "url": "https://drive.google.com/file/d/1RGnisua2h8Si9EvsEHh0rQGtz8g6f7fH/view?usp=drivesdk",
+        "name": "48 ApsotichaDoxastikon-pl1st-SHerron-Vespers-Transfiguration.pdf",
+        "description": "[V] [AP] DOXASTICON FOR THE AFTER-FEAST IN TONE FIVE | Transfiguration - S Herron",
         "automelon": "",
         "path": "MyEnglishMusic / Menaion / 12 August / 06 Holy Transfiguration"
       },
       {
-        "label": "S Herron",
-        "url": "https://drive.google.com/file/d/1RGnisua2h8Si9EvsEHh0rQGtz8g6f7fH/view?usp=drivesdk",
-        "name": "48 ApsotichaDoxastikon-pl1st-SHerron-Vespers-Transfiguration.pdf",
-        "description": "[V] [AP] DOXASTICON FOR THE AFTER-FEAST IN TONE FIVE | S Herron",
+        "label": "G Creemens",
+        "url": "https://drive.google.com/file/d/1Wk3DzeP7CUy3Dn_N05qCqNJCboVoFs0e/view?usp=drivesdk",
+        "name": "48B ApostichaDoxastikon-pl1st-Creemens-Vespers-Transfiguration.pdf",
+        "description": "[V] [AP] DOXASTICON FOR THE AFTER-FEAST IN TONE FIVE | G Creemens",
         "automelon": "",
         "path": "MyEnglishMusic / Menaion / 12 August / 06 Holy Transfiguration"
       }
@@ -4809,20 +4830,33 @@
     "type": "multi",
     "versions": [
       {
-        "label": "Creemens",
+        "label": "Transfiguration - G Creemens",
         "url": "https://drive.google.com/file/d/1_1THUlejuMB2tbJvHgXH7QwYNsTbNhbr/view?usp=drivesdk",
         "name": "46B SticherasDoxastikon-pl1st-Creemens-Vespers-Transfiguration.pdf",
-        "description": "[V] [LIHC] DOXASTICON FOR THE AFTER-FEAST IN TONE FIVE | Creemens",
+        "description": "[V] [LIHC] DOXASTICON FOR THE AFTER-FEAST IN TONE FIVE | Transfiguration - G Creemens",
         "automelon": "",
         "path": "MyEnglishMusic / Menaion / 12 August / 06 Holy Transfiguration"
       },
       {
-        "label": "S Herron",
+        "label": "Transfiguration - S Herron",
         "url": "https://drive.google.com/file/d/1KkigxtNOUOGu-Col-WieyDDGkguTVZHG/view?usp=drivesdk",
         "name": "46 SticherasDoxastikon-pl1st-SHerron-Vespers-Transfiguration.pdf",
-        "description": "[V] [LIHC] DOXASTICON FOR THE AFTER-FEAST IN TONE FIVE | S Herron",
+        "description": "[V] [LIHC] DOXASTICON FOR THE AFTER-FEAST IN TONE FIVE | Transfiguration - S Herron",
         "automelon": "",
         "path": "MyEnglishMusic / Menaion / 12 August / 06 Holy Transfiguration"
+      }
+    ]
+  },
+  "[V] [LIHC] DOXASTICON FOR THE AFTER-FEAST TONE TWO": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Dormition - Creemens",
+        "url": "https://drive.google.com/file/d/1OKRS0ccDWliNZbnl8CC_GU_OHtGeFqM7/view?usp=drivesdk",
+        "name": "40 SticherasDoxastikon-2nd-Creemens-Vespers-SundayAfterDormitionFeast.pdf",
+        "description": "[V] [LIHC] DOXASTICON FOR THE AFTER-FEAST IN TONE TWO | Dormition - Creemens",
+        "automelon": "",
+        "path": "MyEnglishMusic / Menaion / 12 August / 15 Dormition of Theotokos"
       }
     ]
   },
@@ -4885,6 +4919,19 @@
     "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration ",
     "automelon": "THOU ART THE JOY"
   },
+  "[V] [LIHC] FOR THE AFTER-FEAST TONE TWO": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "After Dormition- BCrow",
+        "url": "https://drive.google.com/file/d/13T8x3g8P9CpPN-bnclvCHS4MyXGAy4oZ/view?usp=drivesdk",
+        "name": "41 Sticheras-2nd-Crow-Vespers-AfterFeastDormition.pdf",
+        "description": "[V] [LIHC] For the After-feast in Tone Two\n(**With what fair crowns**) | After Dormition- BCrow",
+        "automelon": "WITH WHAT FAIR CROWNS",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 15 Dormition of Theotokos"
+      }
+    ]
+  },
   "[V] [LIHC] FOR THE ASCENSION TONE SIX": {
     "type": "multi",
     "versions": [
@@ -4916,6 +4963,19 @@
         "description": "[V] [LIHC] For the Holy Fathers in Tone Six\n(**The original melody**)  | AA - w",
         "automelon": "ORIGINAL MELODY",
         "path": "Byzantine Music / EnglishByzantineMusic / Penticostarion / 10 Sunday of the Holy Fathers"
+      }
+    ]
+  },
+  "[V] [LIHC] FOR THE HOLY NAPKIN TONE TWO": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Karam",
+        "url": "https://drive.google.com/file/d/1mBC0T5XO4u9jHdtkS_VkCAe3MfG7fmFc/view?usp=drivesdk",
+        "name": "01 Sticheras-4th-Karam-Vespers-HolyNapkin.pdf",
+        "description": "[V] [LIHC] For “The Holy Napkin” in Tone Two\n(**With what fair crowns**) | Karam",
+        "automelon": "WITH WHAT FAIR CROWNS",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 16 Holy Napkin"
       }
     ]
   },
