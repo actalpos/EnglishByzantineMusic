@@ -81,7 +81,9 @@
         .trim()
         .toLowerCase()
         .replace(/^(the|a|an|sticheras)\s+/i, "")
-        .replace(/\bin\s+tone\b/gi, "tone");
+        .replace(/\bin\s+tone\b/gi, "tone")
+        .replace(/\bcanons\b/gi, "canon");
+
 
       const prefixMatch =
         str.match(/^((\[[a-z]+\]\s*)+)(.*)$/i);

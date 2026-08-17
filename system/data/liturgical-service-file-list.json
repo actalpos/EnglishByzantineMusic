@@ -732,6 +732,24 @@
     "file": "Service_Texts/variableDate/2026/08/16 Sunday After Feast Domition of Theotokos/Aug 16 2026 Bilingual READ.html"
   },
   {
+    "date": "2026-08-23 Sunday Dormition leave-taking",
+    "title": "Aug 22 2026 Bilingual VESP",
+    "order": -1,
+    "file": "Service_Texts/variableDate/2026/08/23 Sunday Dormition leave-taking/Aug 22 2026 Bilingual VESP.html"
+  },
+  {
+    "date": "2026-08-23 Sunday Dormition leave-taking",
+    "title": "Aug 23 2026 Bilingual ORTHROS",
+    "order": -1,
+    "file": "Service_Texts/variableDate/2026/08/23 Sunday Dormition leave-taking/Aug 23 2026 Bilingual ORTHROS.html"
+  },
+  {
+    "date": "2026-08-23 Sunday Dormition leave-taking",
+    "title": "Aug 23 2026 Bilingual READ",
+    "order": -1,
+    "file": "Service_Texts/variableDate/2026/08/23 Sunday Dormition leave-taking/Aug 23 2026 Bilingual READ.html"
+  },
+  {
     "date": "2026-12-28",
     "title": "Dec 28 2025 Bilingual ORTHROS",
     "order": -1,

@@ -60,6 +60,8 @@ July 20 - am scos TD din document.querySelectorAll("td p").forEach(p => {  in in
 July 27 - Fix bug: Am [V] [LIHC] THEOTOKION IN TONE SIX in decrierea unui fiser pe google drive. In documentul curect la Aposticha am titlul THEOTOKION IN TONE SIX 
 si fisierul care as vrea sa fie displayed are descrierea [V] [AP] THEOTOKION IN TONE SIX. Linkul se duce la [V] [LIHC] THEOTOKION IN TONE SIX
 
+Aug 16 - Fixed bug pentru acelasi fisier apar 2 titluri diferite: THE KATAVASIAE OF THE DORMITION CANONS IN TONE ONE si THE KATAVASIAE OF THE DORMITION CANON IN TONE ONE
+
 */
 
 (function () {
@@ -129,6 +131,7 @@ si fisierul care as vrea sa fie displayed are descrierea [V] [AP] THEOTOKION IN 
         .toLowerCase()
         .replace(/^(the|a|an|sticheras)\s+/i, "")          // remove leading article
         .replace(/\bin\s+tone\b/gi, "tone")
+        .replace(/\bcanons\b/gi, "canon");
 
       const prefixMatch = str.match(/^((\[[a-z]+\]\s*)+)(.*)$/i);
 

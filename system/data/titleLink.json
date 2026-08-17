@@ -1347,6 +1347,19 @@
     "path": "Byzantine Music / Bilingual Services / Divine Liturgy / MetropolitanSaba-June2026",
     "automelon": ""
   },
+  "ELEVENTH EOTHINON DOXASTICON IN TONE EIGHT": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "SA",
+        "url": "https://drive.google.com/file/d/1dJt0JBFLUr3pFDbc2stItVlE6LYcQuIu/view?usp=drivesdk",
+        "name": "16 11th DoxastikonEothinon-pl4th.pdf",
+        "description": "THE ELEVENTH EOTHINON DOXASTICON IN TONE EIGHT | SA",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
+  },
   "ELEVENTH EOTHINON EXAPOSTEILARION IN TONE TWO": {
     "url": "https://drive.google.com/file/d/12Zoj3q5RYxUAOOzLYxlYa-hNEZm1Mmpj/view?usp=drivesdk",
     "name": "13 11th-EothionExapostelarion-2nd-AA-EN-W.pdf",
@@ -4638,6 +4651,19 @@
       }
     ]
   },
+  "[V] [AP] DOXASTICON FOR THE DORMITION TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Kazan",
+        "url": "https://drive.google.com/file/d/1lQAvSjXrQm9czYFpBW-td4TYi35SMNNG/view?usp=drivesdk",
+        "name": "06 ApostichaDoxastikon-4th-Kazan-Vespers-Dormition-w.pdf",
+        "description": "[V] [AP] DOXASTICON FOR THE DORMITION\nIN TONE FOUR | Kazan",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 15 Dormition of Theotokos"
+      }
+    ]
+  },
   "[V] [AP] DOXASTICON FOR THE HOLY FATHERS TONE THREE": {
     "type": "multi",
     "versions": [
@@ -4860,6 +4886,19 @@
       }
     ]
   },
+  "[V] [LIHC] DOXASTICON FOR THE DORMITION IN THE EIGHT TONES": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Karam",
+        "url": "https://drive.google.com/file/d/1t5GTRojBlc3ZQz1XroKN9f7CnObLxBPX/view?usp=drivesdk",
+        "name": "02 SticherasDoxastikon-1st-Karam-Vespers-Dormition.pdf",
+        "description": "[V] [LIHC] DOXASTICON FOR THE DORMITION\nIN THE EIGHT TONES | Karam",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 15 Dormition of Theotokos"
+      }
+    ]
+  },
   "[V] [LIHC] DOXASTICON FOR THE TRANSFIGURATION TONE SIX": {
     "type": "multi",
     "versions": [
@@ -4942,6 +4981,19 @@
         "description": "[V] [LIHC] For the Ascension in Tone Six | AA",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Penticostarion / 10 Sunday of the Holy Fathers"
+      }
+    ]
+  },
+  "[V] [LIHC] FOR THE DORMITION TONE ONE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Archdiocese",
+        "url": "https://drive.google.com/file/d/1vjeImRofkjtDxTVTLc9pws9sWAdZfZb-/view?usp=drivesdk",
+        "name": "01 Sticheras-1st-AA-Vespers-Dormition.pdf",
+        "description": "[V] [LIHC] For the Dormition Tone One\n(**The original melody**) | Archdiocese",
+        "automelon": "ORIGINAL MELODY",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 15 Dormition of Theotokos"
       }
     ]
   },
