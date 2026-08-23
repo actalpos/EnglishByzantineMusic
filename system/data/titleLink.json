@@ -4022,11 +4022,17 @@
     "automelon": ""
   },
   "[O] DOXASTICON OF THE DORMITION TONE SIX": {
-    "url": "https://drive.google.com/file/d/1uEv_Chgr5wA63pfP5tkNuIHgJTX4knzA/view?usp=drivesdk",
-    "name": "27 PraisesDoxastikon-pl2nd-Karam-Orthros-Dormition.pdf",
-    "description": "[O] Doxasticon OF THE DORMITION\nin Tone SIX",
-    "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 15 Dormition of Theotokos",
-    "automelon": ""
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Karam",
+        "url": "https://drive.google.com/file/d/1uEv_Chgr5wA63pfP5tkNuIHgJTX4knzA/view?usp=drivesdk",
+        "name": "27 PraisesDoxastikon-pl2nd-Karam-Orthros-Dormition.pdf",
+        "description": "[O] Doxasticon OF THE DORMITION\nin Tone SIX | Karam",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 15 Dormition of Theotokos"
+      }
+    ]
   },
   "[O] DOXASTICON OF THE HOLY FATHERS TONE EIGHT": {
     "type": "multi",
