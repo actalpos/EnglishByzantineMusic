@@ -117,11 +117,43 @@ Aug 26 - Take out O like from O Lord I Have Cried
     /**********************
      * UTILS
      **********************/
+    // function normalizeTitle(str) {
+    //   str = str
+    //     .replace(/[\n\r\t]+/g, " ")
+    //     .replace(/\(\s*\*\*.*?\*\*\s*\)/g, "")   // (** ... **)
+    //     .replace(/\*\*.*?\*\*/g, "")             // fallback
+    //     .replace(/[*]/g, "")
+    //     .replace(/["“”]/g, "")
+    //     .replace(/[,:;]+/g, "")
+    //     .replace(/[–—]/g, "-")
+    //     .replace(/\(\s*/g, "( ")
+    //     .replace(/\s*\)/g, " )")
+    //     .replace(/\s+/g, " ")
+    //     .trim()
+    //     .toLowerCase()
+    //     .replace(/^(the|a|an|sticheras|verses|o)\s+/i, "")          // remove leading article
+    //     .replace(/\bin\s+tone\b/gi, "tone")
+    //     .replace(/\bcanons\b/gi, "canon")
+    //     .replace(/\bfrom the octoechos\b/gi, "for the resurrection");
+
+    //   const prefixMatch = str.match(/^((\[[a-z]+\]\s*)+)(.*)$/i);
+
+    //   if (prefixMatch) {
+    //     const prefixes = prefixMatch[1];
+    //     let title = prefixMatch[3];
+
+    //     title = title.replace(/^(the|a|an|festal|sticheras|verses|o)\s+/, "");
+
+    //     return `${prefixes} ${title}`.trim();
+    //   }
+
+    //   return str.replace(/^(the|a|an|festal)\s+/, "");
+    // }
     function normalizeTitle(str) {
       str = str
         .replace(/[\n\r\t]+/g, " ")
-        .replace(/\(\s*\*\*.*?\*\*\s*\)/g, "")   // (** ... **)
-        .replace(/\*\*.*?\*\*/g, "")             // fallback
+        .replace(/\(\s*\*\*.*?\*\*\s*\)/g, "")
+        .replace(/\*\*.*?\*\*/g, "")
         .replace(/[*]/g, "")
         .replace(/["“”]/g, "")
         .replace(/[,:;]+/g, "")
@@ -131,25 +163,38 @@ Aug 26 - Take out O like from O Lord I Have Cried
         .replace(/\s+/g, " ")
         .trim()
         .toLowerCase()
-        .replace(/^(the|a|an|sticheras|verses|o)\s+/i, "")          // remove leading article
+        .replace(/^(the|a|an|sticheras|verses|o)\s+/i, "")
         .replace(/\bin\s+tone\b/gi, "tone")
         .replace(/\bcanons\b/gi, "canon")
-        .replace(/\bfrom the octoechos\b/gi, "for the resurrection");
+        .replace(
+          /^theotokion (?:from|for) the octoechos\b/i,
+          "apolytikion resurrectional theotokion"
+        )
+        .replace(
+          /^resurrectional theotokion\b/i,
+          "apolytikion resurrectional theotokion"
+        );
 
-      const prefixMatch = str.match(/^((\[[a-z]+\]\s*)+)(.*)$/i);
+      const prefixMatch =
+        str.match(/^((\[[a-z]+\]\s*)+)(.*)$/i);
 
       if (prefixMatch) {
         const prefixes = prefixMatch[1];
         let title = prefixMatch[3];
 
-        title = title.replace(/^(the|a|an|festal|sticheras|verses|o)\s+/, "");
+        title = title.replace(
+          /^(the|a|an|festal|sticheras|verses|o)\s+/,
+          ""
+        );
 
         return `${prefixes} ${title}`.trim();
       }
 
-      return str.replace(/^(the|a|an|festal)\s+/, "");
+      return str.replace(
+        /^(the|a|an|festal)\s+/,
+        ""
+      );
     }
-
     function extractAutomelonFromText(text) {
 
       if (!text) {

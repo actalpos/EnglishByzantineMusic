@@ -398,10 +398,10 @@
     "type": "multi",
     "versions": [
       {
-        "label": "St Anthony Mon",
+        "label": "St Anthony",
         "url": "https://drive.google.com/file/d/1yLey91h5q6Ul_dRBWe8AaSrVqKERDoA7/view?usp=drivesdk",
         "name": "07 Apolytikion-2nd-StAnthony-StJohnTheBaptist.pdf",
-        "description": "APOLYTIKION OF THE BAPTIST’S BEHEADING IN TONE TWO | St Anthony Mon",
+        "description": "APOLYTIKION OF THE BAPTIST’S BEHEADING IN TONE TWO | St Anthony",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 29 Beheading St John the Baptist"
       },
@@ -1686,6 +1686,19 @@
     "description": "THE EXAPOSTEILIARION FOR\nTHE PRODIGAL SON IN TONE TWO (**Hearken, ye women**)",
     "path": "Byzantine Music / EnglishByzantineMusic / Great Lent Triodion / 02 Sunday of the Prodigal Son",
     "automelon": "HEARKEN YE WOMEN"
+  },
+  "EXAPOSTELARION & THEOTOKION FOR THE BAPTIST’S BEHEADING IN TONE TWO": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Archdiocese",
+        "url": "https://drive.google.com/file/d/175shVUQ2MpCYSqAG7vfjlg93nhqgDZ6k/view?usp=drivesdk",
+        "name": "23 Exaposteilarion-2nd-Archdiocese-Orthros-BeheadingStJohnBaptist.pdf",
+        "description": "EXAPOSTELARION & THEOTOKION FOR THE BAPTIST’S BEHEADING\nIN TONE TWO (**Upon that mount in Galilee **) | Archdiocese",
+        "automelon": "UPON THAT MOUNT IN GALILEE",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 29 Beheading St John the Baptist"
+      }
+    ]
   },
   "FESTAL ANABATHMOI IN TONE FOUR": {
     "type": "multi",
@@ -3459,6 +3472,13 @@
     "path": "Byzantine Music / Bilingual Services / Vespers",
     "automelon": ""
   },
+  "RESURRECTIONAL THEOTOKION IN TONE TWO": {
+    "url": "https://drive.google.com/file/d/1QVqkMehs91HnJorhDoSxbhHk17jVHNWn/view?usp=drivesdk",
+    "name": "08 ApolytikionResurrectionTheotokion-2nd.pdf",
+    "description": "RESURRECTIONAL THEOTOKION\nIN TONE TWO",
+    "path": "Byzantine Music / Bilingual Services / Vespers",
+    "automelon": ""
+  },
   "RIGHT O ALL-HOLY THEOTOKOS FORSAKE ME NOT IN THE YEARS OF MY LIFE O INTECESSOR FOR MANKIND BUT HELP ME AND HAVE MERCY ON ME.": {
     "url": "https://drive.google.com/file/d/185xHn4adH3583dMWymJCkCAxE_iYdBlU/view?usp=drivesdk",
     "name": "6 OAllHolyTheotokos-2nd.pdf",
@@ -4299,6 +4319,32 @@
       }
     ]
   },
+  "[O] RESURRECTIONAL KATHISMATA HYMNS TONE EIGHT": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "St Anthony",
+        "url": "https://drive.google.com/file/d/1txjuv7g34yMqDTUhCmea1oS3iBdmrD7j/view?usp=drivesdk",
+        "name": "04 Kathismata-pl4th.pdf",
+        "description": "[O] RESURRECTIONAL KATHISMATA HYMNS IN TONE EIGHT | St Anthony",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
+  },
+  "[O] RESURRECTIONAL KATHISMATA HYMNS TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "St Anthony",
+        "url": "https://drive.google.com/file/d/1-UArCG27XrIKgPRy6IzpwxdLMJqdHWY9/view?usp=drivesdk",
+        "name": "04 Kathismata-4th.pdf",
+        "description": "[O] RESURRECTIONAL KATHISMATA HYMNS IN TONE FOUR | St Anthony",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
+  },
   "[O] THEOTOKION TONE FIVE": {
     "type": "multi",
     "versions": [
@@ -4328,6 +4374,19 @@
         "url": "https://drive.google.com/file/d/1p8ZpTuPjTxw3p3cI9EsdHy-PlEykm6SB/view?usp=drivesdk",
         "name": "17 Theotokion-pl2nd-DoxastikonEothion.pdf",
         "description": "[O] THEOTOKION IN TONE SIX | SA",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
+  },
+  "[O] THEOTOKION TONE TWO": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "St Anthony",
+        "url": "https://drive.google.com/file/d/1F5RP2wu_kODnBLyLv4xVQGnoCtP9BfAj/view?usp=drivesdk",
+        "name": "17 Theotokion-2nd-DoxastikonEothion.pdf",
+        "description": "[O] THEOTOKION IN TONE TWO | St Anthony",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
       }
@@ -4439,13 +4498,6 @@
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
       }
     ]
-  },
-  "[V] RESURRECTIONAL THEOTOKION TONE TWO": {
-    "url": "https://drive.google.com/file/d/1QVqkMehs91HnJorhDoSxbhHk17jVHNWn/view?usp=drivesdk",
-    "name": "08 ApolytikionResurrectionTheotokion-2nd.pdf",
-    "description": "[V] RESURRECTIONAL THEOTOKION\nIN TONE TWO",
-    "path": "Byzantine Music / Bilingual Services / Vespers",
-    "automelon": ""
   },
   "[V] THURSDAY PROKEIMENON TONE SIX": {
     "type": "multi",
