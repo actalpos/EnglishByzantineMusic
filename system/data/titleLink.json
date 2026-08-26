@@ -394,6 +394,27 @@
     "path": "Byzantine Music / EnglishByzantineMusic / Penticostarion / 09 The Ascension of Our Lord Jesus Christ ",
     "automelon": ""
   },
+  "APOLYTIKION OF THE BAPTIST’S BEHEADING IN TONE TWO": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "St Anthony Mon",
+        "url": "https://drive.google.com/file/d/1yLey91h5q6Ul_dRBWe8AaSrVqKERDoA7/view?usp=drivesdk",
+        "name": "07 Apolytikion-2nd-StAnthony-StJohnTheBaptist.pdf",
+        "description": "APOLYTIKION OF THE BAPTIST’S BEHEADING IN TONE TWO | St Anthony Mon",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 29 Beheading St John the Baptist"
+      },
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/1oDhQz7yKO66Qlsu-Xjwn4cIKBd1Wrms1/view?usp=drivesdk",
+        "name": "07 Apolytikion-2nd-ElMassih-StJohnTheBaptist.pdf",
+        "description": "APOLYTIKION OF THE BAPTIST’S BEHEADING IN TONE TWO | El Massih",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 29 Beheading St John the Baptist"
+      }
+    ]
+  },
   "APOLYTIKION OF THE DORMITION IN TONE ONE": {
     "type": "multi",
     "versions": [
@@ -610,27 +631,6 @@
         "url": "https://drive.google.com/file/d/1CtHP__nlNmB3hPPgVl-Pyv559n2jjtac/view?usp=drivesdk",
         "name": "05 ApostichaSlow-pl1st.pdf",
         "description": "APOSTICHA FOR THE RESURRECTION IN TONE FIVE | Slow",
-        "automelon": "",
-        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
-      }
-    ]
-  },
-  "APOSTICHA FOR THE RESURRECTION IN TONE FOUR": {
-    "type": "multi",
-    "versions": [
-      {
-        "label": "BRIEF",
-        "url": "https://drive.google.com/file/d/1ZGh9uX5esAAGbedWkYAgp9phw03t8Z1z/view?usp=drivesdk",
-        "name": "05 ApostichaBrief-4th.pdf",
-        "description": "APOSTICHA FOR THE RESURRECTION IN TONE FOUR | BRIEF",
-        "automelon": "",
-        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
-      },
-      {
-        "label": "SLOW",
-        "url": "https://drive.google.com/file/d/1_0EaFqomg4X_fxGWfM15b0sZahEN9xXV/view?usp=drivesdk",
-        "name": "05 ApostichaSlow-4th.pdf",
-        "description": "APOSTICHA FOR THE RESURRECTION IN TONE FOUR | SLOW",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
       }
@@ -3647,35 +3647,6 @@
       }
     ]
   },
-  "THEOTOKION FOR THE RESURRECTION IN TONE FOUR": {
-    "type": "multi",
-    "versions": [
-      {
-        "label": "Default",
-        "url": "https://drive.google.com/file/d/1bdKRdUrWHhGcOsbfJyLAC1oxiIhn0GDg/view?usp=drivesdk",
-        "name": "06 ApostichaTheotokionSlow-4th.pdf",
-        "description": "THEOTOKION FOR THE RESURRECTION IN TONE FOUR",
-        "automelon": "",
-        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
-      },
-      {
-        "label": "Brief",
-        "url": "https://drive.google.com/file/d/1TrQ26IC7zDCYC79WYqAc-TrwkSMQI2IW/view?usp=drivesdk",
-        "name": "03 DogmaticTheotokionBrief-4th.pdf",
-        "description": "THEOTOKION FOR THE RESURRECTION IN TONE FOUR | Brief",
-        "automelon": "",
-        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
-      },
-      {
-        "label": "Slow",
-        "url": "https://drive.google.com/file/d/1oY4Rck9DYaSP4q5QV02HmC3gbGZ87XCU/view?usp=drivesdk",
-        "name": "03 DogmaticTheotokionSlow-4th.pdf",
-        "description": "THEOTOKION FOR THE RESURRECTION IN TONE FOUR | Slow",
-        "automelon": "",
-        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
-      }
-    ]
-  },
   "THEOTOKION FOR THE RESURRECTION IN TONE ONE": {
     "type": "multi",
     "versions": [
@@ -4515,6 +4486,27 @@
       }
     ]
   },
+  "[V] [AP] APOSTICHA FOR THE RESURRECTION TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Slow",
+        "url": "https://drive.google.com/file/d/1_0EaFqomg4X_fxGWfM15b0sZahEN9xXV/view?usp=drivesdk",
+        "name": "05 ApostichaSlow-4th.pdf",
+        "description": "[V] [AP] APOSTICHA FOR THE RESURRECTION IN TONE FOUR | Slow",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
+      },
+      {
+        "label": "Brief",
+        "url": "https://drive.google.com/file/d/1ZGh9uX5esAAGbedWkYAgp9phw03t8Z1z/view?usp=drivesdk",
+        "name": "05 ApostichaBrief-4th.pdf",
+        "description": "[V] [AP] APOSTICHA FOR THE RESURRECTION IN TONE FOUR | Brief",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
+      }
+    ]
+  },
   "[V] [AP] APOSTICHA FOR THE RESURRECTION TONE SIX": {
     "type": "multi",
     "versions": [
@@ -4713,6 +4705,27 @@
         "description": "[V] [AP] THE APOSTICHA FOR THE TRANSFIGURATION IN TONE ONE | Ayoub",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
+      }
+    ]
+  },
+  "[V] [AP] THEOTOKION FOR THE RESURRECTION TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Brief",
+        "url": "https://drive.google.com/file/d/1AHbCPrMWcKW6uO4IrlpqEM4g6z_eZL5T/view?usp=drivesdk",
+        "name": "06 ApostichaTheotokionBrief-4th.pdf",
+        "description": "[V] [AP] THEOTOKION FOR THE RESURRECTION IN TONE FOUR | Brief",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
+      },
+      {
+        "label": "Slow",
+        "url": "https://drive.google.com/file/d/1bdKRdUrWHhGcOsbfJyLAC1oxiIhn0GDg/view?usp=drivesdk",
+        "name": "06 ApostichaTheotokionSlow-4th.pdf",
+        "description": "[V] [AP] THEOTOKION FOR THE RESURRECTION IN TONE FOUR | Slow",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
       }
     ]
   },
@@ -4997,6 +5010,19 @@
       }
     ]
   },
+  "[V] [LIHC] FOR THE BAPTIST’S BEHEADING TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/1_2m6oclsVS0Y3bhVqpQbXz9wVqLYzPUl/view?usp=drivesdk",
+        "name": "41 Sticheras-4th-ElMassih-Vespers-LeaveTaking.pdf",
+        "description": "[V] [LIHC] For the Baptist’s Beheading in Tone Four (**Thou who wast called from on high**) | El Massih",
+        "automelon": "THOU WHO WAST CALLED FROM ON HIGH",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 29 Beheading St John the Baptist"
+      }
+    ]
+  },
   "[V] [LIHC] FOR THE DORMITION TONE ONE": {
     "type": "multi",
     "versions": [
@@ -5041,6 +5067,19 @@
         "description": "[V] [LIHC] For “The Holy Napkin” in Tone Two\n(**With what fair crowns**) | Karam",
         "automelon": "WITH WHAT FAIR CROWNS",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 16 Holy Napkin"
+      }
+    ]
+  },
+  "[V] [LIHC] FOR THE PATRIARCHS TONE ONE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/1h2Ph-u3Nq6_7hxLJvkfApiom7dNHTnZI/view?usp=drivesdk",
+        "name": "01 Sticheras-1st-ElMassih-Vespers-PatriarchsConstantinopole.pdf",
+        "description": "[V] [LIHC] For the Patriarchs in Tone One\n(**O all-lauded Martyrs**) | El Massih",
+        "automelon": "O ALL-LAUDED MARTYRS",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 30 Alexandre, Paul the New and John Patriarchs of Constantinopole"
       }
     ]
   },
@@ -5214,6 +5253,27 @@
         "description": "[V] [LIHC] For the Transfiguration in Tone Four | Ayoub",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 06 Transfiguration "
+      }
+    ]
+  },
+  "[V] [LIHC] THEOTOKION FOR THE RESURRECTION TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Brief",
+        "url": "https://drive.google.com/file/d/1TrQ26IC7zDCYC79WYqAc-TrwkSMQI2IW/view?usp=drivesdk",
+        "name": "03 DogmaticTheotokionBrief-4th.pdf",
+        "description": "[V] [LIHC] THEOTOKION FOR THE RESURRECTION IN TONE FOUR | Brief",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
+      },
+      {
+        "label": "Slow",
+        "url": "https://drive.google.com/file/d/1oY4Rck9DYaSP4q5QV02HmC3gbGZ87XCU/view?usp=drivesdk",
+        "name": "03 DogmaticTheotokionSlow-4th.pdf",
+        "description": "[V] [LIHC] THEOTOKION FOR THE RESURRECTION IN TONE FOUR | Slow",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
       }
     ]
   },

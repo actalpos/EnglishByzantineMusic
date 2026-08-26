@@ -62,6 +62,8 @@ si fisierul care as vrea sa fie displayed are descrierea [V] [AP] THEOTOKION IN 
 
 Aug 16 - Fixed bug pentru acelasi fisier apar 2 titluri diferite: THE KATAVASIAE OF THE DORMITION CANONS IN TONE ONE si THE KATAVASIAE OF THE DORMITION CANON IN TONE ONE
 
+Aug 26 - Take out O like from O Lord I Have Cried
+
 */
 
 (function () {
@@ -129,9 +131,10 @@ Aug 16 - Fixed bug pentru acelasi fisier apar 2 titluri diferite: THE KATAVASIAE
         .replace(/\s+/g, " ")
         .trim()
         .toLowerCase()
-        .replace(/^(the|a|an|sticheras)\s+/i, "")          // remove leading article
+        .replace(/^(the|a|an|sticheras|verses|o)\s+/i, "")          // remove leading article
         .replace(/\bin\s+tone\b/gi, "tone")
-        .replace(/\bcanons\b/gi, "canon");
+        .replace(/\bcanons\b/gi, "canon")
+        .replace(/\bfrom the octoechos\b/gi, "for the resurrection");
 
       const prefixMatch = str.match(/^((\[[a-z]+\]\s*)+)(.*)$/i);
 
@@ -139,7 +142,7 @@ Aug 16 - Fixed bug pentru acelasi fisier apar 2 titluri diferite: THE KATAVASIAE
         const prefixes = prefixMatch[1];
         let title = prefixMatch[3];
 
-        title = title.replace(/^(the|a|an|festal|sticheras)\s+/, "");
+        title = title.replace(/^(the|a|an|festal|sticheras|verses|o)\s+/, "");
 
         return `${prefixes} ${title}`.trim();
       }

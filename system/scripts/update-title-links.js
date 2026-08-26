@@ -1,6 +1,6 @@
 import fs from "fs";
 
-const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbyy3DtVdyJstsq25lhFJH-aQv4Rn1L3DUHs7sDIsJMvzQlYgOjHtIXudasA2GHPQ_mdSQ/exec";
+const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbwwluuAhbA9VPIkn24nqhaYqvYjXArT8W-HUKO4e0U-RHsBOCUGyLosGuh88Pxapxyvig/exec";
 const LOCAL_PATH = "./data/titleLink.json";
 
 async function update() {
