@@ -64,6 +64,7 @@ Aug 16 - Fixed bug pentru acelasi fisier apar 2 titluri diferite: THE KATAVASIAE
 
 Aug 26 - Take out O like from O Lord I Have Cried
 
+Aug 28 - Updates pentru cand apare THEOTOKION IN TONE... sau THEOTOKION FROM OCTOECHOS IN TONE...  
 */
 
 (function () {

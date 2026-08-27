@@ -1733,10 +1733,10 @@
         "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
       },
       {
-        "label": "Beheading of St John",
+        "label": "Beheading of St John - W",
         "url": "https://drive.google.com/file/d/1CuNW0oe70Not15CjF1LCaiwYQlcqGmk3/view?usp=drivesdk",
         "name": "22 AfterPsalm50Torparia-2nd-Orthros-BeheadingStJohnBaptist-W.pdf",
-        "description": "FESTAL TROPARIA AFTER PSALM 50 IN TONE TWO | Beheading of St John",
+        "description": "FESTAL TROPARIA AFTER PSALM 50 IN TONE TWO | Beheading of St John - W",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 29 Beheading St John the Baptist"
       },
@@ -2593,6 +2593,19 @@
         "description": "KATHISMATA HYMNS OF ST. JOSEPH | Karam",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 11 July / 10 July St Joseph of Damascus"
+      }
+    ]
+  },
+  "KATHISMATA HYMNS OF THE BAPTIST’S BEHEADING": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "DCS - W",
+        "url": "https://drive.google.com/file/d/1eMntd0aQ9EsSvAn9PcRmamRBFr1Bf6Gg/view?usp=drivesdk",
+        "name": "21 Kathismata-DCS-Orthros-BeheadingStJohnBaptist-W.pdf",
+        "description": "KATHISMATA HYMNS OF THE BAPTIST’S BEHEADING | DCS - W",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 29 Beheading St John the Baptist"
       }
     ]
   },
@@ -4038,6 +4051,19 @@
     "description": "[O] DOXASTICON FOR THE SUNDAY OF FORGIVENESS IN TONE SIX",
     "path": "Byzantine Music / EnglishByzantineMusic / Great Lent Triodion / 04 Sunday of Forgiveness",
     "automelon": ""
+  },
+  "[O] DOXASTICON OF THE BEHEADING TONE SIX": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Creemens",
+        "url": "https://drive.google.com/file/d/1epDPmThraMTJ2-MaUac85Y-lUwmxK0Lb/view?usp=drivesdk",
+        "name": "25 PraisesDoxastikon-pl2nd-Creemens-Orthros-BeheadingStJohnBaptist.pdf",
+        "description": "[O] THE DOXASTICON OF THE BEHEADING IN TONE SIX | Creemens",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 29 Beheading St John the Baptist"
+      }
+    ]
   },
   "[O] DOXASTICON OF THE DORMITION TONE SIX": {
     "type": "multi",
