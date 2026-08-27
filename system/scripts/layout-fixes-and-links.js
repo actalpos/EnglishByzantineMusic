@@ -103,6 +103,7 @@ Aug 26 - Take out O like from O Lord I Have Cried
     }
 
     const SERVICE = detectServiceType();
+    console.log("Detected SERVICE:", SERVICE);
 
     // defines document order when multiple identical
     // titles exist inside the same service
@@ -167,12 +168,8 @@ Aug 26 - Take out O like from O Lord I Have Cried
         .replace(/\bin\s+tone\b/gi, "tone")
         .replace(/\bcanons\b/gi, "canon")
         .replace(
-          /^theotokion (?:from|for) the octoechos\b/i,
-          "apolytikion resurrectional theotokion"
-        )
-        .replace(
-          /^resurrectional theotokion\b/i,
-          "apolytikion resurrectional theotokion"
+          /^theotokion from the octoechos\b/i,
+          "theotokion for the octoechos"
         );
 
       const prefixMatch =
@@ -615,6 +612,57 @@ Aug 26 - Take out O like from O Lord I Have Cried
     }
 
 
+    // function detectMomentForParagraph(p) {
+
+    //   const paragraphs =
+    //     Array.from(document.querySelectorAll("p"));
+
+    //   const currentIndex =
+    //     paragraphs.indexOf(p);
+
+    //   if (currentIndex === -1) {
+    //     return "";
+    //   }
+
+    //   /*
+    //    * Căutăm înapoi maximum 100 de paragrafe.
+    //    */
+    //   const startIndex =
+    //     Math.max(0, currentIndex - 100);
+
+    //   for (
+    //     let i = currentIndex - 1;
+    //     i >= startIndex;
+    //     i--
+    //   ) {
+
+    //     const text =
+    //       normalizeTitle(
+    //         paragraphs[i].textContent || ""
+    //       );
+
+    //     if (text.includes("aposticha")) {
+    //       return "AP";
+    //     }
+
+    //     if (
+    //       text.includes("litia") ||
+    //       text.includes("artoklasia")
+    //     ) {
+    //       return "LT";
+    //     }
+
+    //     if (
+    //       text.includes("o lord i have cried") ||
+    //       text.includes("lord i have cried")
+    //     ) {
+    //       return "LIHC";
+    //     }
+    //   }
+
+    //   return "";
+    // }
+
     function detectMomentForParagraph(p) {
 
       const paragraphs =
@@ -627,9 +675,6 @@ Aug 26 - Take out O like from O Lord I Have Cried
         return "";
       }
 
-      /*
-       * Căutăm înapoi maximum 100 de paragrafe.
-       */
       const startIndex =
         Math.max(0, currentIndex - 100);
 
@@ -643,6 +688,21 @@ Aug 26 - Take out O like from O Lord I Have Cried
           normalizeTitle(
             paragraphs[i].textContent || ""
           );
+
+        /*
+         * IMPORTANT:
+         * Dacă am ajuns în secțiunea APOLYTIKION,
+         * nu mai continuăm până la Aposticha/LIHC.
+         *
+         * Theotokion-ul de după Apolytikion
+         * trebuie tratat fără SERVICE MOMENT.
+         */
+        if (
+          text.includes("apolytikion") ||
+          text.includes("troparion")
+        ) {
+          return "";
+        }
 
         if (text.includes("aposticha")) {
           return "AP";
@@ -666,6 +726,57 @@ Aug 26 - Take out O like from O Lord I Have Cried
       return "";
     }
 
+    function isAfterApolytikion(p) {
+
+      const paragraphs =
+        Array.from(document.querySelectorAll("p"));
+
+      const currentIndex =
+        paragraphs.indexOf(p);
+
+      if (currentIndex === -1) {
+        return false;
+      }
+
+      const startIndex =
+        Math.max(0, currentIndex - 100);
+
+      for (
+        let i = currentIndex - 1;
+        i >= startIndex;
+        i--
+      ) {
+
+        const text =
+          normalizeTitle(
+            paragraphs[i].textContent || ""
+          );
+
+        if (
+          text.includes("apolytikion") ||
+          text.includes("troparion")
+        ) {
+          return true;
+        }
+
+        /*
+         * Dacă am ajuns într-un alt moment liturgic,
+         * nu mai suntem în secțiunea Apolytikion.
+         */
+        if (
+          text.includes("aposticha") ||
+          text.includes("litia") ||
+          text.includes("artoklasia") ||
+          text.includes("o lord i have cried") ||
+          text.includes("lord i have cried")
+        ) {
+          return false;
+        }
+      }
+
+      return false;
+    }
+
     /**********************
      * APPLY TITLE LINKS
      **********************/
@@ -685,13 +796,61 @@ Aug 26 - Take out O like from O Lord I Have Cried
 
       const htmlMoment = detectMomentForParagraph(p);
 
+      const afterApolytikion =
+        isAfterApolytikion(p);
+
+      let lookupKey = baseKey;
+
+      /*
+       * Pentru Theotokion-ul care urmează după Apolytikion,
+       * tratăm:
+       *
+       * THEOTOKION FROM/FOR THE OCTOECHOS
+       * ca alias pentru
+       * RESURRECTIONAL THEOTOKION
+       *
+       * Doar când nu suntem într-un moment LIHC / LT / AP.
+       */
+      if (afterApolytikion) {
+
+        // THEOTOKION FROM/FOR THE OCTOECHOS ...
+        if (
+          lookupKey.startsWith(
+            "theotokion for the octoechos "
+          )
+        ) {
+          lookupKey = lookupKey.replace(
+            /^theotokion for the octoechos\b/,
+            "resurrectional theotokion"
+          );
+        }
+
+        // THEOTOKION IN TONE TWO ...
+        // -> RESURRECTIONAL THEOTOKION TONE TWO
+        else if (
+          /^theotokion tone\b/.test(lookupKey)
+        ) {
+          lookupKey = lookupKey.replace(
+            /^theotokion\b/,
+            "resurrectional theotokion"
+          );
+        }
+      }
+
+      const isApolytikionTheotokion =
+        afterApolytikion &&
+        (
+          /^theotokion tone\b/.test(baseKey) ||
+          baseKey.startsWith("theotokion for the octoechos ")
+        );
+
       let item = null;
 
       // ----------------------------
       // SERVICE
       // ----------------------------
 
-      if (SERVICE) {
+      if (SERVICE && !isApolytikionTheotokion) {
 
         const serviceKey =
           `[${SERVICE}] ${baseKey}`;
@@ -823,14 +982,14 @@ Aug 26 - Take out O like from O Lord I Have Cried
 
       if (!item && htmlAutomelon) {
 
-        const automelonKey = baseKey + " || " + htmlAutomelon;
+        const automelonKey = lookupKey + " || " + htmlAutomelon;
 
         item = globalAutomelonIndex[automelonKey];
 
       }
 
       if (!item) {
-        item = globalIndex[baseKey];
+        item = globalIndex[lookupKey];
       }
 
       if (!item) {
