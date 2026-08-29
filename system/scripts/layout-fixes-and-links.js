@@ -838,6 +838,19 @@ Aug 28 - Updates pentru cand apare THEOTOKION IN TONE... sau THEOTOKION FROM OCT
         }
       }
 
+      let serviceLookupKey = baseKey;
+
+      if (
+        SERVICE === "V" &&
+        (htmlMoment === "LIHC"  || htmlMoment === "AP") &&
+        serviceLookupKey.startsWith("theotokion for the octoechos ")
+      ) {
+        serviceLookupKey = serviceLookupKey.replace(
+          /^theotokion for the octoechos\b/,
+          "theotokion for the resurrection"
+        );
+      }
+
       const isApolytikionTheotokion =
         afterApolytikion &&
         (
@@ -854,7 +867,7 @@ Aug 28 - Updates pentru cand apare THEOTOKION IN TONE... sau THEOTOKION FROM OCT
       if (SERVICE && !isApolytikionTheotokion) {
 
         const serviceKey =
-          `[${SERVICE}] ${baseKey}`;
+          `[${SERVICE}] ${serviceLookupKey}`;
 
         /*
          * 1. Căutare după serviciu + automelon

@@ -4774,6 +4774,19 @@
       }
     ]
   },
+  "[V] [AP] DOXASTICON FOR THE BEHEADING TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "John Monk",
+        "url": "https://drive.google.com/file/d/1llUqwg-OgV5LmCL-mKACN06ov8tta2jR/view?usp=drivesdk",
+        "name": "44 ApostichaDoxastikon-4th-JohnMonk-Vespers-LeaveTaking.pdf",
+        "description": "[V] [AP] DOXASTICON FOR THE BEHEADING\nIN TONE FOUR | John Monk",
+        "automelon": "",
+        "path": "MyEnglishMusic / Menaion / 12 August / 29 Beheading of St John Baptist"
+      }
+    ]
+  },
   "[V] [AP] DOXASTICON FOR THE DORMITION TONE FOUR": {
     "type": "multi",
     "versions": [
@@ -5027,6 +5040,27 @@
         "description": "[V] [LIHC] DOXASTICON FOR THE AFTER-FEAST IN TONE TWO | Dormition - Creemens",
         "automelon": "",
         "path": "MyEnglishMusic / Menaion / 12 August / 15 Dormition of Theotokos"
+      }
+    ]
+  },
+  "[V] [LIHC] DOXASTICON FOR THE BEHEADING TONE SIX": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Creemens",
+        "url": "https://drive.google.com/file/d/1L5CnfCsNLtM8yKwhI16a5zueVQHPX5XL/view?usp=drivesdk",
+        "name": "42 SticherasDoxastika-pl2nd-Creemens-Vespers-LeaveTaking.pdf",
+        "description": "[V] [LIHC] DOXASTICON FOR THE BEHEADING\nIN TONE SIX | Creemens",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 29 Beheading St John the Baptist"
+      },
+      {
+        "label": "John Monk",
+        "url": "https://drive.google.com/file/d/1KHg-OYA8x21-_9V3J8tE78o51nsGcZls/view?usp=drivesdk",
+        "name": "42 StichersDoxastikon-pl2nd-JohnMonk-Vespers-LeaveTaking.pdf",
+        "description": "[V] [LIHC] DOXASTICON FOR THE BEHEADING\nIN TONE SIX | John Monk",
+        "automelon": "",
+        "path": "MyEnglishMusic / Menaion / 12 August / 29 Beheading of St John Baptist"
       }
     ]
   },
