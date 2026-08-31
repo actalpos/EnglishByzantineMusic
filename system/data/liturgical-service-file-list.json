@@ -1,23 +1,5 @@
 [
   {
-    "date": "2026-01-06 Sunday",
-    "title": "Sep 05 2026 Bilingual VESP",
-    "order": -1,
-    "file": "Service_Texts/variableDate/2026/01/06 Sunday/Sep 05 2026 Bilingual VESP.html"
-  },
-  {
-    "date": "2026-01-06 Sunday",
-    "title": "Sep 06 2026 Bilingual ORTHROS",
-    "order": -1,
-    "file": "Service_Texts/variableDate/2026/01/06 Sunday/Sep 06 2026 Bilingual ORTHROS.html"
-  },
-  {
-    "date": "2026-01-06 Sunday",
-    "title": "Sep 06 2026 Bilingual READ",
-    "order": -1,
-    "file": "Service_Texts/variableDate/2026/01/06 Sunday/Sep 06 2026 Bilingual READ.html"
-  },
-  {
     "date": "2026-01-11",
     "title": "Divine Liturgy Variables",
     "order": 0,
@@ -796,6 +778,24 @@
     "title": "Aug 30 2026 Bilingual READ",
     "order": -1,
     "file": "Service_Texts/variableDate/2026/08/30 Sunday Beheading of St John the Baptist leave-taking/Aug 30 2026 Bilingual READ.html"
+  },
+  {
+    "date": "2026-09-06 Sunday",
+    "title": "Sep 05 2026 Bilingual VESP",
+    "order": -1,
+    "file": "Service_Texts/variableDate/2026/09/06 Sunday/Sep 05 2026 Bilingual VESP.html"
+  },
+  {
+    "date": "2026-09-06 Sunday",
+    "title": "Sep 06 2026 Bilingual ORTHROS",
+    "order": -1,
+    "file": "Service_Texts/variableDate/2026/09/06 Sunday/Sep 06 2026 Bilingual ORTHROS.html"
+  },
+  {
+    "date": "2026-09-06 Sunday",
+    "title": "Sep 06 2026 Bilingual READ",
+    "order": -1,
+    "file": "Service_Texts/variableDate/2026/09/06 Sunday/Sep 06 2026 Bilingual READ.html"
   },
   {
     "date": "2026-12-28",
