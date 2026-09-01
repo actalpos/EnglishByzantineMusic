@@ -12,6 +12,7 @@ Generated on: 2026-03-10 21:42
 // [EX] = Exaposteilarion
 // [KA] = Kathisma
 // [PS] = Praises Stichera
+// [ED] = Eothinon Doxastikon
 // [LT] = Litia
 // [V][LIHC] DOXASTIKON FOR PENTECOST IN TONE EIGHT
 // [V][AP] DOXASTIKON FOR PENTECOST IN TONE EIGHT
@@ -65,6 +66,8 @@ Aug 16 - Fixed bug pentru acelasi fisier apar 2 titluri diferite: THE KATAVASIAE
 Aug 26 - Take out O like from O Lord I Have Cried
 
 Aug 28 - Updates pentru cand apare THEOTOKION IN TONE... sau THEOTOKION FROM OCTOECHOS IN TONE...  
+
+Aug 31 - 
 */
 
 (function () {
@@ -664,7 +667,121 @@ Aug 28 - Updates pentru cand apare THEOTOKION IN TONE... sau THEOTOKION FROM OCT
     //   return "";
     // }
 
-    function detectMomentForParagraph(p) {
+    // function detectMomentForParagraph(p) {
+
+    //   const paragraphs =
+    //     Array.from(document.querySelectorAll("p"));
+
+    //   const currentIndex =
+    //     paragraphs.indexOf(p);
+
+    //   if (currentIndex === -1) {
+    //     return "";
+    //   }
+
+    //   const startIndex =
+    //     Math.max(0, currentIndex - 100);
+
+    //   for (
+    //     let i = currentIndex - 1;
+    //     i >= startIndex;
+    //     i--
+    //   ) {
+
+    //     const text =
+    //       normalizeTitle(
+    //         paragraphs[i].textContent || ""
+    //       );
+
+    //     /*
+    //      * IMPORTANT:
+    //      * Dacă am ajuns în secțiunea APOLYTIKION,
+    //      * nu mai continuăm până la Aposticha/LIHC.
+    //      *
+    //      * Theotokion-ul de după Apolytikion
+    //      * trebuie tratat fără SERVICE MOMENT.
+    //      */
+    //     if (
+    //       text.includes("apolytikion") ||
+    //       text.includes("troparion")
+    //     ) {
+    //       return "";
+    //     }
+
+    //     if (text.includes("aposticha")) {
+    //       return "AP";
+    //     }
+
+    //     if (
+    //       text.includes("litia") ||
+    //       text.includes("artoklasia")
+    //     ) {
+    //       return "LT";
+    //     }
+
+    //     if (
+    //       text.includes("o lord i have cried") ||
+    //       text.includes("lord i have cried")
+    //     ) {
+    //       return "LIHC";
+    //     }
+    //   }
+
+    //   return "";
+    // }
+
+    // function isAfterApolytikion(p) {
+
+    //   const paragraphs =
+    //     Array.from(document.querySelectorAll("p"));
+
+    //   const currentIndex =
+    //     paragraphs.indexOf(p);
+
+    //   if (currentIndex === -1) {
+    //     return false;
+    //   }
+
+    //   const startIndex =
+    //     Math.max(0, currentIndex - 100);
+
+    //   for (
+    //     let i = currentIndex - 1;
+    //     i >= startIndex;
+    //     i--
+    //   ) {
+
+    //     const text =
+    //       normalizeTitle(
+    //         paragraphs[i].textContent || ""
+    //       );
+
+    //     if (
+    //       text.includes("apolytikion") ||
+    //       text.includes("troparion")
+    //     ) {
+    //       return true;
+    //     }
+
+    //     /*
+    //      * Dacă am ajuns într-un alt moment liturgic,
+    //      * nu mai suntem în secțiunea Apolytikion.
+    //      */
+    //     if (
+    //       text.includes("aposticha") ||
+    //       text.includes("litia") ||
+    //       text.includes("artoklasia") ||
+    //       text.includes("o lord i have cried") ||
+    //       text.includes("lord i have cried")
+    //     ) {
+    //       return false;
+    //     }
+    //   }
+
+    //   return false;
+    // }
+
+    function detectContextForParagraph(p) {
 
       const paragraphs =
         Array.from(document.querySelectorAll("p"));
@@ -673,11 +790,14 @@ Aug 28 - Updates pentru cand apare THEOTOKION IN TONE... sau THEOTOKION FROM OCT
         paragraphs.indexOf(p);
 
       if (currentIndex === -1) {
-        return "";
+        return {
+          moment: "",
+          section: ""
+        };
       }
 
       const startIndex =
-        Math.max(0, currentIndex - 100);
+        Math.max(0, currentIndex - 150);
 
       for (
         let i = currentIndex - 1;
@@ -691,91 +811,111 @@ Aug 28 - Updates pentru cand apare THEOTOKION IN TONE... sau THEOTOKION FROM OCT
           );
 
         /*
-         * IMPORTANT:
-         * Dacă am ajuns în secțiunea APOLYTIKION,
-         * nu mai continuăm până la Aposticha/LIHC.
-         *
-         * Theotokion-ul de după Apolytikion
-         * trebuie tratat fără SERVICE MOMENT.
+         * APOLYTIKION
          */
         if (
           text.includes("apolytikion") ||
           text.includes("troparion")
         ) {
-          return "";
+          return {
+            moment: "",
+            section: "APOLYTIKION"
+          };
         }
 
-        if (text.includes("aposticha")) {
-          return "AP";
+        /*
+         * ORTHROS - PRAISES
+         */
+        if (
+          text.includes("praises") ||
+          text.includes("lauds")
+        ) {
+          return {
+            moment: "PR",
+            section: "PRAISES"
+          };
         }
 
+        /*
+         * ORTHROS - EXAPOSTEILARION
+         */
+        if (
+          text.includes("exaposteilarion")
+        ) {
+          return {
+            moment: "EX",
+            section: "EXAPOSTEILARION"
+          };
+        }
+
+        /*
+         * ORTHROS - KATHISMA
+         */
+        if (
+          text.includes("kathisma") ||
+          text.includes("kathismata")
+        ) {
+          return {
+            moment: "KA",
+            section: "KATHISMA"
+          };
+        }
+
+        /*
+        * ORTHROS - EOTHINON DOXASTIKON
+        */
+        if (
+          text.includes("eothinon doxastikon")
+        ) {
+          return {
+            moment: "ED",
+            section: "EOTHINON DOXASTIKON"
+          };
+        }
+
+        /*
+         * VESPERS - APOSTICHA
+         */
+        if (
+          text.includes("aposticha")
+        ) {
+          return {
+            moment: "AP",
+            section: "APOSTICHA"
+          };
+        }
+
+        /*
+         * VESPERS - LITIA
+         */
         if (
           text.includes("litia") ||
           text.includes("artoklasia")
         ) {
-          return "LT";
-        }
-
-        if (
-          text.includes("o lord i have cried") ||
-          text.includes("lord i have cried")
-        ) {
-          return "LIHC";
-        }
-      }
-
-      return "";
-    }
-
-    function isAfterApolytikion(p) {
-
-      const paragraphs =
-        Array.from(document.querySelectorAll("p"));
-
-      const currentIndex =
-        paragraphs.indexOf(p);
-
-      if (currentIndex === -1) {
-        return false;
-      }
-
-      const startIndex =
-        Math.max(0, currentIndex - 100);
-
-      for (
-        let i = currentIndex - 1;
-        i >= startIndex;
-        i--
-      ) {
-
-        const text =
-          normalizeTitle(
-            paragraphs[i].textContent || ""
-          );
-
-        if (
-          text.includes("apolytikion") ||
-          text.includes("troparion")
-        ) {
-          return true;
+          return {
+            moment: "LT",
+            section: "LITIA"
+          };
         }
 
         /*
-         * Dacă am ajuns într-un alt moment liturgic,
-         * nu mai suntem în secțiunea Apolytikion.
+         * VESPERS - LORD I HAVE CRIED
          */
         if (
-          text.includes("aposticha") ||
-          text.includes("litia") ||
-          text.includes("artoklasia") ||
           text.includes("o lord i have cried") ||
           text.includes("lord i have cried")
         ) {
-          return false;
+          return {
+            moment: "LIHC",
+            section: "LIHC"
+          };
         }
       }
 
-      return false;
+      return {
+        moment: "",
+        section: ""
+      };
     }
 
     /**********************
@@ -795,10 +935,14 @@ Aug 28 - Updates pentru cand apare THEOTOKION IN TONE... sau THEOTOKION FROM OCT
 
       const baseKey = normalizeTitle(originalText);
 
-      const htmlMoment = detectMomentForParagraph(p);
+      const context =
+        detectContextForParagraph(p);
+
+      const htmlMoment =
+        context.moment;
 
       const afterApolytikion =
-        isAfterApolytikion(p);
+        context.section === "APOLYTIKION";
 
       let lookupKey = baseKey;
 
@@ -842,7 +986,7 @@ Aug 28 - Updates pentru cand apare THEOTOKION IN TONE... sau THEOTOKION FROM OCT
 
       if (
         SERVICE === "V" &&
-        (htmlMoment === "LIHC"  || htmlMoment === "AP") &&
+        (htmlMoment === "LIHC" || htmlMoment === "AP") &&
         serviceLookupKey.startsWith("theotokion for the octoechos ")
       ) {
         serviceLookupKey = serviceLookupKey.replace(

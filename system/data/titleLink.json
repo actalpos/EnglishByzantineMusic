@@ -213,6 +213,27 @@
     "path": "Byzantine Music / EnglishByzantineMusic / Penticostarion / 14 Sunday of All Antioch and American Saints",
     "automelon": "THOU WHO WAST RAISED UP"
   },
+  "APOLYTIKION OF ARCHANGEL MICHAEL IN TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "St Anthony",
+        "url": "https://drive.google.com/file/d/12KxysuAs42qVFITJ2DfpGTBiZen1EJqv/view?usp=drivesdk",
+        "name": "06 Apolytikion-2nd-SA-StMichaelMiracle.pdf",
+        "description": "APOLYTIKION OF ARCHANGEL MICHAEL IN TONE FOUR\n(**Thou Who wast raised up**) | St Anthony",
+        "automelon": "THOU WHO WAST RAISED UP",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 01 September / 06 St Archangel Michael Miracle in Colossae"
+      },
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/1gntjdKvvPfb3tYcQF0Tze_5HWUsTd5o3/view?usp=drivesdk",
+        "name": "06 Apolytikion-2nd-ElMassih-StMichaelMiracle.pdf",
+        "description": "APOLYTIKION OF ARCHANGEL MICHAEL IN TONE FOUR\n(**Thou Who wast raised up**) | El Massih",
+        "automelon": "THOU WHO WAST RAISED UP",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 01 September / 06 St Archangel Michael Miracle in Colossae"
+      }
+    ]
+  },
   "APOLYTIKION OF LAZARUS SATURDAY IN TONE ONE": {
     "type": "multi",
     "versions": [
@@ -1699,6 +1720,19 @@
     "description": "THE EXAPOSTEILIARION FOR\nTHE PRODIGAL SON IN TONE TWO (**Hearken, ye women**)",
     "path": "Byzantine Music / EnglishByzantineMusic / Great Lent Triodion / 02 Sunday of the Prodigal Son",
     "automelon": "HEARKEN YE WOMEN"
+  },
+  "EXAPOSTELARION & THEOTOKION FOR ARCHANGEL MICHAEL IN TONE TWO": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "HTM",
+        "url": "https://drive.google.com/file/d/1qM14I_b1W_lQ_Xvm3soHDydXGNbaVMgh/view?usp=drivesdk",
+        "name": "22 Exaposteilarion-2nd-HTM-Orthros-StMichaelMiracle.pdf",
+        "description": "EXAPOSTELARION & THEOTOKION FOR ARCHANGEL MICHAEL IN TONE TWO (**Hearken, ye women**) | HTM",
+        "automelon": "HEARKEN YE WOMEN",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 01 September / 06 St Archangel Michael Miracle in Colossae"
+      }
+    ]
   },
   "FESTAL ANABATHMOI IN TONE FOUR": {
     "type": "multi",
@@ -3668,19 +3702,6 @@
       }
     ]
   },
-  "THEOTOKION FOR THE RESURRECTION IN TONE FIVE": {
-    "type": "multi",
-    "versions": [
-      {
-        "label": "Slow",
-        "url": "https://drive.google.com/file/d/1Fzahum1oOhwNUc8iEckJSva4BhweZ_kR/view?usp=drivesdk",
-        "name": "03 DogmaticTheotokionSlow-pl1st.pdf",
-        "description": "THEOTOKION FOR THE RESURRECTION IN TONE FIVE | Slow",
-        "automelon": "",
-        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
-      }
-    ]
-  },
   "THEOTOKION FOR THE RESURRECTION IN TONE ONE": {
     "type": "multi",
     "versions": [
@@ -3777,26 +3798,12 @@
       }
     ]
   },
-  "THEOTOKION IN TONE EIGHT": {
-    "url": "https://drive.google.com/file/d/1oAWJgS4SUB2UpE2_wf_UmtWeCQuncGXF/view?usp=drivesdk",
-    "name": "17 Theotokion-pl4th-DoxastikonEothion.pdf",
-    "description": "THEOTOKION IN TONE EIGHT",
-    "path": "Byzantine Music / EnglishByzantineMusic / Orthros",
-    "automelon": ""
-  },
   "THEOTOKION IN TONE FOUR": {
     "url": "https://drive.google.com/file/d/1JXZ4zY5XiuMdCrx18g7AklS5-X_1-UxC/view?usp=drivesdk",
     "name": "25 TheotokionTheeDoAllTheAngelicRanks-4th-ElMassih-EN-AkatistHymn.pdf",
     "description": "THEOTOKION IN TONE FOUR\n(**As one valiant**)",
     "path": "Byzantine Music / EnglishByzantineMusic / Great Lent Triodion / 04 Sunday of Forgiveness",
     "automelon": "AS ONE VALIANT"
-  },
-  "THEOTOKION IN TONE ONE": {
-    "url": "https://drive.google.com/file/d/1F3lSYG-eVhZ4FFmRfgm0D3LB3xjHDmtF/view?usp=drivesdk",
-    "name": "17 Theotokion-1st-DoxastikonEothion.pdf",
-    "description": "THEOTOKION IN TONE ONE",
-    "path": "Byzantine Music / EnglishByzantineMusic / Orthros",
-    "automelon": ""
   },
   "THEOTOKION IN TONE THREE": {
     "type": "multi",
@@ -4032,6 +4039,19 @@
       }
     ]
   },
+  "[O] ANABATHMOI FROM THE OCTOECHOS TONE FIVE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "St Anthony",
+        "url": "https://drive.google.com/file/d/1YICdb5QRTKOuAEN4ekS9l3fTU4_1QqZX/view?usp=drivesdk",
+        "name": "07 Anabathmoi-pl1st-SA.pdf",
+        "description": "[O] ANABATHMOI FROM THE OCTOECHOS IN TONE FIVE | St Anthony",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
+  },
   "[O] DOXASTICON FOR THE MACCABEES TONE FOUR": {
     "type": "multi",
     "versions": [
@@ -4169,6 +4189,19 @@
     "description": "[O] For All Saints in Tone Four\n(**As one valiant**)",
     "path": "Byzantine Music / EnglishByzantineMusic / Penticostarion / 13 Sunday of All Saints",
     "automelon": "AS ONE VALIANT"
+  },
+  "[O] FOR ARCHANGEL MICHAEL TONE ONE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "HTM",
+        "url": "https://drive.google.com/file/d/1I4vOavvmzogDeMIQT1p1xhYOidlJOTGi/view?usp=drivesdk",
+        "name": "23 Praises-1st-HTM-Orthros-StMichaelMiracle.pdf",
+        "description": "[O] For Archangel Michael in Tone One (**Thou art the joy**) | HTM",
+        "automelon": "THOU ART THE JOY",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 01 September / 06 St Archangel Michael Miracle in Colossae"
+      }
+    ]
   },
   "[O] FOR PENTECOST TONE FOUR": {
     "type": "multi",
@@ -4411,6 +4444,19 @@
       }
     ]
   },
+  "[O] RESURRECTIONAL KATHISMATA HYMNS TONE FIVE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "St Anthony",
+        "url": "https://drive.google.com/file/d/1Z-eb0aYbhtykhViq4V0HUACUqHy1Vp70/view?usp=drivesdk",
+        "name": "04 Kathismata-pl1st.pdf",
+        "description": "[O] RESURRECTIONAL KATHISMATA HYMNS IN TONE FIVE | St Anthony",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
+  },
   "[O] RESURRECTIONAL KATHISMATA HYMNS TONE FOUR": {
     "type": "multi",
     "versions": [
@@ -4424,59 +4470,124 @@
       }
     ]
   },
-  "[O] THEOTOKION TONE FIVE": {
-    "type": "multi",
-    "versions": [
-      {
-        "label": "SA",
-        "url": "https://drive.google.com/file/d/1FTV1izeSwfyyDHmWBX5twH5CAc9CW3zW/view?usp=drivesdk",
-        "name": "17 Theotokion-pl1st-DoxastikonEothion.pdf",
-        "description": "[O] THEOTOKION IN TONE FIVE | SA",
-        "automelon": "",
-        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
-      }
-    ]
-  },
-  "[O] THEOTOKION TONE SIX": {
-    "type": "multi",
-    "versions": [
-      {
-        "label": "El Massih",
-        "url": "https://drive.google.com/file/d/1M6y4jr7448QWrOS7FwZbVB86r82F6i0k/view?usp=drivesdk",
-        "name": "17 Theotokion-pl2nd-ElMassih-DoxastikonEothion.pdf",
-        "description": "[O] THEOTOKION IN TONE SIX | El Massih",
-        "automelon": "",
-        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
-      },
-      {
-        "label": "SA",
-        "url": "https://drive.google.com/file/d/1p8ZpTuPjTxw3p3cI9EsdHy-PlEykm6SB/view?usp=drivesdk",
-        "name": "17 Theotokion-pl2nd-DoxastikonEothion.pdf",
-        "description": "[O] THEOTOKION IN TONE SIX | SA",
-        "automelon": "",
-        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
-      }
-    ]
-  },
-  "[O] THEOTOKION TONE TWO": {
-    "type": "multi",
-    "versions": [
-      {
-        "label": "St Anthony",
-        "url": "https://drive.google.com/file/d/1F5RP2wu_kODnBLyLv4xVQGnoCtP9BfAj/view?usp=drivesdk",
-        "name": "17 Theotokion-2nd-DoxastikonEothion.pdf",
-        "description": "[O] THEOTOKION IN TONE TWO | St Anthony",
-        "automelon": "",
-        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
-      }
-    ]
-  },
   "[O] TROPARION TONE FOUR": {
     "url": "https://drive.google.com/file/d/1kksfMdu7t2fqB_aHA0CAzMfQTnt4R60M/view?usp=drivesdk",
     "name": "19 TodayIsTheSalvation-4th-EN-AR.pdf",
     "description": "[O] TROPARION IN TONE FOUR",
     "path": "Byzantine Music / EnglishByzantineMusic / Orthros",
     "automelon": ""
+  },
+  "[O] [ED] THEOTOKION TONE EIGHT": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "St Anthony",
+        "url": "https://drive.google.com/file/d/1oAWJgS4SUB2UpE2_wf_UmtWeCQuncGXF/view?usp=drivesdk",
+        "name": "17 Theotokion-pl4th-DoxastikonEothion.pdf",
+        "description": "[O] [ED] THEOTOKION IN TONE EIGHT | St Anthony",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
+  },
+  "[O] [ED] THEOTOKION TONE FIVE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "St Anthony",
+        "url": "https://drive.google.com/file/d/1FTV1izeSwfyyDHmWBX5twH5CAc9CW3zW/view?usp=drivesdk",
+        "name": "17 Theotokion-pl1st-DoxastikonEothion.pdf",
+        "description": "[O] [ED] THEOTOKION IN TONE FIVE | St Anthony",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
+  },
+  "[O] [ED] THEOTOKION TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "St Anthony",
+        "url": "https://drive.google.com/file/d/1KIfNFJgOuoRRZZ-_bjiuBro5wmLm5ZSf/view?usp=drivesdk",
+        "name": "17 Theotokion-4th-DoxastikonEothion.pdf",
+        "description": "[O] [ED] THEOTOKION IN TONE FOUR | St Anthony",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
+  },
+  "[O] [ED] THEOTOKION TONE ONE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "St Anthony",
+        "url": "https://drive.google.com/file/d/1F3lSYG-eVhZ4FFmRfgm0D3LB3xjHDmtF/view?usp=drivesdk",
+        "name": "17 Theotokion-1st-DoxastikonEothion.pdf",
+        "description": "[O] [ED] THEOTOKION IN TONE ONE | St Anthony",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
+  },
+  "[O] [ED] THEOTOKION TONE SEVEN": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "St Anthony",
+        "url": "https://drive.google.com/file/d/1E3sJvfDLuAjFpJQgU01tQ1HR4QhNxAqz/view?usp=drivesdk",
+        "name": "17 Theotokion-pl3rd-grave-DoxastikonEothion.pdf",
+        "description": "[O] [ED] THEOTOKION IN TONE SEVEN | St Anthony",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
+  },
+  "[O] [ED] THEOTOKION TONE SIX": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/1M6y4jr7448QWrOS7FwZbVB86r82F6i0k/view?usp=drivesdk",
+        "name": "17 Theotokion-pl2nd-ElMassih-DoxastikonEothion.pdf",
+        "description": "[O] [ED] THEOTOKION IN TONE SIX | El Massih",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      },
+      {
+        "label": "St Anthony",
+        "url": "https://drive.google.com/file/d/1p8ZpTuPjTxw3p3cI9EsdHy-PlEykm6SB/view?usp=drivesdk",
+        "name": "17 Theotokion-pl2nd-DoxastikonEothion.pdf",
+        "description": "[O] [ED] THEOTOKION IN TONE SIX | St Anthony",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
+  },
+  "[O] [ED] THEOTOKION TONE THREE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "St Anthony",
+        "url": "https://drive.google.com/file/d/1mxAXtvyzZT70E0zMyjLgFZt5iT-uviN5/view?usp=drivesdk",
+        "name": "17 Theotokion-3rd-DoxastikonEothion.pdf",
+        "description": "[O] [ED] THEOTOKION IN TONE THREE | St Anthony",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
+  },
+  "[O] [ED] THEOTOKION TONE TWO": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "St Anthony",
+        "url": "https://drive.google.com/file/d/1F5RP2wu_kODnBLyLv4xVQGnoCtP9BfAj/view?usp=drivesdk",
+        "name": "17 Theotokion-2nd-DoxastikonEothion.pdf",
+        "description": "[O] [ED] THEOTOKION IN TONE TWO | St Anthony",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Orthros"
+      }
+    ]
   },
   "[V] DOXASTICON FOR THE SUNDAY OF FORGIVENESS TONE SIX": {
     "url": "https://drive.google.com/file/d/1I2bTRE4O1WBefw-Rk9Maj7NCfiVEo1yK/view?usp=drivesdk",
@@ -4787,6 +4898,19 @@
       }
     ]
   },
+  "[V] [AP] DOXASTICON FOR THE ARCHANGEL MICHAEL TONE EIGHT": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Creemens",
+        "url": "https://drive.google.com/file/d/1ZyiOyXZkI8QE-UsQIsvZSqSHUhBbE0Wl/view?usp=drivesdk",
+        "name": "04 ApostichaDoxastika-pl4th-Creemens-Vespers-StMichael.pdf",
+        "description": "[V] [AP] DOXASTICON FOR THE ARCHANGEL MICHAEL IN TONE EIGHT | Creemens",
+        "automelon": "",
+        "path": "MyEnglishMusic / Menaion / 01 September / 06 St Michael at Collossae"
+      }
+    ]
+  },
   "[V] [AP] DOXASTICON FOR THE BEHEADING TONE FOUR": {
     "type": "multi",
     "versions": [
@@ -5053,6 +5177,19 @@
         "description": "[V] [LIHC] DOXASTICON FOR THE AFTER-FEAST IN TONE TWO | Dormition - Creemens",
         "automelon": "",
         "path": "MyEnglishMusic / Menaion / 12 August / 15 Dormition of Theotokos"
+      }
+    ]
+  },
+  "[V] [LIHC] DOXASTICON FOR THE ARCHANGEL MICHAEL TONE SIX": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Creemens",
+        "url": "https://drive.google.com/file/d/1moEMj7WwNnGZ9yePPX2cVCIagg9roLVO/view?usp=drivesdk",
+        "name": "02 SticherasDoxastika-pl2nd-Creemens-Vespers-StMichael.pdf",
+        "description": "[V] [LIHC] DOXASTICON FOR THE ARCHANGEL MICHAEL IN TONE SIX | Creemens",
+        "automelon": "",
+        "path": "MyEnglishMusic / Menaion / 01 September / 06 St Michael at Collossae"
       }
     ]
   },
@@ -5421,6 +5558,19 @@
       }
     ]
   },
+  "[V] [LIHC] THEOTOKION FOR THE RESURRECTION TONE FIVE": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Slow",
+        "url": "https://drive.google.com/file/d/1Fzahum1oOhwNUc8iEckJSva4BhweZ_kR/view?usp=drivesdk",
+        "name": "03 DogmaticTheotokionSlow-pl1st.pdf",
+        "description": "[V] [LIHC] THEOTOKION FOR THE RESURRECTION IN TONE FIVE | Slow",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
+      }
+    ]
+  },
   "[V] [LIHC] THEOTOKION FOR THE RESURRECTION TONE FOUR": {
     "type": "multi",
     "versions": [
@@ -5481,6 +5631,19 @@
         "description": "[V] [LIHC] THEOTOKION FOR THE RESURRECTION IN TONE TWO | Brief",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Vespers"
+      }
+    ]
+  },
+  "[V] [LIHV] FOR ARCHANGEL MICHAEL TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "El Massih",
+        "url": "https://drive.google.com/file/d/1-94lOn2niskf-h-OEyQfaZNDMiSU13P7/view?usp=drivesdk",
+        "name": "01 Sticheras-4th-ElMassih-Vespers-StMichaelMiracle.pdf",
+        "description": "[V] [LIHV] For Archangel Michael in Tone Four\n(**As one valiant**) | El Massih",
+        "automelon": "AS ONE VALIANT",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 01 September / 06 St Archangel Michael Miracle in Colossae"
       }
     ]
   }
