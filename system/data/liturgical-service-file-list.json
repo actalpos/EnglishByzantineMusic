@@ -798,6 +798,18 @@
     "file": "Service_Texts/variableDate/2026/09/06 Sunday/Sep 06 2026 Bilingual READ.html"
   },
   {
+    "date": "2026-09-08 Nativity of Theotokos",
+    "title": "Sept 07 Bilingual LITART",
+    "order": -1,
+    "file": "Service_Texts/fixDate/09/08 Nativity of Theotokos/Sept 07 Bilingual LITART.html"
+  },
+  {
+    "date": "2026-09-08 Nativity of Theotokos",
+    "title": "Sept 07 Bilingual VESP",
+    "order": -1,
+    "file": "Service_Texts/fixDate/09/08 Nativity of Theotokos/Sept 07 Bilingual VESP.html"
+  },
+  {
     "date": "2026-12-28",
     "title": "Dec 28 2025 Bilingual ORTHROS",
     "order": -1,

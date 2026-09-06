@@ -534,6 +534,27 @@
       }
     ]
   },
+  "APOLYTIKION OF THE NATIVITY OF THE THEOTOKOS IN TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "St Anthony",
+        "url": "https://drive.google.com/file/d/1T5fF1yO9j4nBOVke9lLbJDReohuiQDIn/view?usp=drivesdk",
+        "name": "07 Apolytikion-2nd-SA-NativityTheotokos.pdf",
+        "description": "APOLYTIKION OF THE NATIVITY OF THE THEOTOKOS IN TONE FOUR | St Anthony",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 01 September / 08 Nativity of the Theotokos"
+      },
+      {
+        "label": "Karam",
+        "url": "https://drive.google.com/file/d/1PU0yZnnN-jzVCYUxBy700mDNDeTddnrQ/view?usp=drivesdk",
+        "name": "07 Apolytikion-2nd-Karam-NativityTheotokos.pdf",
+        "description": "APOLYTIKION OF THE NATIVITY OF THE THEOTOKOS IN TONE FOUR | Karam",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 01 September / 08 Nativity of the Theotokos"
+      }
+    ]
+  },
   "APOLYTIKION OF THE SAINTS IN TONE ONE": {
     "type": "multi",
     "versions": [
@@ -3124,6 +3145,14 @@
     "type": "multi",
     "versions": [
       {
+        "label": "EM bl",
+        "url": "https://drive.google.com/file/d/1sAaOcy0cnckHyxoPacoXhm_Gsi2Pyuqv/view?usp=drivesdk",
+        "name": "PaschalStichera-Doxa-billingual.pdf",
+        "description": "THE PASCHAL STICHERA\nIN TONE FIVE | EM bl",
+        "automelon": "",
+        "path": "Byzantine Music / Bilingual Services / Pentecostarion / 01 Sunday of Great and Holy Pascha"
+      },
+      {
         "label": "EM",
         "url": "https://drive.google.com/file/d/1MRGC-7Cv9FtYtwYLe7oyS9H4ijc1FJ0M/view?usp=drivesdk",
         "name": "20 Sticheras-pl1st-EM-Vespers-Pascha.pdf",
@@ -3138,14 +3167,6 @@
         "description": "THE PASCHAL STICHERA\nIN TONE FIVE | Karam",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Penticostarion / 01 Sunday of Great and Holy Pascha"
-      },
-      {
-        "label": "EM bl",
-        "url": "https://drive.google.com/file/d/1sAaOcy0cnckHyxoPacoXhm_Gsi2Pyuqv/view?usp=drivesdk",
-        "name": "PaschalStichera-Doxa-billingual.pdf",
-        "description": "THE PASCHAL STICHERA\nIN TONE FIVE | EM bl",
-        "automelon": "",
-        "path": "Byzantine Music / Bilingual Services / Pentecostarion / 01 Sunday of Great and Holy Pascha"
       }
     ]
   },
@@ -3928,6 +3949,19 @@
         "description": "[LT] DOXASTICON & THEOTOKION OF THE LITIA PROCESSION IN TONE SIX | Doxastikon DCS",
         "automelon": "",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 11 July / 12 July St Paisios"
+      }
+    ]
+  },
+  "[LT] DOXASTICON OF THE THEOTOKOS NATIVITY LITIA PROCESSION TONE EIGHT": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Creemens",
+        "url": "https://drive.google.com/file/d/146xYWk2bCVi_dox2jPKPxgEEvHq8DaSo/view?usp=drivesdk",
+        "name": "03 LityDoxastikon-pl4th-Creemens-Lity-NativityTheotokos.pdf",
+        "description": "[LT] DOXASTICON OF THE THEOTOKOS NATIVITY LITIA PROCESSION IN TONE EIGHT | Creemens",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 01 September / 08 Nativity of the Theotokos"
       }
     ]
   },
@@ -4728,6 +4762,19 @@
       }
     ]
   },
+  "[V] [AP] APOSTICHA FOR THE NATIVITY OF THE THEOTOKOS TONE FOUR": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Creemens",
+        "url": "https://drive.google.com/file/d/1EZCR1a1NEcSx8ZKfVf8P3gOzOs0ziiYz/view?usp=drivesdk",
+        "name": "04 Aposticha-1st-Creemens-Vespers-NativityTheotokos.pdf",
+        "description": "[V] [AP] APOSTICHA FOR THE NATIVITY OF THE THEOTOKOS IN TONE FOUR | Creemens",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 01 September / 08 Nativity of the Theotokos"
+      }
+    ]
+  },
   "[V] [AP] APOSTICHA FOR THE RESURRECTION TONE FOUR": {
     "type": "multi",
     "versions": [
@@ -4947,6 +4994,19 @@
         "description": "[V] [AP] DOXASTICON FOR THE HOLY FATHERS IN TONE THREE | Creemens",
         "automelon": "",
         "path": "MyEnglishMusic / Menaion / 11 July"
+      }
+    ]
+  },
+  "[V] [AP] DOXASTICON FOR THE NATIVITY OF THE THEOTOKOS TONE EIGHT": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Creemens",
+        "url": "https://drive.google.com/file/d/1wznVyPROtkWUBN6mK2OhE-RA2Sl0HT_u/view?usp=drivesdk",
+        "name": "05 ApostichaDoxastikon-pl4th-Creemens-Vespers-NativityTheotokos.pdf",
+        "description": "[V] [AP] DOXASTICON FOR THE NATIVITY OF THE THEOTOKOS IN TONE EIGHT | Creemens",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 01 September / 08 Nativity of the Theotokos"
       }
     ]
   },
@@ -5227,6 +5287,19 @@
       }
     ]
   },
+  "[V] [LIHC] DOXASTICON FOR THE NATIVITY OF THE THEOTOKOS TONE SIX": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Creemens",
+        "url": "https://drive.google.com/file/d/1GXLBiKsLb6c35Ec8FAr-CrsToheBCAfy/view?usp=drivesdk",
+        "name": "02 SticherasDoxastikon-pl2nd-Creemens-Vespers-NativityTheotokos.pdf",
+        "description": "[V] [LIHC] DOXASTICON FOR THE NATIVITY OF THE THEOTOKOS IN TONE SIX | Creemens",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 01 September / 08 Nativity of the Theotokos"
+      }
+    ]
+  },
   "[V] [LIHC] DOXASTICON FOR THE TRANSFIGURATION TONE SIX": {
     "type": "multi",
     "versions": [
@@ -5369,6 +5442,19 @@
         "description": "[V] [LIHC] For “The Holy Napkin” in Tone Two\n(**With what fair crowns**) | Karam",
         "automelon": "WITH WHAT FAIR CROWNS",
         "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 12 August / 16 Holy Napkin"
+      }
+    ]
+  },
+  "[V] [LIHC] FOR THE NATIVITY OF THE THEOTOKOS TONE SIX": {
+    "type": "multi",
+    "versions": [
+      {
+        "label": "Creemens",
+        "url": "https://drive.google.com/file/d/1cLTxfpG40mdV8wf2VBGOhvuSV9k8UROP/view?usp=drivesdk",
+        "name": "01 Sticheras-pl2nd-Creemens-Vespers-NativityTheotokos.pdf",
+        "description": "[V] [LIHC] For the Nativity of the Theotokos in Tone Six | Creemens",
+        "automelon": "",
+        "path": "Byzantine Music / EnglishByzantineMusic / Menaion / 01 September / 08 Nativity of the Theotokos"
       }
     ]
   },
